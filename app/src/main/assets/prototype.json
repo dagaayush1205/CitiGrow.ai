@@ -1,0 +1,4821 @@
+{
+  "translations": {
+    "en": {
+      "tagline": "Discover possibilities. Build skills. Unlock opportunities.",
+      "journeyAlt": "Illustration: a road from books to skills to a job to a star",
+      "chooseLang": "Choose your language",
+      "segCareers": "Career paths",
+      "examsTitle": "Exams for your career",
+      "examsSummary": "{n} exams for {c} · tap to see",
+      "examsNote": "Dates are typical patterns, not confirmed dates. Always check the official notice.",
+      "examSite": "Official site",
+      "segConnect": "Connect",
+      "connectIntro": "Meet mentors, find verified partner listings, and apply through your teacher.",
+      "connectMentors": "Mentors and group sessions",
+      "connectMentorsSub": "Alumni, teachers and verified mentors · group sessions only",
+      "partnerListings": "Partner listings",
+      "interestCta": "Express interest",
+      "interestSent": "Interest sent",
+      "interestNote": "Your teacher sees your interest and connects you with the partner. No phone numbers are shared.",
+      "schemeFinder": "Scheme finder",
+      "schemeFinderSub": "Check which government schemes you may be eligible for",
+      "becomePartner": "Know an employer or NGO?",
+      "becomePartnerSub": "They can join CitiGrow as a verified partner",
+      "ptEmployer": "Job / internship",
+      "ptTraining": "Training programme",
+      "ptMentor": "Mentorship",
+      "adLabel": "Ad",
+      "adNote": "Education-related ads only · never uses your personal data",
+      "toastAd": "Ad placeholder: sponsor details open here",
+      "pricePaid": "₹{a} (illustrative)",
+      "voiceTitle": "Voice",
+      "voiceEngine": "Voice engine: on-device text-to-speech (Kokoro-82M, VITS or Piper, being evaluated). Placeholder in this demo: no audio plays yet.",
+      "readingScreen": "Reading this screen aloud · audio coming soon",
+      "stopReading": "Stop",
+      "helperTitle": "Ask CitiGrow",
+      "askShort": "Ask",
+      "helperIntro": "Your study helper, like a personal tutor. It will answer questions about careers, exams and lessons using official sources.",
+      "helperSoon": "Coming soon · placeholder",
+      "helperTry": "Try asking",
+      "helperPlaceholder": "The AI helper is not connected yet. When it is, it will answer here using official data and show where each answer comes from.",
+      "helperSources": "Will be grounded in:",
+      "helperInputSoon": "Typing and voice questions coming soon",
+      "toastInterest": "Interest sent to your teacher",
+      "usageTitle": "Usage this week",
+      "usageTotal": "time learning",
+      "usageDays": "days active",
+      "usageGoal": "days met {m}-min goal",
+      "usageGoalLine": "goal {m}m",
+      "lastActive": "Last active {when}",
+      "usageLessons": "{n} lessons completed",
+      "usageQuizzes": "{n} quizzes done",
+      "usageCompass": "Skills check done",
+      "usageNoCompass": "Skills check not done yet",
+      "usageNote": "Counts time spent in CitiGrow lessons and quizzes only. Demo data.",
+      "aidSummary": "{n} may apply · tap to see",
+      "nearbySummary": "{n} options near you · tap to see",
+      "storiesTitle": "Success stories",
+      "seeCareer": "See this career",
+      "didIt": "Someone who took this path",
+      "officialPortal": "Official portal · apply here",
+      "aisheKicker": "Find colleges and universities",
+      "aisheDesc": "Official government directory of colleges and universities across India, by state and district.",
+      "bhashiniNote": "More Indian languages are planned through BHASHINI, the National Language Translation Mission. Not connected in this demo.",
+      "compassAllDone": "All checks completed · tap to see results",
+      "compassTodo": "Two short ASER-style checks · about 5 min",
+      "aserTitle": "Your ASER checks",
+      "aserDemo": "ASER-style · demo",
+      "aserBasic": "ASER: reading and maths basics",
+      "aserBasicSub": "Story reading and arithmetic (subtraction, division)",
+      "aserBeyond": "ASER Beyond Basics",
+      "aserBeyondSub": "Applied skills for ages 14–18: listening, reasoning, practical and digital tasks",
+      "stCompleted": "Completed",
+      "stInProgress": "In progress",
+      "stNotStarted": "Not started",
+      "govPlatforms": "Free government learning platforms",
+      "govFree": "Free · Government of India",
+      "govNote": "Opens the official website in a new tab. Needs internet.",
+      "govNoteOff": "You are offline. These official websites need internet.",
+      "continue": "Continue",
+      "chooseStart": "How would you like to start?",
+      "startSub": "Pick one. You can switch later.",
+      "closeChat": "Close",
+      "demoShort": "Simulated assistant and voice (demo)",
+      "begin": "Begin My Journey",
+      "imParent": "I'm a Parent",
+      "imTeacher": "I'm a Teacher",
+      "partnerLink": "Partner portal: alumni, mentors, NGOs, employers",
+      "resumeTitle": "Continue as {name}",
+      "resumeAt": "Last time: {place}",
+      "back": "Back",
+      "switchRole": "Switch role (demo)",
+      "roleNote": "Demo only: in a real product each role signs in separately with proper authorization.",
+      "role_student": "Student",
+      "role_student_d": "Explore careers and learn skills",
+      "role_parent": "Parent",
+      "role_parent_d": "Understand your child's options and costs",
+      "role_teacher": "Teacher / Facilitator",
+      "role_teacher_d": "Guide a cohort and create courses",
+      "role_partner": "Partner",
+      "role_partner_d": "Alumni, mentors, NGOs, employers",
+      "whoLearning": "Who is learning today?",
+      "sharedNote": "This phone is shared by your family. Each student has a private PIN.",
+      "addStudent": "Add another student",
+      "parentName": "Parent / Guardian",
+      "teacherName": "Ms. Kavitha R.",
+      "enterPin": "Enter your 4-digit PIN",
+      "del": "Delete",
+      "wrongPin": "Wrong PIN. Please try again.",
+      "demoPin": "Demo PIN",
+      "noVoiceLogin": "Voice is never used to unlock a profile.",
+      "regTitle1": "About you",
+      "regSub1": "Step 1 · a few basics",
+      "regTitle2": "Your phone and time",
+      "regSub2": "So lessons fit your day",
+      "regTitle3": "Consent and privacy",
+      "regSub3": "Almost done",
+      "stepLabel": "Step {n} of 3",
+      "next": "Next",
+      "createProfile": "Create my profile",
+      "prefName": "Preferred name",
+      "namePh": "What should we call you?",
+      "age": "Age",
+      "eduLevel": "Education level",
+      "state": "State",
+      "district": "District",
+      "districtPh": "e.g. Villupuram",
+      "prefLang": "Preferred language",
+      "phone": "Smartphone access",
+      "own": "Own phone",
+      "shared": "Shared at home",
+      "teacherPhone": "Teacher's device",
+      "internet": "Internet availability",
+      "reliable": "Reliable",
+      "sometimes": "Sometimes",
+      "limited": "Limited",
+      "learnTime": "Preferred learning time",
+      "tm_morning": "Morning",
+      "tm_afternoon": "Afternoon",
+      "tm_evening": "Evening",
+      "study": "Study time per day",
+      "min": "min",
+      "pin": "Create a 4-digit PIN",
+      "pinHelp": "Used to open your profile on a shared phone",
+      "guardianName": "Parent or guardian's name",
+      "guardianPh": "e.g. Lakshmi",
+      "consentTitleMinor": "Guardian consent",
+      "consentTitleAdult": "Your consent",
+      "consentIntroMinor": "Because you are under 18, a parent or guardian should agree before you use CitiGrow.",
+      "consentIntroAdult": "Please confirm you agree to how CitiGrow uses your information.",
+      "c1Minor": "My parent or guardian knows I am using CitiGrow and agrees",
+      "c1Adult": "I agree to use CitiGrow",
+      "c2": "Save my profile and progress on this phone",
+      "c3": "I understand matches and scores are demo estimates",
+      "privacyShort": "No Aadhaar or ID numbers are collected. Your demo student ID:",
+      "err1": "Please add your name, age, education level and district.",
+      "err2": "Please create a 4-digit PIN.",
+      "err3Minor": "Please add your guardian's name and tick all boxes.",
+      "err3": "Please tick all boxes to continue.",
+      "edu_iti": "ITI / Diploma",
+      "edu_college": "College",
+      "classShort": "Class",
+      "ageShort": "Age",
+      "morning": "Good morning",
+      "afternoon": "Good afternoon",
+      "evening": "Good evening",
+      "online": "Online",
+      "offline": "Offline",
+      "netAriaOn": "Online. Tap to simulate going offline",
+      "netAriaOff": "Offline (simulated). Tap to reconnect",
+      "modeStudent": "Student",
+      "modeParent": "Parent view",
+      "modeTeacher": "Teacher / Facilitator",
+      "modePartner": "Partner portal",
+      "syncOffline": "Offline (demo) · {n} changes saved on this phone",
+      "syncOfflineNone": "Offline (demo) · saved lessons and quizzes still work",
+      "syncing": "Back online · syncing {n} changes…",
+      "synced": "All changes synced · {time}",
+      "navHome": "Home",
+      "navDiscover": "Discover",
+      "navLearn": "Learn",
+      "navOpps": "Opportunities",
+      "navProfile": "Profile",
+      "mainNav": "Main",
+      "lv1": "Basic",
+      "lv2": "Developing",
+      "lv3": "Strong",
+      "sk_numeracy": "Numeracy",
+      "sk_reasoning": "Reasoning",
+      "sk_communication": "Communication",
+      "sk_practical": "Practical",
+      "sk_digital": "Digital",
+      "sk_reading": "Reading",
+      "tr_practical": "Practical work",
+      "tr_tech": "Technology",
+      "tr_people": "Working with people",
+      "tr_creative": "Creative work",
+      "tr_organizing": "Organizing",
+      "tr_outdoors": "Outdoors and nature",
+      "tr_caring": "Caring for others",
+      "tr_service": "Serving the nation",
+      "ex_pump": "Repaired household equipment",
+      "ex_shop": "Helped in the family shop",
+      "ex_stitch": "Stitches clothes",
+      "ex_fest": "Organized community events",
+      "ex_field": "Farm work",
+      "nextStep": "Your next step",
+      "simAI": "Simulated AI · rule-based demo, not a real model",
+      "simAIShort": "Simulated AI",
+      "journeyProgress": "Career journey",
+      "studyTime": "Study time",
+      "currentMilestone": "Current milestone",
+      "openLifeMap": "Open my Life Map",
+      "upcomingDeadline": "Upcoming deadline",
+      "sampleData": "Sample data",
+      "suggestedScholarship": "Suggested scholarship or scheme",
+      "mentorRec": "Mentor for you",
+      "teacherRecommends": "Your teacher recommends",
+      "thought": "Thought for today",
+      "offlineContent": "Offline content",
+      "manageDownloads": "Manage downloads",
+      "refreshRecs": "Refresh recommendations",
+      "refreshOnline": "Last refreshed {time}",
+      "refreshOffline": "New recommendations need internet. Your saved plan still works.",
+      "dreamNone": "Dream career: not chosen yet",
+      "dreamIs": "Dream: {c}",
+      "minPerDay": "{m} min a day",
+      "stageOf": "Step {n} of {total}",
+      "msNoteLessons": "{d} of {n} lessons for this step",
+      "msNoteTap": "Open your Life Map to see what to do.",
+      "msNoCareer": "Choose a career to start your Life Map",
+      "msNoCareerT": "No career chosen yet",
+      "offlineText": "{n} courses saved on this phone · they work without internet",
+      "queueNone": "Nothing waiting to sync",
+      "queueSome": "{n} changes waiting to sync",
+      "scLifeMap": "Life Map",
+      "scMotivation": "My Future",
+      "scMentors": "Mentors",
+      "mentorWhy": "Hosts a group session on {topic}",
+      "na_talk_t": "Talk to CitiGrow about what you enjoy",
+      "na_talk_w": "Your answers help us suggest careers that fit you.",
+      "na_start": "Start",
+      "na_assess_t": "Take the Skills Compass",
+      "na_assess_w": "An 8-question check shows which skills to build first.",
+      "na_career_t": "Explore your top match: {c}",
+      "na_open": "Open",
+      "na_lesson_t": "Lesson: {l}",
+      "na_lesson_w": "This lesson moves you forward on step {n} of your Life Map.",
+      "na_lesson_off": "You're offline, so here is a lesson saved on this phone.",
+      "na_les_cta": "Start lesson",
+      "na_step_t": "Finish step: {s}",
+      "na_step_w": "Open your Life Map and mark this step done when you have finished it.",
+      "na_opp_t": "Prepare documents for {o}",
+      "na_opp_w": "You may be eligible. Getting documents ready early avoids last-minute stress.",
+      "na_prep": "Prepare",
+      "na_session_t": "Join a group session with a mentor",
+      "na_session_w": "Hearing from people who did it makes the path clearer.",
+      "na_see": "See sessions",
+      "discoverTitle": "Discover careers",
+      "talkTitle": "Talk to CitiGrow",
+      "compassTitle": "Skills Compass",
+      "discNone": "Not started · about 5 min",
+      "discDone": "Done · tap to talk again",
+      "compassNone": "Not started · 8 questions",
+      "compassDone": "Done · see results",
+      "yourProfile": "Your interest profile",
+      "careersForYou": "Careers for you",
+      "compare": "Compare",
+      "matchHint": "Talk to CitiGrow first to see how well each career matches you.",
+      "yourChoice": "Your choice",
+      "fAll": "All",
+      "fVoc": "Skill and vocational",
+      "fAca": "Academic",
+      "routeVoc": "Vocational route",
+      "routeAca": "Academic route",
+      "sampleCareerNote": "Career details, costs and durations are illustrative sample information. Always confirm with official sources.",
+      "matchPct": "{p}% match",
+      "learnTitle": "Learning hub",
+      "skillMastery": "Skill mastery",
+      "noSkillsYet": "Take the Skills Compass to see your skill levels.",
+      "startCompass": "Start Skills Compass",
+      "masteryNote": "Lessons completed: {n}. Practice helps each skill grow.",
+      "recommendedModules": "Recommended for you",
+      "examPath": "Exam preparation pathway",
+      "pathNote": "A sample route from basics to timed practice.",
+      "allCourses": "All courses",
+      "fFree": "Free",
+      "fPaid": "Teacher courses",
+      "fDl": "Downloaded",
+      "csrSeat": "CSR seat available",
+      "downloaded": "Downloaded",
+      "needsNet": "Needs internet",
+      "enrolled": "Enrolled",
+      "noCourses": "No courses here yet.",
+      "liveClasses": "Upcoming live classes",
+      "quizzes": "Short quizzes",
+      "worksOffline": "Works offline",
+      "priceFree": "Free",
+      "priceModule": "₹{a} per module (illustrative)",
+      "priceSub": "₹{a}/month (illustrative)",
+      "progLessons": "{d}/{n} lessons",
+      "recWhyGap": "Builds your {s} (now {l})",
+      "recWhyCareer": "Part of your {c} plan",
+      "reserve": "Reserve",
+      "reserved": "Reserved",
+      "quizBest": "Best score {s}/3",
+      "quizNew": "Not tried yet · 3 questions",
+      "oppsTitle": "Opportunities",
+      "refresh": "Refresh",
+      "recByTeacher": "Teacher recommended",
+      "noOpps": "No listings in this category yet.",
+      "oppsDisclaimer": "All listings are sample data for this demo. CitiGrow helps you prepare but never submits official applications.",
+      "ot_scholarship": "Scholarships",
+      "ot_scheme": "Govt. schemes",
+      "ot_exam": "Exams",
+      "ot_apprentice": "Apprenticeships",
+      "ot_intern": "Internships",
+      "ot_job": "Jobs",
+      "ot_centre": "Training centres",
+      "stYes": "Appears eligible",
+      "stInfo": "More information needed",
+      "stNo": "Does not meet a requirement",
+      "bannerOnline": "Listings refreshed {time} · sample data",
+      "bannerOffline": "Offline · showing saved listings from {time}. Details may have changed.",
+      "studentId": "Demo ID",
+      "privacyConsent": "Privacy and sharing",
+      "privacyMore": "Privacy and consent details",
+      "appLang": "App language",
+      "switchStudent": "Switch student",
+      "savedLocal": "Profiles are saved on this phone only in this demo.",
+      "resetDemo": "Reset demo data",
+      "resetConfirm": "Tap again to reset everything",
+      "consentTeacher": "Share progress with my teacher",
+      "consentTeacherSub": "Teacher sees skills and progress, never your chats",
+      "consentParent": "Share a summary with my family",
+      "consentParentSub": "Family view shows careers, milestones and costs",
+      "d_learnTime": "Learning time",
+      "d_guardian": "Guardian",
+      "chatNote": "CitiGrow is a simulated assistant. It follows simple demo rules; it is not a real AI model.",
+      "listen": "Listen",
+      "playingSim": "Playing (simulated)",
+      "profileReady": "Your interest profile is ready",
+      "seeMatches": "See my career matches",
+      "restartChat": "Start the conversation again",
+      "listeningSim": "Listening… (simulated)",
+      "voiceOffline": "Voice needs internet. You can still tap or type an answer.",
+      "speak": "Speak your answer",
+      "typeAnswer": "Type your answer…",
+      "send": "Send",
+      "voiceSimNote": "Demo voice: the microphone fills in a sample answer. No real speech recognition.",
+      "chat_hello": "Vanakkam {name}! I'm CitiGrow. Let's talk about you. There are no wrong answers.",
+      "q_enjoy": "What activities do you enjoy most?",
+      "q_exp_fix": "Have you ever repaired something at home, like a motor pump or a fan? Tell me about it.",
+      "q_exp_people": "Have you helped at a shop or with customers? What did you learn?",
+      "q_exp": "What have you learned from helping at home or in your community?",
+      "q_life": "What kind of life would you like in the future?",
+      "q_where": "Would you prefer to work near home or somewhere else?",
+      "q_time": "How much time can you study each day?",
+      "q_worry": "What worries you about your future?",
+      "q_pace": "Do you like a fixed timetable or learning at your own pace?",
+      "a_enjoy_fix": "Fixing things",
+      "a_enjoy_talk": "Talking with people",
+      "a_enjoy_make": "Drawing or stitching",
+      "a_enjoy_tech": "Phones and computers",
+      "a_enjoy_farm": "Farming and outdoors",
+      "a_enjoy_org": "Organizing events",
+      "a_exp_pump": "I repaired our motor pump with my father",
+      "a_exp_shop": "I help at our family shop",
+      "a_exp_stitch": "I stitch clothes with my mother",
+      "a_exp_fest": "I organized our village festival",
+      "a_exp_field": "I help on the farm",
+      "a_life_steady": "A steady monthly income",
+      "a_life_biz": "My own business",
+      "a_life_nation": "Serving the nation",
+      "a_life_creative": "Creative work",
+      "a_life_help": "Helping people",
+      "a_where_near": "Near my home",
+      "a_where_city": "I can move to a city",
+      "a_where_any": "Anywhere in India",
+      "a_time_15": "15 minutes",
+      "a_time_30": "30 minutes",
+      "a_time_45": "45 minutes",
+      "a_time_60": "1 hour",
+      "a_worry_cost": "Cost of studies",
+      "a_worry_unknown": "Not knowing which careers exist",
+      "a_worry_english": "My English",
+      "a_worry_family": "My family needs me nearby",
+      "a_worry_exam": "Exams feel hard",
+      "a_pace_fixed": "A fixed timetable",
+      "a_pace_self": "My own pace",
+      "k_exp_pump": "Repairing a motor pump shows real problem-solving and mechanical skill!",
+      "k_exp_shop": "Helping at a shop builds communication and money skills.",
+      "k_exp_stitch": "Stitching takes patience, precision and an eye for design.",
+      "k_exp_fest": "Organizing a festival shows leadership and planning.",
+      "k_exp_field": "Farm work teaches hard work and knowledge of crops and weather.",
+      "k_life_nation": "Serving the nation is a proud goal. The Armed Forces could be one path to explore.",
+      "k_life_biz": "Many skilled people later start their own service business.",
+      "k_where_near": "Good to know. Many careers can be built close to home.",
+      "k_worry_cost": "That's a real concern. I'll look for free courses and scholarships for you.",
+      "k_worry_english": "Many careers start in your own language, and English can be learned step by step.",
+      "k_worry_family": "I'll give extra weight to options near home.",
+      "k_time": "Got it. I'll plan your lessons around that time.",
+      "k_free": "Thanks! I noticed: {labels}.",
+      "k_gen": "Thank you for sharing!",
+      "chat_done": "Thank you, {name}! I've made your interest profile. Next, try the Skills Compass so I can suggest careers and lessons.",
+      "v_enjoy": "I like fixing things at home, like the motor pump and fans",
+      "v_exp": "Last summer I helped my father repair our motor pump when it stopped working",
+      "v_life": "I want a steady job and maybe my own business later",
+      "v_where": "I want to work near my home",
+      "v_time": "I can study for 30 minutes",
+      "v_worry": "I worry about the cost of studies",
+      "v_pace": "I like a fixed timetable",
+      "chatSummary": "You enjoy {traits}.",
+      "compassIntro": "A short ASER-style check of reading, listening, maths, reasoning, practical and digital skills. It takes about 5 minutes.",
+      "compassNote1": "Results are demo estimates, not validated educational or psychological diagnoses.",
+      "compassNote2": "The reading question is not read aloud, because it checks your own reading. Listening is a separate question.",
+      "startTest": "Start the check",
+      "viewLast": "See my last results",
+      "readYourself": "Read this yourself",
+      "simTranscript": "Simulated audio transcript",
+      "listenFirst": "Play the audio first, then answer.",
+      "playAudio": "Play the audio",
+      "playAgain": "Play again",
+      "progQ": "Question {n} of {total}",
+      "yourSkills": "Your Skills Compass",
+      "demoEstimate": "Demo estimate",
+      "compassDisclaimer": "These are demo estimates from a few questions, not a diagnosis. Skills grow with practice.",
+      "recommendedTasks": "Recommended skill-building tasks",
+      "retake": "Take it again",
+      "taskWhy": "Because your {s} is {l} right now",
+      "as_read_p": "Meena lives in a small village. Every morning she feeds the goats. Then she walks to school with her brother. After school, she helps her mother in the shop.",
+      "as_read_q": "What does Meena do after school?",
+      "as_read_o0": "She feeds the goats",
+      "as_read_o1": "She helps in the shop",
+      "as_read_o2": "She plays cricket",
+      "as_listen_t": "Hello! The bus to the training centre leaves at 8 o’clock from the temple stop. Please bring your school ID.",
+      "as_listen_q": "Where does the bus leave from?",
+      "as_listen_o0": "The school",
+      "as_listen_o1": "The market",
+      "as_listen_o2": "The temple stop",
+      "as_num_q": "Which number is forty-seven?",
+      "as_sub_q": "Solve: 52 − 27 = ?",
+      "as_div_q": "Solve: 156 ÷ 4 = ?",
+      "as_reason_q": "What comes next? 2, 4, 8, 16, …",
+      "as_prac_q": "The fan in your room stops, but the light in the same room still works. What should you check first?",
+      "as_prac_o0": "The main electricity meter",
+      "as_prac_o1": "The fan's switch and regulator",
+      "as_prac_o2": "Buy a new fan",
+      "as_dig_q": "Someone calls and asks for the OTP sent to your phone. What should you do?",
+      "as_dig_o0": "Share it if they sound polite",
+      "as_dig_o1": "Post it in the family group",
+      "as_dig_o2": "Never share it and tell an adult",
+      "as_comm_q": "A customer is upset because their order is late. What is the best first thing to say?",
+      "as_comm_o0": "Sorry for the wait. Let me check your order now.",
+      "as_comm_o1": "It's not my fault.",
+      "as_comm_o2": "Come back tomorrow.",
+      "whyMatch": "Why this career is suggested",
+      "keyFacts": "Key facts",
+      "illustrative": "Illustrative",
+      "skillsNeeded": "Skills you will need",
+      "f_edu": "Education needed",
+      "f_dur": "Preparation time",
+      "f_fin": "Money matters",
+      "f_loc": "Location and travel",
+      "f_prog": "Career growth",
+      "trySim": "Try the career simulator",
+      "comparePaths": "Compare career pathways",
+      "chooseCareer": "Choose this career and build my Life Map",
+      "chosenCareer": "Open my Life Map for this career",
+      "simDisclaimer": "Practice scenario with simple scoring. Not a job test.",
+      "simResult": "Your simulation result",
+      "nextModules": "Suggested next modules",
+      "tryAgain": "Try again",
+      "done": "Done",
+      "simStep": "Step {n} of {total}",
+      "simNext": "Next",
+      "simFinish": "See my result",
+      "simGood": "Good choice",
+      "simThink": "Think again",
+      "noCareerYet": "Choose a career to build your Life Map",
+      "noCareerHint": "Explore careers, open one you like and tap \"Choose this career\".",
+      "exploreCareers": "Explore careers",
+      "lifeMapFor": "Life Map for",
+      "dailyTime": "Daily study time",
+      "adaptive": "Adaptive",
+      "yourRoadmap": "Your roadmap",
+      "tapStep": "Tap a step",
+      "youAreHere": "You are here",
+      "resources": "Available resources",
+      "markStepDone": "Mark this step complete",
+      "altRoute": "Alternate route",
+      "lifeMapNote": "Steps, durations and dates are illustrative. Your teacher can help confirm details.",
+      "statLessons": "lessons a week",
+      "statWeeks": "weeks for study step",
+      "statMin": "minutes a week",
+      "legCore": "Career skills",
+      "legFound": "Foundations",
+      "legRev": "Revision",
+      "days": "Mon,Tue,Wed,Thu,Fri,Sat,Sun",
+      "adaptMsg": "Your roadmap has adapted to {m} minutes a day. Short, regular sessions still move you forward. The study step is now planned over about {w} weeks.",
+      "stDone": "Completed",
+      "stCur": "Current step",
+      "stNext": "Coming up",
+      "stAlt": "Another way",
+      "r_what": "What to do",
+      "r_why": "Why it matters",
+      "r_skills": "Skills needed",
+      "r_effort": "Estimated effort",
+      "r_deadline": "Deadlines",
+      "r_teacher": "Teacher support",
+      "r_unlocks": "Opportunities unlocked",
+      "lessonsFor": "{d}/{n} lessons for this step",
+      "compareIntro": "Compare your top pathways side by side. You can change your choice any time.",
+      "cmpRoute": "Route",
+      "cmpEdu": "Education",
+      "cmpTime": "Preparation",
+      "cmpCost": "Costs",
+      "cmpPlace": "Location",
+      "cmpChoose": "Choose",
+      "cmpChosen": "Chosen",
+      "futurePossible": "My future is possible",
+      "dreamCareer": "My dream career",
+      "dreamPick": "Still exploring",
+      "mo_reason": "You completed your first reasoning challenge. Your next step is a {m}-minute practice session.",
+      "mo_lessons": "You have finished {n} lessons. Your next step: {next}.",
+      "mo_compass": "You discovered your strengths: {s}. Your next step: {next}.",
+      "mo_start": "Every journey starts with one conversation. Your next step: {next}.",
+      "listenMessage": "Listen to your message",
+      "audioSimNote": "Simulated audio for the demo: no real speech is played.",
+      "nextAchievable": "Your next achievable action",
+      "achievements": "My achievements",
+      "noStreaks": "No streaks to lose here. Every step counts, whenever you can study.",
+      "skillsDeveloped": "Skills I have developed",
+      "skillsEmpty": "Finish the Skills Compass to see your strengths.",
+      "milestones": "Career journey milestones",
+      "someoneLikeMe": "Someone like me",
+      "fictional": "Fictional demo stories",
+      "familyCard": "Share with my family",
+      "shareFamily": "Prepare family card",
+      "familyShared": "Family card ready. Show this screen, or your parent can see it in Parent view.",
+      "familyText": "{name} is exploring {career}. It usually needs {edu}. Free courses and scholarships can lower the cost. You can help by sharing the phone for short study sessions.",
+      "familyTextNone": "{name} is exploring careers on CitiGrow, starting with what they enjoy. You can help by asking about their day and sharing the phone for short study sessions.",
+      "ach_talk": "Shared my interests",
+      "ach_compass": "Found my strengths",
+      "ach_lesson": "First lesson",
+      "ach_map": "Life Map started",
+      "ach_sim": "Tried a simulator",
+      "ach_offline": "Learned offline",
+      "ach_quiz": "Finished a quiz",
+      "ach_session": "Booked a session",
+      "ach_apply": "Documents ready",
+      "mentorIntro": "People who can open doors: alumni from nearby villages, teachers and verified mentors.",
+      "mentorSafety": "For your safety, mentoring happens in teacher-moderated group sessions. No personal phone numbers or private chats.",
+      "groupSessions": "Upcoming group sessions",
+      "localAlumni": "Local alumni role models",
+      "verifiedDemo": "Verified (demo)",
+      "teachers": "Teachers",
+      "requestMentor": "Request mentorship",
+      "requestHow": "Pick a topic. Your request goes to your teacher, who arranges a group session.",
+      "sendRequest": "Send request through my teacher",
+      "successStories": "Local success stories",
+      "seatsLeft": "{n} seats left",
+      "reserveSeat": "Reserve a seat",
+      "seatReserved": "Seat reserved",
+      "reqStatus": "Waiting for teacher",
+      "tp_career": "Choosing a career",
+      "tp_exam": "Exam preparation",
+      "tp_skills": "Learning a skill",
+      "enrollTitle": "Join this course",
+      "priceNote": "This teacher course costs {p}. Choose how to join:",
+      "useCsr": "Use a CSR-sponsored seat",
+      "csrExplain": "A sponsor pays the fee, the teacher is paid, and you learn free.",
+      "enrollDemo": "Enroll (demo payment)",
+      "noRealPayment": "No real money is charged in this prototype.",
+      "needsNetEnroll": "Connect to the internet to enroll.",
+      "notDownloaded": "This course isn't saved on this phone. Connect to the internet or download it when you're online.",
+      "lessons": "Lessons",
+      "takeQuiz": "Take the course quiz",
+      "dlNow": "Download for offline use",
+      "dlDone": "Saved on this phone · tap to remove",
+      "dlNeedsNet": "Connect to download",
+      "liveAt": "Live class: {w}",
+      "offlineCopy": "Offline copy",
+      "keyPoints": "Key points",
+      "quickCheck": "Quick check",
+      "completeLesson": "Mark lesson complete",
+      "lessonDone": "Lesson complete!",
+      "backToCourse": "Back to course",
+      "nextLesson": "Next lesson",
+      "playLesson": "Listen to this lesson",
+      "correct": "Correct!",
+      "notQuite": "Not quite. The answer is: {a}",
+      "doneNoteOnline": "Progress saved and synced. Your dashboard and Life Map are updated.",
+      "doneNoteOffline": "Saved on this phone. It will sync when you're back online.",
+      "savedOffline": "Saved offline · will sync",
+      "seeScore": "See my score",
+      "quizEnd": "You scored {s} out of {n}.",
+      "quizGood": "Great work. Keep going!",
+      "quizOk": "Good effort. Review the lesson and try again.",
+      "lastVerified": "Sample data · not verified",
+      "eligibility": "Eligibility conditions",
+      "checkEligibility": "Check my eligibility",
+      "ruleBased": "Rule-based",
+      "checkNow": "Check now",
+      "checkerNote": "Demo eligibility rules, not an official decision. Always check the official notice.",
+      "documents": "Required documents",
+      "prepareApp": "Prepare my application",
+      "clReady": "Your checklist is complete. Apply on the official portal.",
+      "noSubmit": "CitiGrow does not submit applications. You apply yourself on the official website or office.",
+      "officialSource": "Official source",
+      "openSource": "Open official source",
+      "sourceToast": "Official link placeholder: add the verified portal link before launch.",
+      "incomeQ": "Is your family's yearly income below {v}?",
+      "yes": "Yes",
+      "no": "No",
+      "notSure": "Not sure",
+      "cl_read": "Read the official notice carefully",
+      "cl_teacher": "Ask my teacher to check the details",
+      "cl_deadline": "Note the deadline in the family calendar",
+      "cl_doc": "Keep ready: {d}",
+      "clText": "{d}/{n} done",
+      "privacyTitle": "Privacy and consent",
+      "privacyIntro": "You decide who sees your information. Here is what this demo stores and who can see it.",
+      "whatWeStore": "What is stored",
+      "whoSees": "Who sees what",
+      "yourChoices": "Your choices",
+      "pv1": "Your name, age, class, district and language",
+      "pv2": "Your answers, skills results and progress",
+      "pv3": "Everything is saved on this phone (browser storage) in this demo",
+      "pv4": "No Aadhaar, ID numbers, phone numbers or photos",
+      "pa_student": "Everything in your own profile",
+      "pa_parent": "Careers, milestones, costs, aid and a progress summary. Never your chats.",
+      "pa_teacher": "Skills and progress if you allow it. Never your chats.",
+      "pa_partner": "Nothing personal.",
+      "pvn1": "Voice is never used to unlock a profile.",
+      "pvn2": "Each student on a shared phone has a private PIN.",
+      "pvn3": "Role switching is only for this demo. A real product needs proper sign-in.",
+      "parentHello": "Vanakkam! Welcome, parent",
+      "parentSub": "A simple view of your child's journey. Tap play to listen.",
+      "listenCareer": "Listen to career explanation",
+      "listenSub": "{name}'s career, explained simply",
+      "howToHelp": "How you can help this week",
+      "childPathways": "Career pathways being explored",
+      "parentNoPaths": "Your child has not explored careers yet.",
+      "expectedMilestones": "Expected milestones",
+      "costs": "Course and training costs",
+      "costNote": "Figures are illustrative. Many options have free or sponsored seats.",
+      "financialAid": "Financial help that may apply",
+      "nearby": "Nearby learning options",
+      "progressSummary": "Progress summary",
+      "familySchedule": "Family learning schedule",
+      "sharedPhoneNote": "One family phone, shared fairly. Times follow each child’s preferred learning time.",
+      "parentHidden": "{name} has chosen not to share details with the family view. {name} can switch this on in Profile.",
+      "parentPrivacy": "Private conversations and detailed answers stay with {name}.",
+      "sup_tech": "Your child is exploring technical careers. This week, providing the family smartphone for 15 minutes on three days would help with the next lesson.",
+      "sup_general": "Your child is exploring careers. Sharing the family smartphone for 15 minutes on three days this week would help with the next lesson.",
+      "parentExplain": "{name} is exploring {career}. {desc} It usually needs {edu}, and preparation takes {dur}. Costs: {fin} {name} is working on: {step}.",
+      "parentExplainNone": "{name} has started exploring careers on CitiGrow by talking about what they enjoy. Next, {name} will take a short skills check and look at careers that fit.",
+      "pTagChosen": "Chosen",
+      "pTagExploring": "Exploring",
+      "ps_lessons": "Lessons done",
+      "ps_compass": "Skills check",
+      "ps_sessions": "Group sessions",
+      "c_path": "Typical path cost",
+      "c_paid": "Paid courses so far (simulated)",
+      "c_free": "Free courses in use",
+      "c_none": "None",
+      "sunday": "Family day · no study planned",
+      "toastOffline": "Offline mode on (simulated). Saved lessons and quizzes still work.",
+      "toastSynced": "{n} changes synced",
+      "toastOnline": "Back online",
+      "toastCareer": "Life Map created for {c}",
+      "toastStep": "Step complete. Next step unlocked!",
+      "toastLesson": "Lesson complete. Progress updated.",
+      "toastRefresh": "Recommendations refreshed",
+      "toastListings": "Listings refreshed",
+      "toastBooked": "Seat reserved. Your teacher will share details.",
+      "toastReq": "Request sent to your teacher",
+      "toastDl": "Saved for offline use",
+      "toastDlRm": "Removed from this phone",
+      "toastEnroll": "Enrolled in {c}",
+      "toastShared": "Family card ready",
+      "toastProfile": "Profile created. Welcome, {name}!",
+      "toastReset": "Demo data reset"
+    },
+    "hi": {
+      "tagline": "संभावनाएँ खोजें। कौशल बनाएँ। अवसर पाएँ।",
+      "journeyAlt": "चित्र: किताबों से कौशल, नौकरी और सितारे तक का रास्ता",
+      "chooseLang": "अपनी भाषा चुनें",
+      "segCareers": "करियर रास्ते",
+      "examsTitle": "आपके करियर की परीक्षाएँ",
+      "examsSummary": "{c} के लिए {n} परीक्षाएँ · देखने के लिए टैप करें",
+      "examsNote": "तारीखें सामान्य पैटर्न हैं, पक्की नहीं। हमेशा आधिकारिक सूचना देखें।",
+      "examSite": "आधिकारिक साइट",
+      "segConnect": "जुड़ें",
+      "connectIntro": "मेंटर से मिलें, सत्यापित पार्टनर सूचियाँ देखें, और शिक्षक के ज़रिए आवेदन करें।",
+      "connectMentors": "मेंटर और समूह सत्र",
+      "connectMentorsSub": "पूर्व छात्र, शिक्षक और सत्यापित मेंटर · केवल समूह सत्र",
+      "partnerListings": "पार्टनर सूचियाँ",
+      "interestCta": "रुचि दिखाएँ",
+      "interestSent": "रुचि भेजी गई",
+      "interestNote": "आपके शिक्षक आपकी रुचि देखकर आपको पार्टनर से जोड़ेंगे। कोई फ़ोन नंबर साझा नहीं होता।",
+      "schemeFinder": "योजना खोजक",
+      "schemeFinderSub": "देखें कि आप किन सरकारी योजनाओं के योग्य हो सकते हैं",
+      "becomePartner": "किसी नियोक्ता या NGO को जानते हैं?",
+      "becomePartnerSub": "वे सत्यापित पार्टनर के रूप में CitiGrow से जुड़ सकते हैं",
+      "ptEmployer": "नौकरी / इंटर्नशिप",
+      "ptTraining": "प्रशिक्षण कार्यक्रम",
+      "ptMentor": "मेंटरशिप",
+      "adLabel": "विज्ञापन",
+      "adNote": "केवल शिक्षा से जुड़े विज्ञापन · आपकी निजी जानकारी कभी इस्तेमाल नहीं होती",
+      "pricePaid": "₹{a} (उदाहरण)",
+      "voiceTitle": "आवाज़",
+      "voiceEngine": "आवाज़ इंजन: फ़ोन पर ही टेक्स्ट-टू-स्पीच (Kokoro-82M, VITS या Piper, जाँच जारी)। इस डेमो में अभी कोई ऑडियो नहीं चलता।",
+      "readingScreen": "यह स्क्रीन पढ़कर सुनाई जा रही है · ऑडियो जल्द",
+      "stopReading": "रोकें",
+      "helperTitle": "CitiGrow से पूछें",
+      "askShort": "पूछें",
+      "helperIntro": "आपका पढ़ाई सहायक, एक निजी ट्यूटर जैसा। यह करियर, परीक्षा और पाठों के सवालों के जवाब आधिकारिक स्रोतों से देगा।",
+      "helperSoon": "जल्द आ रहा है · प्लेसहोल्डर",
+      "helperTry": "ये पूछकर देखें",
+      "helperPlaceholder": "AI सहायक अभी जुड़ा नहीं है। जुड़ने पर यह आधिकारिक डेटा से जवाब देगा और बताएगा कि हर जवाब कहाँ से आया।",
+      "helperSources": "इन पर आधारित होगा:",
+      "helperInputSoon": "लिखकर और बोलकर सवाल जल्द",
+      "toastInterest": "रुचि आपके शिक्षक को भेजी गई",
+      "usageTitle": "इस हफ़्ते का उपयोग",
+      "usageTotal": "सीखने का समय",
+      "usageDays": "सक्रिय दिन",
+      "usageGoal": "दिन {m} मिनट का लक्ष्य पूरा",
+      "usageGoalLine": "लक्ष्य {m}मि",
+      "lastActive": "पिछली बार {when}",
+      "usageLessons": "{n} पाठ पूरे",
+      "usageQuizzes": "{n} क्विज़ पूरे",
+      "usageCompass": "कौशल जाँच पूरी",
+      "usageNoCompass": "कौशल जाँच अभी बाकी",
+      "usageNote": "सिर्फ़ CitiGrow के पाठ और क्विज़ में बिताया समय गिना जाता है। डेमो डेटा।",
+      "aidSummary": "{n} मिल सकती हैं · देखने के लिए टैप करें",
+      "nearbySummary": "आस-पास {n} विकल्प · देखने के लिए टैप करें",
+      "storiesTitle": "सफलता की कहानियाँ",
+      "seeCareer": "यह करियर देखें",
+      "didIt": "जिसने यह रास्ता अपनाया",
+      "officialPortal": "आधिकारिक पोर्टल · यहाँ आवेदन करें",
+      "aisheKicker": "कॉलेज और विश्वविद्यालय खोजें",
+      "aisheDesc": "पूरे भारत के कॉलेजों और विश्वविद्यालयों की आधिकारिक सरकारी सूची, राज्य और ज़िले के अनुसार।",
+      "bhashiniNote": "भाषिणी (राष्ट्रीय भाषा अनुवाद मिशन) के ज़रिए और भारतीय भाषाएँ जोड़ने की योजना है। इस डेमो में यह जुड़ा नहीं है।",
+      "compassAllDone": "सभी जाँच पूरी · परिणाम देखने के लिए टैप करें",
+      "compassTodo": "दो छोटी ASER जैसी जाँच · लगभग 5 मिनट",
+      "aserTitle": "आपकी ASER जाँच",
+      "aserDemo": "ASER जैसी · डेमो",
+      "aserBasic": "ASER: पढ़ना और गणित की बुनियाद",
+      "aserBasicSub": "कहानी पढ़ना और गणित (घटाना, भाग)",
+      "aserBeyond": "ASER बियॉन्ड बेसिक्स",
+      "aserBeyondSub": "14–18 साल के लिए व्यावहारिक कौशल: सुनना, तर्क, व्यावहारिक और डिजिटल काम",
+      "stCompleted": "पूरा",
+      "stInProgress": "चल रहा है",
+      "stNotStarted": "शुरू नहीं हुआ",
+      "govPlatforms": "मुफ़्त सरकारी लर्निंग प्लेटफ़ॉर्म",
+      "govFree": "मुफ़्त · भारत सरकार",
+      "govNote": "आधिकारिक वेबसाइट नए टैब में खुलेगी। इंटरनेट चाहिए।",
+      "govNoteOff": "आप ऑफ़लाइन हैं। इन आधिकारिक वेबसाइटों के लिए इंटरनेट चाहिए।",
+      "continue": "आगे बढ़ें",
+      "chooseStart": "आप कैसे शुरू करना चाहेंगे?",
+      "startSub": "एक चुनें। आप बाद में बदल सकते हैं।",
+      "closeChat": "बंद करें",
+      "demoShort": "सिम्युलेटेड सहायक और आवाज़ (डेमो)",
+      "begin": "मेरी यात्रा शुरू करें",
+      "imParent": "मैं अभिभावक हूँ",
+      "imTeacher": "मैं शिक्षक हूँ",
+      "partnerLink": "पार्टनर पोर्टल: पूर्व छात्र, मेंटर, NGO, नियोक्ता",
+      "resumeTitle": "{name} के रूप में जारी रखें",
+      "resumeAt": "पिछली बार: {place}",
+      "back": "वापस",
+      "switchRole": "भूमिका बदलें (डेमो)",
+      "roleNote": "केवल डेमो: असली ऐप में हर भूमिका अलग से सुरक्षित लॉग-इन करती है।",
+      "role_student": "छात्र",
+      "role_student_d": "करियर जानें और कौशल सीखें",
+      "role_parent": "अभिभावक",
+      "role_parent_d": "अपने बच्चे के विकल्प और खर्च समझें",
+      "role_teacher": "शिक्षक / सहायक",
+      "role_teacher_d": "छात्रों के समूह का मार्गदर्शन और कोर्स बनाएँ",
+      "role_partner": "पार्टनर",
+      "role_partner_d": "पूर्व छात्र, मेंटर, NGO, नियोक्ता",
+      "whoLearning": "आज कौन सीख रहा है?",
+      "sharedNote": "यह फ़ोन परिवार में साझा है। हर छात्र का अपना निजी पिन है।",
+      "addStudent": "एक और छात्र जोड़ें",
+      "parentName": "अभिभावक",
+      "enterPin": "अपना 4 अंकों का पिन डालें",
+      "del": "मिटाएँ",
+      "wrongPin": "गलत पिन। फिर से कोशिश करें।",
+      "demoPin": "डेमो पिन",
+      "noVoiceLogin": "प्रोफ़ाइल खोलने के लिए आवाज़ का इस्तेमाल कभी नहीं होता।",
+      "regTitle1": "आपके बारे में",
+      "regSub1": "चरण 1 · कुछ बुनियादी बातें",
+      "regTitle2": "आपका फ़ोन और समय",
+      "regSub2": "ताकि पाठ आपके दिन में फिट हों",
+      "regTitle3": "सहमति और गोपनीयता",
+      "regSub3": "लगभग हो गया",
+      "stepLabel": "चरण {n} / 3",
+      "next": "आगे",
+      "createProfile": "मेरी प्रोफ़ाइल बनाएँ",
+      "prefName": "पसंदीदा नाम",
+      "namePh": "हम आपको क्या बुलाएँ?",
+      "age": "उम्र",
+      "eduLevel": "शिक्षा स्तर",
+      "state": "राज्य",
+      "district": "ज़िला",
+      "districtPh": "जैसे: विल्लुपुरम",
+      "prefLang": "पसंदीदा भाषा",
+      "phone": "स्मार्टफ़ोन की सुविधा",
+      "own": "अपना फ़ोन",
+      "shared": "घर में साझा",
+      "teacherPhone": "शिक्षक का फ़ोन",
+      "internet": "इंटरनेट उपलब्धता",
+      "reliable": "भरोसेमंद",
+      "sometimes": "कभी-कभी",
+      "limited": "सीमित",
+      "learnTime": "सीखने का पसंदीदा समय",
+      "tm_morning": "सुबह",
+      "tm_afternoon": "दोपहर",
+      "tm_evening": "शाम",
+      "study": "रोज़ पढ़ाई का समय",
+      "min": "मिनट",
+      "pin": "4 अंकों का पिन बनाएँ",
+      "pinHelp": "साझा फ़ोन पर आपकी प्रोफ़ाइल खोलने के लिए",
+      "guardianName": "माता-पिता या अभिभावक का नाम",
+      "guardianPh": "जैसे: लक्ष्मी",
+      "consentTitleMinor": "अभिभावक की सहमति",
+      "consentTitleAdult": "आपकी सहमति",
+      "consentIntroMinor": "आप 18 साल से कम हैं, इसलिए CitiGrow इस्तेमाल करने से पहले माता-पिता या अभिभावक की सहमति ज़रूरी है।",
+      "consentIntroAdult": "कृपया पुष्टि करें कि आप CitiGrow के जानकारी इस्तेमाल करने के तरीके से सहमत हैं।",
+      "c1Minor": "मेरे माता-पिता/अभिभावक जानते हैं कि मैं CitiGrow इस्तेमाल कर रहा/रही हूँ और सहमत हैं",
+      "c1Adult": "मैं CitiGrow इस्तेमाल करने के लिए सहमत हूँ",
+      "c2": "मेरी प्रोफ़ाइल और प्रगति इसी फ़ोन पर सहेजें",
+      "c3": "मैं समझता/समझती हूँ कि मिलान और स्कोर डेमो अनुमान हैं",
+      "privacyShort": "आधार या कोई पहचान संख्या नहीं ली जाती। आपकी डेमो छात्र ID:",
+      "err1": "कृपया नाम, उम्र, शिक्षा स्तर और ज़िला भरें।",
+      "err2": "कृपया 4 अंकों का पिन बनाएँ।",
+      "err3Minor": "कृपया अभिभावक का नाम भरें और सभी बॉक्स चुनें।",
+      "err3": "आगे बढ़ने के लिए सभी बॉक्स चुनें।",
+      "edu_iti": "ITI / डिप्लोमा",
+      "edu_college": "कॉलेज",
+      "classShort": "कक्षा",
+      "ageShort": "उम्र",
+      "morning": "सुप्रभात",
+      "afternoon": "नमस्ते",
+      "evening": "शुभ संध्या",
+      "online": "ऑनलाइन",
+      "offline": "ऑफ़लाइन",
+      "modeStudent": "छात्र",
+      "modeParent": "अभिभावक दृश्य",
+      "syncOffline": "ऑफ़लाइन (डेमो) · {n} बदलाव इस फ़ोन पर सहेजे गए",
+      "syncOfflineNone": "ऑफ़लाइन (डेमो) · सहेजे गए पाठ और क्विज़ चलते रहेंगे",
+      "syncing": "फिर ऑनलाइन · {n} बदलाव सिंक हो रहे हैं…",
+      "synced": "सभी बदलाव सिंक हुए · {time}",
+      "navHome": "होम",
+      "navDiscover": "खोजें",
+      "navLearn": "सीखें",
+      "navOpps": "अवसर",
+      "navProfile": "प्रोफ़ाइल",
+      "lv1": "शुरुआती",
+      "lv2": "विकसित हो रहा",
+      "lv3": "मज़बूत",
+      "sk_numeracy": "गणित",
+      "sk_reasoning": "तर्क",
+      "sk_communication": "संवाद",
+      "sk_practical": "व्यावहारिक",
+      "sk_digital": "डिजिटल",
+      "sk_reading": "पढ़ना",
+      "tr_practical": "व्यावहारिक काम",
+      "tr_tech": "तकनीक",
+      "tr_people": "लोगों के साथ काम",
+      "tr_creative": "रचनात्मक काम",
+      "tr_organizing": "आयोजन",
+      "tr_outdoors": "बाहर और प्रकृति",
+      "tr_caring": "दूसरों की देखभाल",
+      "tr_service": "देश सेवा",
+      "ex_pump": "घर के उपकरण ठीक किए",
+      "ex_shop": "परिवार की दुकान में मदद",
+      "ex_stitch": "कपड़े सिलना",
+      "ex_fest": "सामुदायिक कार्यक्रम आयोजित किए",
+      "ex_field": "खेती का काम",
+      "nextStep": "आपका अगला कदम",
+      "simAI": "सिम्युलेटेड AI · नियम-आधारित डेमो, असली मॉडल नहीं",
+      "simAIShort": "सिम्युलेटेड AI",
+      "journeyProgress": "करियर यात्रा",
+      "studyTime": "पढ़ाई का समय",
+      "currentMilestone": "मौजूदा पड़ाव",
+      "openLifeMap": "मेरा लाइफ़ मैप खोलें",
+      "upcomingDeadline": "आने वाली अंतिम तारीख",
+      "sampleData": "नमूना डेटा",
+      "suggestedScholarship": "सुझाई गई छात्रवृत्ति या योजना",
+      "mentorRec": "आपके लिए मेंटर",
+      "teacherRecommends": "आपके शिक्षक का सुझाव",
+      "thought": "आज का विचार",
+      "offlineContent": "ऑफ़लाइन सामग्री",
+      "manageDownloads": "डाउनलोड प्रबंधित करें",
+      "refreshRecs": "सुझाव ताज़ा करें",
+      "refreshOnline": "पिछली बार ताज़ा: {time}",
+      "refreshOffline": "नए सुझावों के लिए इंटरनेट चाहिए। आपकी सहेजी योजना चलती रहेगी।",
+      "dreamNone": "सपनों का करियर: अभी नहीं चुना",
+      "dreamIs": "सपना: {c}",
+      "minPerDay": "रोज़ {m} मिनट",
+      "stageOf": "चरण {n} / {total}",
+      "msNoteLessons": "इस चरण के {n} में से {d} पाठ",
+      "msNoteTap": "क्या करना है देखने के लिए लाइफ़ मैप खोलें।",
+      "msNoCareer": "लाइफ़ मैप शुरू करने के लिए करियर चुनें",
+      "msNoCareerT": "अभी कोई करियर नहीं चुना",
+      "offlineText": "{n} कोर्स इस फ़ोन पर सहेजे गए · बिना इंटरनेट चलते हैं",
+      "queueNone": "सिंक के लिए कुछ बाकी नहीं",
+      "queueSome": "{n} बदलाव सिंक होने बाकी",
+      "scLifeMap": "लाइफ़ मैप",
+      "scMotivation": "मेरा भविष्य",
+      "scMentors": "मेंटर",
+      "na_talk_t": "CitiGrow से बात करें कि आपको क्या पसंद है",
+      "na_talk_w": "आपके जवाब हमें सही करियर सुझाने में मदद करते हैं।",
+      "na_start": "शुरू करें",
+      "na_assess_t": "स्किल्स कम्पास दें",
+      "na_assess_w": "8 सवालों की जाँच बताती है कि पहले कौन से कौशल बनाने हैं।",
+      "na_career_t": "अपना सबसे अच्छा मिलान देखें: {c}",
+      "na_open": "खोलें",
+      "na_lesson_t": "पाठ: {l}",
+      "na_lesson_w": "यह पाठ आपके लाइफ़ मैप के चरण {n} में आगे बढ़ाता है।",
+      "na_lesson_off": "आप ऑफ़लाइन हैं, इसलिए यह इस फ़ोन पर सहेजा पाठ है।",
+      "na_les_cta": "पाठ शुरू करें",
+      "na_step_t": "चरण पूरा करें: {s}",
+      "na_step_w": "लाइफ़ मैप खोलें और पूरा होने पर इस चरण को पूरा चिह्नित करें।",
+      "na_opp_t": "{o} के लिए दस्तावेज़ तैयार करें",
+      "na_opp_w": "आप योग्य हो सकते हैं। दस्तावेज़ पहले तैयार रखने से आखिरी समय का तनाव नहीं होता।",
+      "na_prep": "तैयारी करें",
+      "na_session_t": "मेंटर के साथ समूह सत्र में शामिल हों",
+      "na_session_w": "जिन्होंने यह किया है उनसे सुनकर रास्ता साफ़ होता है।",
+      "na_see": "सत्र देखें",
+      "discoverTitle": "करियर खोजें",
+      "talkTitle": "CitiGrow से बात करें",
+      "compassTitle": "स्किल्स कम्पास",
+      "discNone": "शुरू नहीं हुआ · लगभग 5 मिनट",
+      "discDone": "पूरा · फिर से बात करें",
+      "compassNone": "शुरू नहीं हुआ · 8 सवाल",
+      "compassDone": "पूरा · परिणाम देखें",
+      "yourProfile": "आपकी रुचि प्रोफ़ाइल",
+      "careersForYou": "आपके लिए करियर",
+      "compare": "तुलना करें",
+      "matchHint": "हर करियर आपसे कितना मेल खाता है, यह देखने के लिए पहले CitiGrow से बात करें।",
+      "yourChoice": "आपकी पसंद",
+      "fAll": "सभी",
+      "fVoc": "कौशल और व्यावसायिक",
+      "fAca": "शैक्षणिक",
+      "routeVoc": "व्यावसायिक रास्ता",
+      "routeAca": "शैक्षणिक रास्ता",
+      "sampleCareerNote": "करियर विवरण, खर्च और अवधि नमूना जानकारी हैं। हमेशा आधिकारिक स्रोत से पुष्टि करें।",
+      "matchPct": "{p}% मेल",
+      "learnTitle": "सीखने का केंद्र",
+      "skillMastery": "कौशल में महारत",
+      "noSkillsYet": "अपने कौशल स्तर देखने के लिए स्किल्स कम्पास दें।",
+      "startCompass": "स्किल्स कम्पास शुरू करें",
+      "masteryNote": "पूरे किए गए पाठ: {n}। अभ्यास से हर कौशल बढ़ता है।",
+      "recommendedModules": "आपके लिए सुझाए गए",
+      "examPath": "परीक्षा तैयारी का रास्ता",
+      "allCourses": "सभी कोर्स",
+      "fFree": "मुफ़्त",
+      "fPaid": "शिक्षक कोर्स",
+      "fDl": "डाउनलोड किए",
+      "csrSeat": "CSR सीट उपलब्ध",
+      "downloaded": "डाउनलोड किया",
+      "needsNet": "इंटरनेट चाहिए",
+      "enrolled": "नामांकित",
+      "liveClasses": "आने वाली लाइव कक्षाएँ",
+      "quizzes": "छोटे क्विज़",
+      "worksOffline": "ऑफ़लाइन चलता है",
+      "priceFree": "मुफ़्त",
+      "reserve": "बुक करें",
+      "reserved": "बुक हो गया",
+      "oppsTitle": "अवसर",
+      "refresh": "ताज़ा करें",
+      "recByTeacher": "शिक्षक ने सुझाया",
+      "ot_scholarship": "छात्रवृत्ति",
+      "ot_scheme": "सरकारी योजनाएँ",
+      "ot_exam": "परीक्षाएँ",
+      "ot_apprentice": "अप्रेंटिसशिप",
+      "ot_intern": "इंटर्नशिप",
+      "ot_job": "नौकरियाँ",
+      "ot_centre": "प्रशिक्षण केंद्र",
+      "stYes": "योग्य लगते हैं",
+      "stInfo": "और जानकारी चाहिए",
+      "stNo": "एक शर्त पूरी नहीं होती",
+      "oppsDisclaimer": "सभी सूचियाँ इस डेमो के लिए नमूना डेटा हैं। CitiGrow तैयारी में मदद करता है, पर आधिकारिक आवेदन कभी जमा नहीं करता।",
+      "studentId": "डेमो ID",
+      "privacyConsent": "गोपनीयता और साझा करना",
+      "privacyMore": "गोपनीयता और सहमति विवरण",
+      "appLang": "ऐप की भाषा",
+      "switchStudent": "छात्र बदलें",
+      "savedLocal": "इस डेमो में प्रोफ़ाइल केवल इसी फ़ोन पर सहेजी जाती हैं।",
+      "resetDemo": "डेमो डेटा रीसेट करें",
+      "resetConfirm": "सब रीसेट करने के लिए फिर टैप करें",
+      "consentTeacher": "मेरी प्रगति शिक्षक के साथ साझा करें",
+      "consentTeacherSub": "शिक्षक कौशल और प्रगति देखते हैं, आपकी बातचीत कभी नहीं",
+      "consentParent": "परिवार के साथ सारांश साझा करें",
+      "consentParentSub": "परिवार दृश्य में करियर, पड़ाव और खर्च दिखते हैं",
+      "chatNote": "CitiGrow एक सिम्युलेटेड सहायक है। यह सरल डेमो नियमों पर चलता है; यह असली AI मॉडल नहीं है।",
+      "listen": "सुनें",
+      "playingSim": "चल रहा है (सिम्युलेटेड)",
+      "profileReady": "आपकी रुचि प्रोफ़ाइल तैयार है",
+      "seeMatches": "मेरे करियर मिलान देखें",
+      "restartChat": "बातचीत फिर से शुरू करें",
+      "listeningSim": "सुन रहा है… (सिम्युलेटेड)",
+      "voiceOffline": "आवाज़ के लिए इंटरनेट चाहिए। आप फिर भी टैप करके या लिखकर जवाब दे सकते हैं।",
+      "speak": "बोलकर जवाब दें",
+      "typeAnswer": "अपना जवाब लिखें…",
+      "send": "भेजें",
+      "voiceSimNote": "डेमो आवाज़: माइक एक नमूना जवाब भरता है। असली आवाज़ पहचान नहीं है।",
+      "chat_hello": "नमस्ते {name}! मैं CitiGrow हूँ। चलिए आपके बारे में बात करते हैं। कोई जवाब गलत नहीं है।",
+      "q_enjoy": "आपको कौन से काम सबसे ज़्यादा पसंद हैं?",
+      "q_exp_fix": "क्या आपने कभी घर में कुछ ठीक किया है, जैसे मोटर पंप या पंखा? मुझे बताइए।",
+      "q_exp_people": "क्या आपने दुकान पर या ग्राहकों के साथ मदद की है? आपने क्या सीखा?",
+      "q_exp": "घर या समुदाय में मदद करके आपने क्या सीखा है?",
+      "q_life": "भविष्य में आप कैसी ज़िंदगी चाहते हैं?",
+      "q_where": "आप घर के पास काम करना पसंद करेंगे या कहीं और?",
+      "q_time": "आप रोज़ कितना समय पढ़ सकते हैं?",
+      "q_worry": "आपको अपने भविष्य के बारे में क्या चिंता है?",
+      "q_pace": "आपको तय समय-सारणी पसंद है या अपनी गति से सीखना?",
+      "a_enjoy_fix": "चीज़ें ठीक करना",
+      "a_enjoy_talk": "लोगों से बात करना",
+      "a_enjoy_make": "चित्र बनाना या सिलाई",
+      "a_enjoy_tech": "फ़ोन और कंप्यूटर",
+      "a_enjoy_farm": "खेती और बाहर का काम",
+      "a_enjoy_org": "कार्यक्रम आयोजित करना",
+      "a_exp_pump": "मैंने पिताजी के साथ मोटर पंप ठीक किया",
+      "a_exp_shop": "मैं परिवार की दुकान में मदद करता/करती हूँ",
+      "a_exp_stitch": "मैं माँ के साथ कपड़े सिलता/सिलती हूँ",
+      "a_exp_fest": "मैंने गाँव का त्योहार आयोजित किया",
+      "a_exp_field": "मैं खेत में मदद करता/करती हूँ",
+      "a_life_steady": "हर महीने पक्की आमदनी",
+      "a_life_biz": "अपना खुद का व्यवसाय",
+      "a_life_nation": "देश की सेवा",
+      "a_life_creative": "रचनात्मक काम",
+      "a_life_help": "लोगों की मदद",
+      "a_where_near": "घर के पास",
+      "a_where_city": "शहर जा सकता/सकती हूँ",
+      "a_where_any": "भारत में कहीं भी",
+      "a_time_15": "15 मिनट",
+      "a_time_30": "30 मिनट",
+      "a_time_45": "45 मिनट",
+      "a_time_60": "1 घंटा",
+      "a_worry_cost": "पढ़ाई का खर्च",
+      "a_worry_unknown": "पता नहीं कौन से करियर हैं",
+      "a_worry_english": "मेरी अंग्रेज़ी",
+      "a_worry_family": "परिवार को मेरी पास ज़रूरत है",
+      "a_worry_exam": "परीक्षाएँ कठिन लगती हैं",
+      "a_pace_fixed": "तय समय-सारणी",
+      "a_pace_self": "अपनी गति से",
+      "k_exp_pump": "मोटर पंप ठीक करना असली समस्या-समाधान और मशीनी कौशल दिखाता है!",
+      "k_exp_shop": "दुकान पर मदद करने से बातचीत और पैसों का हिसाब सीखते हैं।",
+      "k_exp_stitch": "सिलाई में धैर्य, सटीकता और डिज़ाइन की समझ चाहिए।",
+      "k_exp_fest": "त्योहार आयोजित करना नेतृत्व और योजना दिखाता है।",
+      "k_exp_field": "खेती मेहनत और फसल-मौसम की समझ सिखाती है।",
+      "k_life_nation": "देश सेवा एक गर्व का लक्ष्य है। सशस्त्र बल एक रास्ता हो सकता है।",
+      "k_life_biz": "कई कुशल लोग बाद में अपना सेवा व्यवसाय शुरू करते हैं।",
+      "k_where_near": "अच्छा है। कई करियर घर के पास भी बन सकते हैं।",
+      "k_worry_cost": "यह सही चिंता है। मैं आपके लिए मुफ़्त कोर्स और छात्रवृत्ति ढूँढूँगा।",
+      "k_worry_english": "कई करियर अपनी भाषा में शुरू होते हैं, और अंग्रेज़ी धीरे-धीरे सीखी जा सकती है।",
+      "k_worry_family": "मैं घर के पास वाले विकल्पों को ज़्यादा महत्व दूँगा।",
+      "k_time": "ठीक है। मैं उसी समय के हिसाब से पाठ बनाऊँगा।",
+      "k_free": "धन्यवाद! मैंने देखा: {labels}।",
+      "k_gen": "बताने के लिए धन्यवाद!",
+      "chat_done": "धन्यवाद, {name}! मैंने आपकी रुचि प्रोफ़ाइल बना दी है। अब स्किल्स कम्पास दें ताकि मैं करियर और पाठ सुझा सकूँ।",
+      "v_enjoy": "मुझे घर की चीज़ें ठीक करना पसंद है, जैसे मोटर पंप और पंखे",
+      "v_exp": "पिछली गर्मियों में मैंने पिताजी के साथ खराब मोटर पंप ठीक किया",
+      "v_life": "मुझे पक्की नौकरी चाहिए और बाद में शायद अपना व्यवसाय",
+      "v_where": "मैं घर के पास काम करना चाहता हूँ",
+      "v_time": "मैं 30 मिनट पढ़ सकता हूँ",
+      "v_worry": "मुझे पढ़ाई के खर्च की चिंता है",
+      "v_pace": "मुझे तय समय-सारणी पसंद है",
+      "chatSummary": "आपको पसंद है: {traits}।",
+      "compassIntro": "ASER जैसी छोटी जाँच: पढ़ना, सुनना, गणित, तर्क, व्यावहारिक और डिजिटल कौशल। लगभग 5 मिनट लगते हैं।",
+      "compassNote1": "परिणाम डेमो अनुमान हैं, कोई प्रमाणित शैक्षिक या मनोवैज्ञानिक निदान नहीं।",
+      "compassNote2": "पढ़ने वाला सवाल ज़ोर से नहीं पढ़ा जाता, क्योंकि यह आपकी अपनी पढ़ाई जाँचता है। सुनने का सवाल अलग है।",
+      "startTest": "जाँच शुरू करें",
+      "viewLast": "पिछले परिणाम देखें",
+      "readYourself": "इसे खुद पढ़ें",
+      "simTranscript": "सिम्युलेटेड ऑडियो का पाठ",
+      "listenFirst": "पहले ऑडियो चलाएँ, फिर जवाब दें।",
+      "playAudio": "ऑडियो चलाएँ",
+      "playAgain": "फिर से चलाएँ",
+      "progQ": "सवाल {n} / {total}",
+      "yourSkills": "आपका स्किल्स कम्पास",
+      "demoEstimate": "डेमो अनुमान",
+      "compassDisclaimer": "ये कुछ सवालों से बने डेमो अनुमान हैं, कोई निदान नहीं। अभ्यास से कौशल बढ़ते हैं।",
+      "recommendedTasks": "सुझाए गए कौशल अभ्यास",
+      "retake": "फिर से दें",
+      "taskWhy": "क्योंकि अभी आपका {s} {l} है",
+      "as_read_p": "मीना एक छोटे गाँव में रहती है। हर सुबह वह बकरियों को चारा देती है। फिर वह अपने भाई के साथ पैदल स्कूल जाती है। स्कूल के बाद वह दुकान में अपनी माँ की मदद करती है।",
+      "as_read_q": "स्कूल के बाद मीना क्या करती है?",
+      "as_read_o0": "बकरियों को चारा देती है",
+      "as_read_o1": "दुकान में मदद करती है",
+      "as_read_o2": "क्रिकेट खेलती है",
+      "as_listen_t": "नमस्ते! प्रशिक्षण केंद्र की बस मंदिर वाले स्टॉप से 8 बजे चलती है। कृपया अपना स्कूल ID साथ लाएँ।",
+      "as_listen_q": "बस कहाँ से चलती है?",
+      "as_listen_o0": "स्कूल से",
+      "as_listen_o1": "बाज़ार से",
+      "as_listen_o2": "मंदिर वाले स्टॉप से",
+      "as_num_q": "सैंतालीस कौन सी संख्या है?",
+      "as_sub_q": "हल करें: 52 − 27 = ?",
+      "as_div_q": "हल करें: 156 ÷ 4 = ?",
+      "as_reason_q": "आगे क्या आएगा? 2, 4, 8, 16, …",
+      "as_prac_q": "आपके कमरे का पंखा बंद हो गया, पर उसी कमरे की बत्ती जल रही है। पहले क्या जाँचेंगे?",
+      "as_prac_o0": "बिजली का मुख्य मीटर",
+      "as_prac_o1": "पंखे का स्विच और रेगुलेटर",
+      "as_prac_o2": "नया पंखा खरीदना",
+      "as_dig_q": "कोई फ़ोन करके आपके फ़ोन पर आया OTP माँगता है। आप क्या करेंगे?",
+      "as_dig_o0": "विनम्र लगे तो बता दें",
+      "as_dig_o1": "परिवार के ग्रुप में डाल दें",
+      "as_dig_o2": "कभी न बताएँ और किसी बड़े को बताएँ",
+      "as_comm_q": "एक ग्राहक नाराज़ है क्योंकि उसका ऑर्डर देर से आया। सबसे पहले क्या कहना अच्छा है?",
+      "as_comm_o0": "इंतज़ार के लिए माफ़ी, मैं अभी आपका ऑर्डर देखता हूँ।",
+      "as_comm_o1": "इसमें मेरी गलती नहीं है।",
+      "as_comm_o2": "कल आइए।",
+      "whyMatch": "यह करियर क्यों सुझाया गया",
+      "keyFacts": "मुख्य बातें",
+      "illustrative": "उदाहरण के लिए",
+      "skillsNeeded": "ज़रूरी कौशल",
+      "f_edu": "ज़रूरी शिक्षा",
+      "f_dur": "तैयारी का समय",
+      "f_fin": "पैसों की बात",
+      "f_loc": "जगह और यात्रा",
+      "f_prog": "करियर में आगे बढ़ना",
+      "trySim": "करियर सिम्युलेटर आज़माएँ",
+      "comparePaths": "करियर रास्तों की तुलना करें",
+      "chooseCareer": "यह करियर चुनें और मेरा लाइफ़ मैप बनाएँ",
+      "chosenCareer": "इस करियर का लाइफ़ मैप खोलें",
+      "simResult": "आपका सिम्युलेशन परिणाम",
+      "nextModules": "आगे के सुझाए मॉड्यूल",
+      "tryAgain": "फिर से कोशिश करें",
+      "done": "हो गया",
+      "simNext": "आगे",
+      "simFinish": "परिणाम देखें",
+      "simGood": "अच्छा चुनाव",
+      "simThink": "फिर सोचें",
+      "noCareerYet": "लाइफ़ मैप बनाने के लिए करियर चुनें",
+      "noCareerHint": "करियर देखें, पसंद का खोलें और \"यह करियर चुनें\" दबाएँ।",
+      "exploreCareers": "करियर देखें",
+      "lifeMapFor": "लाइफ़ मैप:",
+      "dailyTime": "रोज़ पढ़ाई का समय",
+      "adaptive": "अनुकूल",
+      "yourRoadmap": "आपका रास्ता",
+      "tapStep": "चरण पर टैप करें",
+      "youAreHere": "आप यहाँ हैं",
+      "resources": "उपलब्ध संसाधन",
+      "markStepDone": "यह चरण पूरा करें",
+      "altRoute": "दूसरा रास्ता",
+      "statLessons": "पाठ प्रति सप्ताह",
+      "statWeeks": "अध्ययन चरण के सप्ताह",
+      "statMin": "मिनट प्रति सप्ताह",
+      "legCore": "करियर कौशल",
+      "legFound": "बुनियाद",
+      "legRev": "दोहराना",
+      "days": "सोम,मंगल,बुध,गुरु,शुक्र,शनि,रवि",
+      "adaptMsg": "आपका रास्ता अब रोज़ {m} मिनट के हिसाब से बदल गया है। छोटे, नियमित सत्र भी आपको आगे बढ़ाते हैं। अध्ययन चरण अब लगभग {w} सप्ताह का है।",
+      "stDone": "पूरा",
+      "stCur": "मौजूदा चरण",
+      "stNext": "आगे आने वाला",
+      "stAlt": "दूसरा तरीका",
+      "r_what": "क्या करना है",
+      "r_why": "यह क्यों ज़रूरी है",
+      "r_skills": "ज़रूरी कौशल",
+      "r_effort": "अनुमानित मेहनत",
+      "r_deadline": "अंतिम तारीखें",
+      "r_teacher": "शिक्षक की मदद",
+      "r_unlocks": "खुलने वाले अवसर",
+      "lessonsFor": "इस चरण के {d}/{n} पाठ",
+      "compareIntro": "अपने मुख्य रास्तों की आमने-सामने तुलना करें। आप कभी भी अपनी पसंद बदल सकते हैं।",
+      "cmpRoute": "रास्ता",
+      "cmpEdu": "शिक्षा",
+      "cmpTime": "तैयारी",
+      "cmpCost": "खर्च",
+      "cmpPlace": "जगह",
+      "cmpChoose": "चुनें",
+      "cmpChosen": "चुना गया",
+      "futurePossible": "मेरा भविष्य संभव है",
+      "dreamCareer": "मेरा सपनों का करियर",
+      "dreamPick": "अभी खोज रहे हैं",
+      "mo_reason": "आपने अपनी पहली तर्क चुनौती पूरी की। आपका अगला कदम {m} मिनट का अभ्यास है।",
+      "mo_lessons": "आपने {n} पाठ पूरे किए। आपका अगला कदम: {next}।",
+      "mo_compass": "आपने अपनी ताकत पहचानी: {s}। अगला कदम: {next}।",
+      "mo_start": "हर यात्रा एक बातचीत से शुरू होती है। आपका अगला कदम: {next}।",
+      "listenMessage": "अपना संदेश सुनें",
+      "audioSimNote": "डेमो के लिए सिम्युलेटेड ऑडियो: असली आवाज़ नहीं चलती।",
+      "nextAchievable": "आपका अगला आसान कदम",
+      "achievements": "मेरी उपलब्धियाँ",
+      "noStreaks": "यहाँ कोई स्ट्रीक नहीं टूटती। जब भी पढ़ें, हर कदम गिना जाता है।",
+      "skillsDeveloped": "मैंने जो कौशल बनाए",
+      "skillsEmpty": "अपनी ताकत देखने के लिए स्किल्स कम्पास पूरा करें।",
+      "milestones": "करियर यात्रा के पड़ाव",
+      "someoneLikeMe": "मेरे जैसा कोई",
+      "fictional": "काल्पनिक डेमो कहानियाँ",
+      "familyCard": "परिवार के साथ साझा करें",
+      "shareFamily": "परिवार कार्ड तैयार करें",
+      "familyShared": "परिवार कार्ड तैयार। यह स्क्रीन दिखाएँ, या अभिभावक दृश्य में देखें।",
+      "familyText": "{name} {career} के बारे में जान रहा/रही है। इसके लिए आमतौर पर {edu} चाहिए। मुफ़्त कोर्स और छात्रवृत्ति से खर्च कम हो सकता है। आप छोटे सत्रों के लिए फ़ोन देकर मदद कर सकते हैं।",
+      "familyTextNone": "{name} CitiGrow पर करियर खोज रहा/रही है, अपनी पसंद से शुरुआत करके। आप उसके दिन के बारे में पूछकर और छोटे सत्रों के लिए फ़ोन देकर मदद कर सकते हैं।",
+      "ach_talk": "रुचियाँ बताईं",
+      "ach_compass": "ताकत पहचानी",
+      "ach_lesson": "पहला पाठ",
+      "ach_map": "लाइफ़ मैप शुरू",
+      "ach_sim": "सिम्युलेटर आज़माया",
+      "ach_offline": "ऑफ़लाइन सीखा",
+      "ach_quiz": "क्विज़ पूरा",
+      "ach_session": "सत्र बुक किया",
+      "ach_apply": "दस्तावेज़ तैयार",
+      "mentorIntro": "जो लोग दरवाज़े खोल सकते हैं: आस-पास के गाँवों के पूर्व छात्र, शिक्षक और सत्यापित मेंटर।",
+      "mentorSafety": "आपकी सुरक्षा के लिए मेंटरिंग शिक्षक की देखरेख में समूह सत्रों में होती है। कोई निजी फ़ोन नंबर या निजी चैट नहीं।",
+      "groupSessions": "आने वाले समूह सत्र",
+      "localAlumni": "स्थानीय पूर्व छात्र",
+      "verifiedDemo": "सत्यापित (डेमो)",
+      "teachers": "शिक्षक",
+      "requestMentor": "मेंटरशिप माँगें",
+      "requestHow": "विषय चुनें। आपका अनुरोध शिक्षक के पास जाएगा, जो समूह सत्र तय करेंगे।",
+      "sendRequest": "शिक्षक के ज़रिए अनुरोध भेजें",
+      "successStories": "स्थानीय सफलता की कहानियाँ",
+      "seatsLeft": "{n} सीटें बाकी",
+      "reserveSeat": "सीट बुक करें",
+      "seatReserved": "सीट बुक हुई",
+      "reqStatus": "शिक्षक की प्रतीक्षा",
+      "tp_career": "करियर चुनना",
+      "tp_exam": "परीक्षा तैयारी",
+      "tp_skills": "कौशल सीखना",
+      "enrollTitle": "इस कोर्स से जुड़ें",
+      "useCsr": "CSR प्रायोजित सीट लें",
+      "csrExplain": "प्रायोजक फ़ीस देता है, शिक्षक को भुगतान मिलता है, और आप मुफ़्त सीखते हैं।",
+      "enrollDemo": "नामांकन (डेमो भुगतान)",
+      "noRealPayment": "इस प्रोटोटाइप में कोई असली पैसा नहीं लिया जाता।",
+      "lessons": "पाठ",
+      "takeQuiz": "कोर्स क्विज़ दें",
+      "dlNow": "ऑफ़लाइन के लिए डाउनलोड करें",
+      "dlDone": "इस फ़ोन पर सहेजा · हटाने के लिए टैप करें",
+      "dlNeedsNet": "डाउनलोड के लिए इंटरनेट जोड़ें",
+      "offlineCopy": "ऑफ़लाइन कॉपी",
+      "keyPoints": "मुख्य बातें",
+      "quickCheck": "छोटी जाँच",
+      "completeLesson": "पाठ पूरा करें",
+      "lessonDone": "पाठ पूरा हुआ!",
+      "backToCourse": "कोर्स पर वापस",
+      "nextLesson": "अगला पाठ",
+      "playLesson": "यह पाठ सुनें",
+      "correct": "सही!",
+      "notQuite": "पूरा सही नहीं। सही जवाब: {a}",
+      "doneNoteOnline": "प्रगति सहेजी और सिंक हुई। आपका डैशबोर्ड और लाइफ़ मैप अपडेट हो गए।",
+      "doneNoteOffline": "इस फ़ोन पर सहेजा गया। ऑनलाइन होने पर सिंक होगा।",
+      "savedOffline": "ऑफ़लाइन सहेजा · बाद में सिंक",
+      "seeScore": "मेरा स्कोर देखें",
+      "quizEnd": "आपने {n} में से {s} पाए।",
+      "quizGood": "बहुत बढ़िया। ऐसे ही चलते रहें!",
+      "quizOk": "अच्छी कोशिश। पाठ दोहराएँ और फिर से दें।",
+      "eligibility": "योग्यता की शर्तें",
+      "checkEligibility": "मेरी योग्यता जाँचें",
+      "ruleBased": "नियम-आधारित",
+      "checkNow": "अभी जाँचें",
+      "checkerNote": "डेमो नियम, कोई आधिकारिक निर्णय नहीं। हमेशा आधिकारिक सूचना देखें।",
+      "documents": "ज़रूरी दस्तावेज़",
+      "prepareApp": "मेरा आवेदन तैयार करें",
+      "noSubmit": "CitiGrow आवेदन जमा नहीं करता। आप खुद आधिकारिक वेबसाइट या कार्यालय में आवेदन करते हैं।",
+      "officialSource": "आधिकारिक स्रोत",
+      "openSource": "आधिकारिक स्रोत खोलें",
+      "incomeQ": "क्या आपके परिवार की सालाना आय {v} से कम है?",
+      "yes": "हाँ",
+      "no": "नहीं",
+      "notSure": "पक्का नहीं",
+      "privacyTitle": "गोपनीयता और सहमति",
+      "whatWeStore": "क्या सहेजा जाता है",
+      "whoSees": "कौन क्या देखता है",
+      "yourChoices": "आपके विकल्प",
+      "parentHello": "नमस्ते! अभिभावक, आपका स्वागत है",
+      "parentSub": "आपके बच्चे की यात्रा का आसान दृश्य। सुनने के लिए चलाएँ दबाएँ।",
+      "listenCareer": "करियर की जानकारी सुनें",
+      "listenSub": "{name} का करियर, आसान भाषा में",
+      "howToHelp": "इस हफ़्ते आप कैसे मदद कर सकते हैं",
+      "childPathways": "जिन करियर रास्तों को देखा जा रहा है",
+      "parentNoPaths": "आपके बच्चे ने अभी करियर नहीं देखे हैं।",
+      "expectedMilestones": "अपेक्षित पड़ाव",
+      "costs": "कोर्स और प्रशिक्षण का खर्च",
+      "costNote": "आँकड़े उदाहरण के लिए हैं। कई विकल्पों में मुफ़्त या प्रायोजित सीटें हैं।",
+      "financialAid": "मिल सकने वाली आर्थिक मदद",
+      "nearby": "आस-पास सीखने के विकल्प",
+      "progressSummary": "प्रगति सारांश",
+      "familySchedule": "परिवार की पढ़ाई समय-सारणी",
+      "sharedPhoneNote": "एक परिवार फ़ोन, सबके लिए बराबर। समय हर बच्चे की पसंद के अनुसार।",
+      "parentHidden": "{name} ने परिवार दृश्य के साथ विवरण साझा न करने का चुनाव किया है। {name} इसे प्रोफ़ाइल में चालू कर सकता/सकती है।",
+      "parentPrivacy": "निजी बातचीत और विस्तृत जवाब {name} के पास ही रहते हैं।",
+      "sup_tech": "आपका बच्चा तकनीकी करियर देख रहा है। इस हफ़्ते तीन दिन 15 मिनट के लिए परिवार का स्मार्टफ़ोन देने से अगले पाठ में मदद मिलेगी।",
+      "sup_general": "आपका बच्चा करियर देख रहा है। इस हफ़्ते तीन दिन 15 मिनट के लिए परिवार का फ़ोन देने से अगले पाठ में मदद मिलेगी।",
+      "parentExplain": "{name} {career} के बारे में जान रहा/रही है। {desc} इसके लिए आमतौर पर {edu} चाहिए, और तैयारी में {dur} लगते हैं। खर्च: {fin} {name} अभी इस पर काम कर रहा/रही है: {step}।",
+      "parentExplainNone": "{name} ने अपनी पसंद के बारे में बात करके CitiGrow पर करियर खोजना शुरू किया है। आगे {name} एक छोटी कौशल जाँच देगा/देगी और मेल खाते करियर देखेगा/देखेगी।",
+      "pTagChosen": "चुना गया",
+      "pTagExploring": "देख रहे हैं",
+      "ps_lessons": "पूरे पाठ",
+      "ps_compass": "कौशल जाँच",
+      "ps_sessions": "समूह सत्र",
+      "sunday": "परिवार का दिन · पढ़ाई नहीं",
+      "toastOffline": "ऑफ़लाइन मोड चालू (सिम्युलेटेड)। सहेजे पाठ और क्विज़ चलते रहेंगे।",
+      "toastSynced": "{n} बदलाव सिंक हुए",
+      "toastOnline": "फिर ऑनलाइन",
+      "toastCareer": "{c} के लिए लाइफ़ मैप बना",
+      "toastStep": "चरण पूरा। अगला चरण खुल गया!",
+      "toastLesson": "पाठ पूरा। प्रगति अपडेट हुई।",
+      "toastProfile": "प्रोफ़ाइल बन गई। स्वागत है, {name}!"
+    },
+    "ta": {
+      "tagline": "சாத்தியங்களைக் கண்டறியுங்கள். திறன்களை வளர்த்திடுங்கள். வாய்ப்புகளைப் பெறுங்கள்.",
+      "journeyAlt": "படம்: புத்தகங்களிலிருந்து திறன், வேலை, நட்சத்திரம் வரை செல்லும் பாதை",
+      "chooseLang": "உங்கள் மொழியைத் தேர்ந்தெடுங்கள்",
+      "segCareers": "தொழில் பாதைகள்",
+      "examsTitle": "உங்கள் தொழிலுக்கான தேர்வுகள்",
+      "examsSummary": "{c}-க்கு {n} தேர்வுகள் · பார்க்கத் தட்டுங்கள்",
+      "examsNote": "தேதிகள் வழக்கமான முறைகள், உறுதியானவை அல்ல. எப்போதும் அதிகாரப்பூர்வ அறிவிப்பைப் பாருங்கள்.",
+      "examSite": "அதிகாரப்பூர்வ தளம்",
+      "segConnect": "இணை",
+      "connectIntro": "வழிகாட்டிகளைச் சந்தியுங்கள், சரிபார்த்த கூட்டாளர் பட்டியல்களைப் பாருங்கள், ஆசிரியர் வழியாக விண்ணப்பியுங்கள்.",
+      "connectMentors": "வழிகாட்டிகளும் குழு அமர்வுகளும்",
+      "connectMentorsSub": "முன்னாள் மாணவர்கள், ஆசிரியர்கள், சரிபார்த்த வழிகாட்டிகள் · குழு அமர்வுகள் மட்டும்",
+      "partnerListings": "கூட்டாளர் பட்டியல்கள்",
+      "interestCta": "ஆர்வம் தெரிவி",
+      "interestSent": "ஆர்வம் அனுப்பப்பட்டது",
+      "interestNote": "உங்கள் ஆசிரியர் உங்கள் ஆர்வத்தைப் பார்த்து கூட்டாளருடன் இணைப்பார். தொலைபேசி எண்கள் பகிரப்படாது.",
+      "schemeFinder": "திட்டத் தேடல்",
+      "schemeFinderSub": "நீங்கள் தகுதி பெறக்கூடிய அரசுத் திட்டங்களைப் பாருங்கள்",
+      "becomePartner": "ஒரு நிறுவனம் அல்லது NGO தெரியுமா?",
+      "becomePartnerSub": "அவர்கள் சரிபார்த்த கூட்டாளராக CitiGrow-இல் சேரலாம்",
+      "ptEmployer": "வேலை / இன்டர்ன்ஷிப்",
+      "ptTraining": "பயிற்சித் திட்டம்",
+      "ptMentor": "வழிகாட்டல்",
+      "adLabel": "விளம்பரம்",
+      "adNote": "கல்வி தொடர்பான விளம்பரங்கள் மட்டும் · உங்கள் தனிப்பட்ட தகவல் பயன்படுத்தப்படாது",
+      "pricePaid": "₹{a} (எடுத்துக்காட்டு)",
+      "voiceTitle": "குரல்",
+      "voiceEngine": "குரல் இயந்திரம்: கைபேசியிலேயே உரை-ஒலி மாற்றம் (Kokoro-82M, VITS அல்லது Piper, மதிப்பீட்டில்). இந்த டெமோவில் இன்னும் ஒலி இல்லை.",
+      "readingScreen": "இந்தத் திரை வாசிக்கப்படுகிறது · ஒலி விரைவில்",
+      "stopReading": "நிறுத்து",
+      "helperTitle": "CitiGrow-இடம் கேள்",
+      "askShort": "கேள்",
+      "helperIntro": "உங்கள் படிப்பு உதவியாளர், தனிப்பட்ட ஆசிரியர் போல. தொழில், தேர்வு, பாடக் கேள்விகளுக்கு அதிகாரப்பூர்வ மூலங்களிலிருந்து பதில் தரும்.",
+      "helperSoon": "விரைவில் · இடம்பிடிப்பு",
+      "helperTry": "இப்படிக் கேட்டுப் பாருங்கள்",
+      "helperPlaceholder": "AI உதவியாளர் இன்னும் இணைக்கப்படவில்லை. இணைந்ததும், அதிகாரப்பூர்வ தரவிலிருந்து பதில் தந்து, ஒவ்வொரு பதிலும் எங்கிருந்து வந்தது எனக் காட்டும்.",
+      "helperSources": "இவற்றை அடிப்படையாகக் கொள்ளும்:",
+      "helperInputSoon": "தட்டச்சு, குரல் கேள்விகள் விரைவில்",
+      "toastInterest": "ஆர்வம் உங்கள் ஆசிரியருக்கு அனுப்பப்பட்டது",
+      "usageTitle": "இந்த வாரப் பயன்பாடு",
+      "usageTotal": "கற்ற நேரம்",
+      "usageDays": "செயல்பட்ட நாட்கள்",
+      "usageGoal": "நாட்கள் {m} நிமி இலக்கு",
+      "usageGoalLine": "இலக்கு {m}நி",
+      "lastActive": "கடைசியாக {when}",
+      "usageLessons": "{n} பாடங்கள் முடிந்தன",
+      "usageQuizzes": "{n} வினாடி வினாக்கள்",
+      "usageCompass": "திறன் சோதனை முடிந்தது",
+      "usageNoCompass": "திறன் சோதனை இன்னும் இல்லை",
+      "usageNote": "CitiGrow பாடங்கள், வினாடி வினாக்களில் செலவிட்ட நேரம் மட்டும். டெமோ தரவு.",
+      "aidSummary": "{n} பொருந்தலாம் · பார்க்கத் தட்டுங்கள்",
+      "nearbySummary": "அருகில் {n} வாய்ப்புகள் · பார்க்கத் தட்டுங்கள்",
+      "storiesTitle": "வெற்றிக் கதைகள்",
+      "seeCareer": "இந்தத் தொழிலைப் பார்",
+      "didIt": "இந்தப் பாதையில் சென்றவர்",
+      "officialPortal": "அதிகாரப்பூர்வ தளம் · இங்கே விண்ணப்பிக்கவும்",
+      "aisheKicker": "கல்லூரிகள், பல்கலைக்கழகங்களைக் கண்டறி",
+      "aisheDesc": "இந்தியா முழுவதும் உள்ள கல்லூரிகள், பல்கலைக்கழகங்களின் அதிகாரப்பூர்வ அரசுப் பட்டியல், மாநிலம், மாவட்ட வாரியாக.",
+      "bhashiniNote": "பாஷினி (தேசிய மொழிபெயர்ப்பு இயக்கம்) மூலம் மேலும் இந்திய மொழிகளைச் சேர்க்கத் திட்டம். இந்த டெமோவில் இணைக்கப்படவில்லை.",
+      "compassAllDone": "எல்லாச் சோதனைகளும் முடிந்தன · முடிவுகளைப் பார்க்கத் தட்டுங்கள்",
+      "compassTodo": "இரண்டு சிறு ASER போன்ற சோதனைகள் · சுமார் 5 நிமி",
+      "aserTitle": "உங்கள் ASER சோதனைகள்",
+      "aserDemo": "ASER போன்றது · டெமோ",
+      "aserBasic": "ASER: வாசிப்பு, கணித அடிப்படைகள்",
+      "aserBasicSub": "கதை வாசிப்பு, கணக்கு (கழித்தல், வகுத்தல்)",
+      "aserBeyond": "ASER அடிப்படைக்கு அப்பால்",
+      "aserBeyondSub": "14–18 வயதினருக்கான பயன்பாட்டுத் திறன்கள்: கேட்டல், சிந்தனை, செய்முறை, டிஜிட்டல் பணிகள்",
+      "stCompleted": "முடிந்தது",
+      "stInProgress": "நடந்து வருகிறது",
+      "stNotStarted": "தொடங்கவில்லை",
+      "govPlatforms": "இலவச அரசுக் கற்றல் தளங்கள்",
+      "govFree": "இலவசம் · இந்திய அரசு",
+      "govNote": "அதிகாரப்பூர்வ இணையதளம் புதிய தாவலில் திறக்கும். இணையம் தேவை.",
+      "govNoteOff": "நீங்கள் இணைப்பில் இல்லை. இந்த அதிகாரப்பூர்வ இணையதளங்களுக்கு இணையம் தேவை.",
+      "continue": "தொடரவும்",
+      "chooseStart": "எப்படித் தொடங்க விரும்புகிறீர்கள்?",
+      "startSub": "ஒன்றைத் தேர்ந்தெடுங்கள். பின்னர் மாற்றலாம்.",
+      "closeChat": "மூடு",
+      "demoShort": "உருவக உதவியாளர், உருவகக் குரல் (டெமோ)",
+      "begin": "என் பயணத்தைத் தொடங்கு",
+      "imParent": "நான் பெற்றோர்",
+      "imTeacher": "நான் ஆசிரியர்",
+      "partnerLink": "கூட்டாளர் தளம்: முன்னாள் மாணவர்கள், வழிகாட்டிகள், NGO, நிறுவனங்கள்",
+      "resumeTitle": "{name} ஆகத் தொடரவும்",
+      "resumeAt": "கடைசியாக: {place}",
+      "back": "பின்செல்",
+      "switchRole": "பங்கை மாற்று (டெமோ)",
+      "roleNote": "டெமோ மட்டும்: உண்மையான செயலியில் ஒவ்வொரு பங்கும் தனியாகப் பாதுகாப்பாக உள்நுழையும்.",
+      "role_student": "மாணவர்",
+      "role_student_d": "தொழில்களை அறிந்து திறன்களைக் கற்கவும்",
+      "role_parent": "பெற்றோர்",
+      "role_parent_d": "உங்கள் குழந்தையின் வாய்ப்புகளும் செலவுகளும்",
+      "role_teacher": "ஆசிரியர் / வழிகாட்டி",
+      "role_teacher_d": "மாணவர் குழுவுக்கு வழிகாட்டி, பாடங்களை உருவாக்குங்கள்",
+      "role_partner": "கூட்டாளர்",
+      "role_partner_d": "முன்னாள் மாணவர்கள், வழிகாட்டிகள், NGO, நிறுவனங்கள்",
+      "whoLearning": "இன்று யார் கற்கிறார்கள்?",
+      "sharedNote": "இந்தக் கைபேசி குடும்பத்தில் பகிரப்படுகிறது. ஒவ்வொரு மாணவருக்கும் தனி PIN உண்டு.",
+      "addStudent": "மற்றொரு மாணவரைச் சேர்",
+      "parentName": "பெற்றோர் / பாதுகாவலர்",
+      "enterPin": "உங்கள் 4 இலக்க PIN-ஐ உள்ளிடுங்கள்",
+      "del": "அழி",
+      "wrongPin": "தவறான PIN. மீண்டும் முயலுங்கள்.",
+      "demoPin": "டெமோ PIN",
+      "noVoiceLogin": "சுயவிவரத்தைத் திறக்கக் குரல் ஒருபோதும் பயன்படுத்தப்படாது.",
+      "regTitle1": "உங்களைப் பற்றி",
+      "regSub1": "படி 1 · சில அடிப்படைகள்",
+      "regTitle2": "உங்கள் கைபேசியும் நேரமும்",
+      "regSub2": "பாடங்கள் உங்கள் நாளுக்குப் பொருந்த",
+      "regTitle3": "ஒப்புதல் மற்றும் தனியுரிமை",
+      "regSub3": "கிட்டத்தட்ட முடிந்தது",
+      "stepLabel": "படி {n} / 3",
+      "next": "அடுத்து",
+      "createProfile": "என் சுயவிவரத்தை உருவாக்கு",
+      "prefName": "விருப்பப் பெயர்",
+      "namePh": "உங்களை எப்படி அழைக்கலாம்?",
+      "age": "வயது",
+      "eduLevel": "கல்வி நிலை",
+      "state": "மாநிலம்",
+      "district": "மாவட்டம்",
+      "districtPh": "எ.கா. விழுப்புரம்",
+      "prefLang": "விருப்ப மொழி",
+      "phone": "கைபேசி வசதி",
+      "own": "சொந்தக் கைபேசி",
+      "shared": "வீட்டில் பகிர்வு",
+      "teacherPhone": "ஆசிரியரின் கைபேசி",
+      "internet": "இணைய வசதி",
+      "reliable": "நம்பகமானது",
+      "sometimes": "சில நேரம்",
+      "limited": "குறைவு",
+      "learnTime": "விருப்பக் கற்றல் நேரம்",
+      "tm_morning": "காலை",
+      "tm_afternoon": "மதியம்",
+      "tm_evening": "மாலை",
+      "study": "தினசரி படிப்பு நேரம்",
+      "min": "நிமி",
+      "pin": "4 இலக்க PIN உருவாக்குங்கள்",
+      "pinHelp": "பகிரப்பட்ட கைபேசியில் உங்கள் சுயவிவரத்தைத் திறக்க",
+      "guardianName": "பெற்றோர் அல்லது பாதுகாவலர் பெயர்",
+      "guardianPh": "எ.கா. லட்சுமி",
+      "consentTitleMinor": "பாதுகாவலர் ஒப்புதல்",
+      "consentTitleAdult": "உங்கள் ஒப்புதல்",
+      "consentIntroMinor": "உங்களுக்கு 18 வயதுக்குக் குறைவு என்பதால், CitiGrow-ஐப் பயன்படுத்தும் முன் பெற்றோர் அல்லது பாதுகாவலர் ஒப்புதல் தேவை.",
+      "consentIntroAdult": "CitiGrow உங்கள் தகவலைப் பயன்படுத்தும் விதத்துக்கு ஒப்புக்கொள்வதை உறுதிப்படுத்துங்கள்.",
+      "c1Minor": "நான் CitiGrow பயன்படுத்துவது என் பெற்றோருக்குத் தெரியும், அவர்கள் ஒப்புக்கொள்கிறார்கள்",
+      "c1Adult": "CitiGrow பயன்படுத்த ஒப்புக்கொள்கிறேன்",
+      "c2": "என் சுயவிவரத்தையும் முன்னேற்றத்தையும் இந்தக் கைபேசியில் சேமி",
+      "c3": "பொருத்தங்களும் மதிப்பெண்களும் டெமோ மதிப்பீடுகள் எனப் புரிந்துகொள்கிறேன்",
+      "privacyShort": "ஆதார் அல்லது அடையாள எண் எதுவும் சேகரிக்கப்படாது. உங்கள் டெமோ மாணவர் ID:",
+      "err1": "பெயர், வயது, கல்வி நிலை, மாவட்டம் ஆகியவற்றை நிரப்புங்கள்.",
+      "err2": "4 இலக்க PIN உருவாக்குங்கள்.",
+      "err3Minor": "பாதுகாவலர் பெயரைச் சேர்த்து, எல்லாப் பெட்டிகளையும் தேர்வு செய்யுங்கள்.",
+      "err3": "தொடர எல்லாப் பெட்டிகளையும் தேர்வு செய்யுங்கள்.",
+      "edu_iti": "ITI / டிப்ளமோ",
+      "edu_college": "கல்லூரி",
+      "classShort": "வகுப்பு",
+      "ageShort": "வயது",
+      "morning": "காலை வணக்கம்",
+      "afternoon": "மதிய வணக்கம்",
+      "evening": "மாலை வணக்கம்",
+      "online": "இணைப்பில்",
+      "offline": "இணைப்பில்லை",
+      "modeStudent": "மாணவர்",
+      "modeParent": "பெற்றோர் பார்வை",
+      "syncOffline": "இணைப்பில்லை (டெமோ) · {n} மாற்றங்கள் இந்தக் கைபேசியில் சேமிக்கப்பட்டன",
+      "syncOfflineNone": "இணைப்பில்லை (டெமோ) · சேமித்த பாடங்களும் வினாடி வினாக்களும் வேலை செய்யும்",
+      "syncing": "மீண்டும் இணைப்பில் · {n} மாற்றங்கள் ஒத்திசைகின்றன…",
+      "synced": "எல்லா மாற்றங்களும் ஒத்திசைந்தன · {time}",
+      "navHome": "முகப்பு",
+      "navDiscover": "கண்டறி",
+      "navLearn": "கற்றல்",
+      "navOpps": "வாய்ப்புகள்",
+      "navProfile": "சுயவிவரம்",
+      "lv1": "அடிப்படை",
+      "lv2": "வளர்கிறது",
+      "lv3": "வலுவானது",
+      "sk_numeracy": "கணிதம்",
+      "sk_reasoning": "சிந்தனைத் திறன்",
+      "sk_communication": "தொடர்புத் திறன்",
+      "sk_practical": "செய்முறை",
+      "sk_digital": "டிஜிட்டல்",
+      "sk_reading": "வாசிப்பு",
+      "tr_practical": "செய்முறை வேலை",
+      "tr_tech": "தொழில்நுட்பம்",
+      "tr_people": "மக்களுடன் வேலை",
+      "tr_creative": "படைப்பு வேலை",
+      "tr_organizing": "ஏற்பாடு செய்தல்",
+      "tr_outdoors": "வெளிப்புறமும் இயற்கையும்",
+      "tr_caring": "பிறரைக் கவனித்தல்",
+      "tr_service": "நாட்டுச் சேவை",
+      "ex_pump": "வீட்டுக் கருவிகளைப் பழுது பார்த்தார்",
+      "ex_shop": "குடும்பக் கடையில் உதவி",
+      "ex_stitch": "துணி தைத்தல்",
+      "ex_fest": "ஊர் நிகழ்ச்சிகளை ஏற்பாடு செய்தார்",
+      "ex_field": "விவசாய வேலை",
+      "nextStep": "உங்கள் அடுத்த படி",
+      "simAI": "உருவகப்படுத்திய AI · விதி அடிப்படையிலான டெமோ, உண்மையான மாதிரி அல்ல",
+      "simAIShort": "உருவக AI",
+      "journeyProgress": "தொழில் பயணம்",
+      "studyTime": "படிப்பு நேரம்",
+      "currentMilestone": "தற்போதைய மைல்கல்",
+      "openLifeMap": "என் வாழ்க்கை வரைபடம்",
+      "upcomingDeadline": "வரவிருக்கும் கடைசி தேதி",
+      "sampleData": "மாதிரித் தரவு",
+      "suggestedScholarship": "பரிந்துரைக்கப்பட்ட உதவித்தொகை / திட்டம்",
+      "mentorRec": "உங்களுக்கான வழிகாட்டி",
+      "teacherRecommends": "உங்கள் ஆசிரியர் பரிந்துரை",
+      "thought": "இன்றைய சிந்தனை",
+      "offlineContent": "இணைப்பில்லா உள்ளடக்கம்",
+      "manageDownloads": "பதிவிறக்கங்களை நிர்வகி",
+      "refreshRecs": "பரிந்துரைகளைப் புதுப்பி",
+      "refreshOnline": "கடைசியாகப் புதுப்பித்தது {time}",
+      "refreshOffline": "புதிய பரிந்துரைகளுக்கு இணையம் தேவை. சேமித்த திட்டம் வேலை செய்யும்.",
+      "dreamNone": "கனவுத் தொழில்: இன்னும் தேர்வு செய்யவில்லை",
+      "dreamIs": "கனவு: {c}",
+      "minPerDay": "தினமும் {m} நிமி",
+      "stageOf": "படி {n} / {total}",
+      "msNoteLessons": "இந்தப் படிக்கான {n}-இல் {d} பாடங்கள்",
+      "msNoteTap": "என்ன செய்ய வேண்டும் என்று பார்க்க வாழ்க்கை வரைபடத்தைத் திறக்கவும்.",
+      "msNoCareer": "வாழ்க்கை வரைபடம் தொடங்க ஒரு தொழிலைத் தேர்வு செய்யுங்கள்",
+      "msNoCareerT": "இன்னும் தொழில் தேர்வு இல்லை",
+      "offlineText": "{n} பாடநெறிகள் இந்தக் கைபேசியில் உள்ளன · இணையம் இல்லாமல் வேலை செய்யும்",
+      "queueNone": "ஒத்திசைக்க எதுவும் இல்லை",
+      "queueSome": "{n} மாற்றங்கள் ஒத்திசைக்கக் காத்திருக்கின்றன",
+      "scLifeMap": "வாழ்க்கை வரைபடம்",
+      "scMotivation": "என் எதிர்காலம்",
+      "scMentors": "வழிகாட்டிகள்",
+      "na_talk_t": "உங்களுக்குப் பிடித்தவை பற்றி CitiGrow-உடன் பேசுங்கள்",
+      "na_talk_w": "உங்கள் பதில்கள் பொருத்தமான தொழில்களைப் பரிந்துரைக்க உதவும்.",
+      "na_start": "தொடங்கு",
+      "na_assess_t": "திறன் திசைகாட்டியை முடியுங்கள்",
+      "na_assess_w": "8 கேள்விகள் எந்தத் திறன்களை முதலில் வளர்க்க வேண்டும் எனக் காட்டும்.",
+      "na_career_t": "உங்கள் சிறந்த பொருத்தம்: {c}",
+      "na_open": "திற",
+      "na_lesson_t": "பாடம்: {l}",
+      "na_lesson_w": "இந்தப் பாடம் உங்கள் வாழ்க்கை வரைபடத்தின் படி {n}-இல் முன்னேற்றும்.",
+      "na_lesson_off": "நீங்கள் இணைப்பில் இல்லை, எனவே இந்தக் கைபேசியில் சேமித்த பாடம்.",
+      "na_les_cta": "பாடம் தொடங்கு",
+      "na_step_t": "படியை முடியுங்கள்: {s}",
+      "na_step_w": "வாழ்க்கை வரைபடத்தைத் திறந்து, முடிந்ததும் இந்தப் படியை முடிந்ததாகக் குறியுங்கள்.",
+      "na_opp_t": "{o}-க்கான ஆவணங்களைத் தயார் செய்யுங்கள்",
+      "na_opp_w": "நீங்கள் தகுதி பெறலாம். ஆவணங்களை முன்பே தயார் செய்வது கடைசி நேர அழுத்தத்தைத் தவிர்க்கும்.",
+      "na_prep": "தயார் செய்",
+      "na_session_t": "வழிகாட்டியுடன் குழு அமர்வில் சேருங்கள்",
+      "na_session_w": "செய்து காட்டியவர்களிடம் கேட்பது பாதையைத் தெளிவாக்கும்.",
+      "na_see": "அமர்வுகளைப் பார்",
+      "discoverTitle": "தொழில்களைக் கண்டறி",
+      "talkTitle": "CitiGrow-உடன் பேசு",
+      "compassTitle": "திறன் திசைகாட்டி",
+      "discNone": "தொடங்கவில்லை · சுமார் 5 நிமி",
+      "discDone": "முடிந்தது · மீண்டும் பேசு",
+      "compassNone": "தொடங்கவில்லை · 8 கேள்விகள்",
+      "compassDone": "முடிந்தது · முடிவுகள்",
+      "yourProfile": "உங்கள் ஆர்வ விவரம்",
+      "careersForYou": "உங்களுக்கான தொழில்கள்",
+      "compare": "ஒப்பிடு",
+      "matchHint": "ஒவ்வொரு தொழிலும் உங்களுக்கு எவ்வளவு பொருந்துகிறது என்று பார்க்க முதலில் CitiGrow-உடன் பேசுங்கள்.",
+      "yourChoice": "உங்கள் தேர்வு",
+      "fAll": "அனைத்தும்",
+      "fVoc": "திறன் / தொழிற்கல்வி",
+      "fAca": "கல்விசார்",
+      "routeVoc": "தொழிற்கல்விப் பாதை",
+      "routeAca": "கல்விசார் பாதை",
+      "sampleCareerNote": "தொழில் விவரங்கள், செலவுகள், காலம் ஆகியவை மாதிரித் தகவல்கள். அதிகாரப்பூர்வ மூலத்தில் உறுதி செய்யுங்கள்.",
+      "matchPct": "{p}% பொருத்தம்",
+      "learnTitle": "கற்றல் மையம்",
+      "skillMastery": "திறன் தேர்ச்சி",
+      "noSkillsYet": "உங்கள் திறன் நிலைகளைப் பார்க்கத் திறன் திசைகாட்டியை முடியுங்கள்.",
+      "startCompass": "திறன் திசைகாட்டி தொடங்கு",
+      "masteryNote": "முடித்த பாடங்கள்: {n}. பயிற்சியால் ஒவ்வொரு திறனும் வளரும்.",
+      "recommendedModules": "உங்களுக்குப் பரிந்துரை",
+      "examPath": "தேர்வுத் தயாரிப்புப் பாதை",
+      "allCourses": "எல்லாப் பாடநெறிகளும்",
+      "fFree": "இலவசம்",
+      "fPaid": "ஆசிரியர் பாடநெறிகள்",
+      "fDl": "பதிவிறக்கியவை",
+      "csrSeat": "CSR இடம் உண்டு",
+      "downloaded": "பதிவிறக்கப்பட்டது",
+      "needsNet": "இணையம் தேவை",
+      "enrolled": "சேர்ந்தது",
+      "liveClasses": "வரவிருக்கும் நேரலை வகுப்புகள்",
+      "quizzes": "சிறு வினாடி வினாக்கள்",
+      "worksOffline": "இணைப்பில்லாமலும் இயங்கும்",
+      "priceFree": "இலவசம்",
+      "reserve": "முன்பதிவு",
+      "reserved": "முன்பதிவு ஆனது",
+      "oppsTitle": "வாய்ப்புகள்",
+      "refresh": "புதுப்பி",
+      "recByTeacher": "ஆசிரியர் பரிந்துரை",
+      "ot_scholarship": "உதவித்தொகை",
+      "ot_scheme": "அரசுத் திட்டங்கள்",
+      "ot_exam": "தேர்வுகள்",
+      "ot_apprentice": "தொழிற்பயிற்சி",
+      "ot_intern": "இன்டர்ன்ஷிப்",
+      "ot_job": "வேலைகள்",
+      "ot_centre": "பயிற்சி மையங்கள்",
+      "stYes": "தகுதி இருப்பதாகத் தெரிகிறது",
+      "stInfo": "மேலும் தகவல் தேவை",
+      "stNo": "ஒரு நிபந்தனை பொருந்தவில்லை",
+      "oppsDisclaimer": "எல்லாப் பட்டியல்களும் இந்த டெமோவுக்கான மாதிரித் தரவு. CitiGrow தயாரிக்க உதவும், ஆனால் அதிகாரப்பூர்வ விண்ணப்பங்களைச் சமர்ப்பிக்காது.",
+      "studentId": "டெமோ ID",
+      "privacyConsent": "தனியுரிமையும் பகிர்வும்",
+      "privacyMore": "தனியுரிமை, ஒப்புதல் விவரங்கள்",
+      "appLang": "செயலி மொழி",
+      "switchStudent": "மாணவரை மாற்று",
+      "savedLocal": "இந்த டெமோவில் சுயவிவரங்கள் இந்தக் கைபேசியில் மட்டும் சேமிக்கப்படுகின்றன.",
+      "resetDemo": "டெமோ தரவை மீட்டமை",
+      "resetConfirm": "அனைத்தையும் மீட்டமைக்க மீண்டும் தட்டுங்கள்",
+      "consentTeacher": "என் முன்னேற்றத்தை ஆசிரியருடன் பகிர்",
+      "consentTeacherSub": "ஆசிரியர் திறன்களையும் முன்னேற்றத்தையும் பார்ப்பார், உரையாடல்களை ஒருபோதும் இல்லை",
+      "consentParent": "குடும்பத்துடன் சுருக்கத்தைப் பகிர்",
+      "consentParentSub": "குடும்பப் பார்வையில் தொழில்கள், மைல்கற்கள், செலவுகள்",
+      "chatNote": "CitiGrow ஒரு உருவகப்படுத்திய உதவியாளர். இது எளிய டெமோ விதிகளைப் பின்பற்றுகிறது; உண்மையான AI மாதிரி அல்ல.",
+      "listen": "கேள்",
+      "playingSim": "ஒலிக்கிறது (உருவகம்)",
+      "profileReady": "உங்கள் ஆர்வ விவரம் தயார்",
+      "seeMatches": "என் தொழில் பொருத்தங்கள்",
+      "restartChat": "உரையாடலை மீண்டும் தொடங்கு",
+      "listeningSim": "கேட்கிறது… (உருவகம்)",
+      "voiceOffline": "குரலுக்கு இணையம் தேவை. தட்டியோ தட்டச்சு செய்தோ பதில் சொல்லலாம்.",
+      "speak": "பேசிப் பதில் சொல்",
+      "typeAnswer": "உங்கள் பதிலைத் தட்டச்சு செய்யுங்கள்…",
+      "send": "அனுப்பு",
+      "voiceSimNote": "டெமோ குரல்: மைக் ஒரு மாதிரிப் பதிலை நிரப்பும். உண்மையான குரல் அறிதல் இல்லை.",
+      "chat_hello": "வணக்கம் {name}! நான் CitiGrow. உங்களைப் பற்றிப் பேசலாம். தவறான பதில் எதுவும் இல்லை.",
+      "q_enjoy": "உங்களுக்கு மிகவும் பிடித்த செயல்கள் எவை?",
+      "q_exp_fix": "வீட்டில் மோட்டார் பம்ப் அல்லது மின்விசிறி போன்ற எதையாவது பழுது பார்த்திருக்கிறீர்களா? சொல்லுங்கள்.",
+      "q_exp_people": "கடையிலோ வாடிக்கையாளர்களிடமோ உதவியிருக்கிறீர்களா? என்ன கற்றுக்கொண்டீர்கள்?",
+      "q_exp": "வீட்டிலோ ஊரிலோ உதவியதில் இருந்து என்ன கற்றுக்கொண்டீர்கள்?",
+      "q_life": "எதிர்காலத்தில் எப்படிப்பட்ட வாழ்க்கை வேண்டும்?",
+      "q_where": "வீட்டுக்கு அருகில் வேலை செய்ய விருப்பமா, வேறு இடத்திலா?",
+      "q_time": "தினமும் எவ்வளவு நேரம் படிக்க முடியும்?",
+      "q_worry": "உங்கள் எதிர்காலம் பற்றி என்ன கவலை?",
+      "q_pace": "நிலையான நேர அட்டவணை பிடிக்குமா, உங்கள் வேகத்தில் கற்பதா?",
+      "a_enjoy_fix": "பொருட்களைச் சரி செய்வது",
+      "a_enjoy_talk": "மக்களுடன் பேசுவது",
+      "a_enjoy_make": "வரைதல் அல்லது தையல்",
+      "a_enjoy_tech": "கைபேசி, கணினி",
+      "a_enjoy_farm": "விவசாயம், வெளிப்புறம்",
+      "a_enjoy_org": "நிகழ்ச்சி ஏற்பாடு",
+      "a_exp_pump": "அப்பாவுடன் எங்கள் மோட்டார் பம்பைப் பழுது பார்த்தேன்",
+      "a_exp_shop": "எங்கள் குடும்பக் கடையில் உதவுகிறேன்",
+      "a_exp_stitch": "அம்மாவுடன் துணி தைக்கிறேன்",
+      "a_exp_fest": "எங்கள் ஊர்த் திருவிழாவை ஏற்பாடு செய்தேன்",
+      "a_exp_field": "வயலில் உதவுகிறேன்",
+      "a_life_steady": "நிலையான மாத வருமானம்",
+      "a_life_biz": "சொந்தத் தொழில்",
+      "a_life_nation": "நாட்டுக்குச் சேவை",
+      "a_life_creative": "படைப்பு வேலை",
+      "a_life_help": "மக்களுக்கு உதவுவது",
+      "a_where_near": "வீட்டுக்கு அருகில்",
+      "a_where_city": "நகரத்துக்குச் செல்லலாம்",
+      "a_where_any": "இந்தியாவில் எங்கும்",
+      "a_time_15": "15 நிமிடம்",
+      "a_time_30": "30 நிமிடம்",
+      "a_time_45": "45 நிமிடம்",
+      "a_time_60": "1 மணி நேரம்",
+      "a_worry_cost": "படிப்புச் செலவு",
+      "a_worry_unknown": "என்ன தொழில்கள் உள்ளன எனத் தெரியாது",
+      "a_worry_english": "என் ஆங்கிலம்",
+      "a_worry_family": "குடும்பத்துக்கு நான் அருகில் தேவை",
+      "a_worry_exam": "தேர்வுகள் கடினமாக உள்ளன",
+      "a_pace_fixed": "நிலையான நேர அட்டவணை",
+      "a_pace_self": "என் வேகத்தில்",
+      "k_exp_pump": "மோட்டார் பம்பைப் பழுது பார்ப்பது உண்மையான சிக்கல் தீர்க்கும் திறனையும் இயந்திரத் திறனையும் காட்டுகிறது!",
+      "k_exp_shop": "கடையில் உதவுவது பேச்சுத் திறனையும் பணக் கணக்கையும் வளர்க்கும்.",
+      "k_exp_stitch": "தையலுக்குப் பொறுமை, துல்லியம், வடிவமைப்பு உணர்வு தேவை.",
+      "k_exp_fest": "திருவிழா ஏற்பாடு தலைமைப் பண்பையும் திட்டமிடலையும் காட்டுகிறது.",
+      "k_exp_field": "விவசாயம் கடின உழைப்பையும் பயிர், வானிலை அறிவையும் கற்றுத்தரும்.",
+      "k_life_nation": "நாட்டுச் சேவை பெருமைக்குரிய இலக்கு. ஆயுதப் படைகள் ஒரு வழியாக இருக்கலாம்.",
+      "k_life_biz": "பல திறமையானவர்கள் பின்னர் சொந்தச் சேவைத் தொழில் தொடங்குகிறார்கள்.",
+      "k_where_near": "நல்லது. பல தொழில்களை வீட்டுக்கு அருகிலேயே அமைக்கலாம்.",
+      "k_worry_cost": "இது உண்மையான கவலை. உங்களுக்கான இலவசப் பாடநெறிகளையும் உதவித்தொகைகளையும் தேடுகிறேன்.",
+      "k_worry_english": "பல தொழில்கள் உங்கள் தாய்மொழியிலேயே தொடங்கும்; ஆங்கிலத்தைப் படிப்படியாகக் கற்கலாம்.",
+      "k_worry_family": "வீட்டுக்கு அருகிலுள்ள வாய்ப்புகளுக்கு அதிக முக்கியத்துவம் தருகிறேன்.",
+      "k_time": "சரி. அந்த நேரத்துக்கு ஏற்பப் பாடங்களைத் திட்டமிடுகிறேன்.",
+      "k_free": "நன்றி! நான் கவனித்தது: {labels}.",
+      "k_gen": "பகிர்ந்ததற்கு நன்றி!",
+      "chat_done": "நன்றி, {name}! உங்கள் ஆர்வ விவரத்தை உருவாக்கினேன். அடுத்து திறன் திசைகாட்டியை முயலுங்கள், அப்போது தொழில்களையும் பாடங்களையும் பரிந்துரைக்க முடியும்.",
+      "v_enjoy": "வீட்டில் மோட்டார் பம்ப், மின்விசிறி போன்றவற்றைச் சரி செய்வது பிடிக்கும்",
+      "v_exp": "கடந்த கோடையில் பழுதான மோட்டார் பம்பை அப்பாவுடன் சரி செய்தேன்",
+      "v_life": "நிலையான வேலை வேண்டும், பின்னர் சொந்தத் தொழிலும் இருக்கலாம்",
+      "v_where": "வீட்டுக்கு அருகில் வேலை செய்ய விரும்புகிறேன்",
+      "v_time": "தினமும் 30 நிமிடம் படிக்க முடியும்",
+      "v_worry": "படிப்புச் செலவு பற்றிக் கவலை",
+      "v_pace": "நிலையான நேர அட்டவணை பிடிக்கும்",
+      "chatSummary": "உங்களுக்குப் பிடித்தவை: {traits}.",
+      "compassIntro": "ASER போன்ற சிறு சோதனை: வாசிப்பு, கேட்டல், கணிதம், சிந்தனை, செய்முறை, டிஜிட்டல் திறன்கள். சுமார் 5 நிமிடம்.",
+      "compassNote1": "முடிவுகள் டெமோ மதிப்பீடுகள்; சான்றளிக்கப்பட்ட கல்வி அல்லது உளவியல் கணிப்பு அல்ல.",
+      "compassNote2": "வாசிப்புக் கேள்வி சத்தமாக வாசிக்கப்படாது, ஏனெனில் அது உங்கள் சொந்த வாசிப்பைச் சோதிக்கிறது. கேட்டல் தனிக் கேள்வி.",
+      "startTest": "சோதனையைத் தொடங்கு",
+      "viewLast": "கடைசி முடிவுகளைப் பார்",
+      "readYourself": "இதை நீங்களே வாசியுங்கள்",
+      "simTranscript": "உருவக ஒலியின் எழுத்துவடிவம்",
+      "listenFirst": "முதலில் ஒலியை இயக்கி, பிறகு பதில் சொல்லுங்கள்.",
+      "playAudio": "ஒலியை இயக்கு",
+      "playAgain": "மீண்டும் இயக்கு",
+      "progQ": "கேள்வி {n} / {total}",
+      "yourSkills": "உங்கள் திறன் திசைகாட்டி",
+      "demoEstimate": "டெமோ மதிப்பீடு",
+      "compassDisclaimer": "இவை சில கேள்விகளிலிருந்து வந்த டெமோ மதிப்பீடுகள், கணிப்பு அல்ல. பயிற்சியால் திறன்கள் வளரும்.",
+      "recommendedTasks": "பரிந்துரைக்கப்பட்ட திறன் பயிற்சிகள்",
+      "retake": "மீண்டும் எழுது",
+      "taskWhy": "இப்போது உங்கள் {s} {l} நிலையில் உள்ளதால்",
+      "as_read_p": "மீனா ஒரு சிறிய கிராமத்தில் வசிக்கிறாள். தினமும் காலையில் ஆடுகளுக்குத் தீனி போடுகிறாள். பிறகு தம்பியுடன் நடந்து பள்ளிக்குச் செல்கிறாள். பள்ளி முடிந்ததும் கடையில் அம்மாவுக்கு உதவுகிறாள்.",
+      "as_read_q": "பள்ளி முடிந்ததும் மீனா என்ன செய்கிறாள்?",
+      "as_read_o0": "ஆடுகளுக்குத் தீனி போடுகிறாள்",
+      "as_read_o1": "கடையில் உதவுகிறாள்",
+      "as_read_o2": "கிரிக்கெட் விளையாடுகிறாள்",
+      "as_listen_t": "வணக்கம்! பயிற்சி மையத்துக்கான பேருந்து கோயில் நிறுத்தத்திலிருந்து 8 மணிக்குப் புறப்படும். உங்கள் பள்ளி அடையாள அட்டையைக் கொண்டு வாருங்கள்.",
+      "as_listen_q": "பேருந்து எங்கிருந்து புறப்படுகிறது?",
+      "as_listen_o0": "பள்ளியிலிருந்து",
+      "as_listen_o1": "சந்தையிலிருந்து",
+      "as_listen_o2": "கோயில் நிறுத்தத்திலிருந்து",
+      "as_num_q": "நாற்பத்தேழு எந்த எண்?",
+      "as_sub_q": "தீர்க்கவும்: 52 − 27 = ?",
+      "as_div_q": "தீர்க்கவும்: 156 ÷ 4 = ?",
+      "as_reason_q": "அடுத்து என்ன வரும்? 2, 4, 8, 16, …",
+      "as_prac_q": "உங்கள் அறையின் மின்விசிறி நின்றுவிட்டது, ஆனால் அதே அறையின் விளக்கு எரிகிறது. முதலில் எதைச் சோதிப்பீர்கள்?",
+      "as_prac_o0": "பிரதான மின் மீட்டர்",
+      "as_prac_o1": "மின்விசிறியின் சுவிட்ச், ரெகுலேட்டர்",
+      "as_prac_o2": "புதிய மின்விசிறி வாங்குவது",
+      "as_dig_q": "ஒருவர் அழைத்து உங்கள் கைபேசிக்கு வந்த OTP-ஐக் கேட்கிறார். என்ன செய்வீர்கள்?",
+      "as_dig_o0": "மரியாதையாகப் பேசினால் சொல்வேன்",
+      "as_dig_o1": "குடும்பக் குழுவில் பகிர்வேன்",
+      "as_dig_o2": "ஒருபோதும் சொல்ல மாட்டேன், பெரியவரிடம் தெரிவிப்பேன்",
+      "as_comm_q": "ஆர்டர் தாமதமானதால் ஒரு வாடிக்கையாளர் கோபமாக இருக்கிறார். முதலில் சொல்ல வேண்டியது எது?",
+      "as_comm_o0": "காத்திருக்க வைத்ததற்கு மன்னிக்கவும், இப்போதே உங்கள் ஆர்டரைப் பார்க்கிறேன்.",
+      "as_comm_o1": "இது என் தவறு அல்ல.",
+      "as_comm_o2": "நாளை வாருங்கள்.",
+      "whyMatch": "இந்தத் தொழில் ஏன் பரிந்துரைக்கப்படுகிறது",
+      "keyFacts": "முக்கியத் தகவல்கள்",
+      "illustrative": "எடுத்துக்காட்டு",
+      "skillsNeeded": "தேவையான திறன்கள்",
+      "f_edu": "தேவையான கல்வி",
+      "f_dur": "தயாரிப்புக் காலம்",
+      "f_fin": "பணம் தொடர்பானவை",
+      "f_loc": "இடமும் பயணமும்",
+      "f_prog": "தொழில் வளர்ச்சி",
+      "trySim": "தொழில் உருவகப் பயிற்சியை முயல்",
+      "comparePaths": "தொழில் பாதைகளை ஒப்பிடு",
+      "chooseCareer": "இந்தத் தொழிலைத் தேர்ந்து என் வாழ்க்கை வரைபடம் உருவாக்கு",
+      "chosenCareer": "இந்தத் தொழிலுக்கான வாழ்க்கை வரைபடம்",
+      "simResult": "உங்கள் உருவகப் பயிற்சி முடிவு",
+      "nextModules": "அடுத்துப் பரிந்துரைக்கப்படும் பாடங்கள்",
+      "tryAgain": "மீண்டும் முயல்",
+      "done": "முடிந்தது",
+      "simNext": "அடுத்து",
+      "simFinish": "முடிவைப் பார்",
+      "simGood": "நல்ல தேர்வு",
+      "simThink": "மீண்டும் யோசியுங்கள்",
+      "noCareerYet": "வாழ்க்கை வரைபடம் உருவாக்க ஒரு தொழிலைத் தேர்ந்தெடுங்கள்",
+      "noCareerHint": "தொழில்களைப் பார்த்து, பிடித்ததைத் திறந்து \"இந்தத் தொழிலைத் தேர்ந்து\" என்பதைத் தட்டுங்கள்.",
+      "exploreCareers": "தொழில்களைப் பார்",
+      "lifeMapFor": "வாழ்க்கை வரைபடம்:",
+      "dailyTime": "தினசரி படிப்பு நேரம்",
+      "adaptive": "தகவமைக்கும்",
+      "yourRoadmap": "உங்கள் பாதை",
+      "tapStep": "ஒரு படியைத் தட்டுங்கள்",
+      "youAreHere": "நீங்கள் இங்கே",
+      "resources": "கிடைக்கும் வளங்கள்",
+      "markStepDone": "இந்தப் படி முடிந்தது",
+      "altRoute": "மாற்றுப் பாதை",
+      "statLessons": "வாரத்துக்குப் பாடங்கள்",
+      "statWeeks": "படிப்புப் படிக்கான வாரங்கள்",
+      "statMin": "வாரத்துக்கு நிமிடங்கள்",
+      "legCore": "தொழில் திறன்",
+      "legFound": "அடிப்படை",
+      "legRev": "மீள்பார்வை",
+      "days": "திங்,செவ்,புத,வியா,வெள்,சனி,ஞாயி",
+      "adaptMsg": "உங்கள் பாதை இப்போது தினமும் {m} நிமிடங்களுக்கு ஏற்ப மாறியுள்ளது. குறுகிய, ஒழுங்கான அமர்வுகளும் உங்களை முன்னேற்றும். படிப்புப் படி இப்போது சுமார் {w} வாரங்களாகத் திட்டமிடப்பட்டுள்ளது.",
+      "stDone": "முடிந்தது",
+      "stCur": "தற்போதைய படி",
+      "stNext": "அடுத்து வருவது",
+      "stAlt": "வேறு வழி",
+      "r_what": "என்ன செய்ய வேண்டும்",
+      "r_why": "ஏன் முக்கியம்",
+      "r_skills": "தேவையான திறன்கள்",
+      "r_effort": "தோராய உழைப்பு",
+      "r_deadline": "கடைசி தேதிகள்",
+      "r_teacher": "ஆசிரியர் உதவி",
+      "r_unlocks": "திறக்கும் வாய்ப்புகள்",
+      "lessonsFor": "இந்தப் படிக்கான {d}/{n} பாடங்கள்",
+      "compareIntro": "உங்கள் முக்கியப் பாதைகளை அருகருகே ஒப்பிடுங்கள். உங்கள் தேர்வை எப்போது வேண்டுமானாலும் மாற்றலாம்.",
+      "cmpRoute": "பாதை",
+      "cmpEdu": "கல்வி",
+      "cmpTime": "தயாரிப்பு",
+      "cmpCost": "செலவு",
+      "cmpPlace": "இடம்",
+      "cmpChoose": "தேர்ந்தெடு",
+      "cmpChosen": "தேர்ந்தது",
+      "futurePossible": "என் எதிர்காலம் சாத்தியம்",
+      "dreamCareer": "என் கனவுத் தொழில்",
+      "dreamPick": "இன்னும் ஆராய்கிறேன்",
+      "mo_reason": "உங்கள் முதல் சிந்தனைச் சவாலை முடித்தீர்கள். அடுத்த படி {m} நிமிடப் பயிற்சி.",
+      "mo_lessons": "நீங்கள் {n} பாடங்களை முடித்தீர்கள். அடுத்த படி: {next}.",
+      "mo_compass": "உங்கள் பலங்களைக் கண்டறிந்தீர்கள்: {s}. அடுத்த படி: {next}.",
+      "mo_start": "ஒவ்வொரு பயணமும் ஒரு உரையாடலில் தொடங்குகிறது. அடுத்த படி: {next}.",
+      "listenMessage": "உங்கள் செய்தியைக் கேளுங்கள்",
+      "audioSimNote": "டெமோவுக்கான உருவக ஒலி: உண்மையான குரல் ஒலிக்காது.",
+      "nextAchievable": "அடுத்து எளிதாகச் செய்யக்கூடியது",
+      "achievements": "என் சாதனைகள்",
+      "noStreaks": "இங்கே இழக்க வேண்டிய தொடர் எதுவும் இல்லை. எப்போது படித்தாலும் ஒவ்வொரு படியும் கணக்கில்.",
+      "skillsDeveloped": "நான் வளர்த்த திறன்கள்",
+      "skillsEmpty": "உங்கள் பலங்களைப் பார்க்கத் திறன் திசைகாட்டியை முடியுங்கள்.",
+      "milestones": "தொழில் பயண மைல்கற்கள்",
+      "someoneLikeMe": "என்னைப் போன்ற ஒருவர்",
+      "fictional": "கற்பனை டெமோ கதைகள்",
+      "familyCard": "குடும்பத்துடன் பகிர்",
+      "shareFamily": "குடும்ப அட்டை தயார் செய்",
+      "familyShared": "குடும்ப அட்டை தயார். இந்தத் திரையைக் காட்டுங்கள், அல்லது பெற்றோர் பார்வையில் பார்க்கலாம்.",
+      "familyText": "{name} {career} பற்றி அறிந்து வருகிறார். இதற்குப் பொதுவாக {edu} தேவை. இலவசப் பாடநெறிகளும் உதவித்தொகைகளும் செலவைக் குறைக்கும். குறுகிய படிப்பு நேரத்துக்குக் கைபேசியைக் கொடுத்து நீங்கள் உதவலாம்.",
+      "familyTextNone": "{name} தனக்குப் பிடித்தவற்றிலிருந்து தொடங்கி CitiGrow-இல் தொழில்களை ஆராய்கிறார். அவர் நாளைப் பற்றிக் கேட்டும், குறுகிய படிப்பு நேரத்துக்குக் கைபேசியைக் கொடுத்தும் உதவலாம்.",
+      "ach_talk": "ஆர்வங்களைப் பகிர்ந்தேன்",
+      "ach_compass": "பலங்களைக் கண்டேன்",
+      "ach_lesson": "முதல் பாடம்",
+      "ach_map": "வரைபடம் தொடக்கம்",
+      "ach_sim": "உருவகப் பயிற்சி",
+      "ach_offline": "இணைப்பில்லாமல் கற்றேன்",
+      "ach_quiz": "வினாடி வினா முடிந்தது",
+      "ach_session": "அமர்வு முன்பதிவு",
+      "ach_apply": "ஆவணங்கள் தயார்",
+      "mentorIntro": "கதவுகளைத் திறக்கக்கூடியவர்கள்: அருகிலுள்ள கிராமங்களின் முன்னாள் மாணவர்கள், ஆசிரியர்கள், சரிபார்க்கப்பட்ட வழிகாட்டிகள்.",
+      "mentorSafety": "உங்கள் பாதுகாப்புக்காக, வழிகாட்டல் ஆசிரியர் மேற்பார்வையில் குழு அமர்வுகளில் நடக்கும். தனிப்பட்ட தொலைபேசி எண்களோ தனி அரட்டையோ இல்லை.",
+      "groupSessions": "வரவிருக்கும் குழு அமர்வுகள்",
+      "localAlumni": "உள்ளூர் முன்னாள் மாணவர்கள்",
+      "verifiedDemo": "சரிபார்த்தது (டெமோ)",
+      "teachers": "ஆசிரியர்கள்",
+      "requestMentor": "வழிகாட்டல் கோரு",
+      "requestHow": "ஒரு தலைப்பைத் தேர்ந்தெடுங்கள். உங்கள் கோரிக்கை ஆசிரியரிடம் செல்லும்; அவர் குழு அமர்வை ஏற்பாடு செய்வார்.",
+      "sendRequest": "ஆசிரியர் வழியாகக் கோரிக்கை அனுப்பு",
+      "successStories": "உள்ளூர் வெற்றிக் கதைகள்",
+      "seatsLeft": "{n} இடங்கள் உள்ளன",
+      "reserveSeat": "இடம் முன்பதிவு",
+      "seatReserved": "இடம் முன்பதிவு ஆனது",
+      "reqStatus": "ஆசிரியருக்காகக் காத்திருக்கிறது",
+      "tp_career": "தொழில் தேர்வு",
+      "tp_exam": "தேர்வுத் தயாரிப்பு",
+      "tp_skills": "திறன் கற்றல்",
+      "enrollTitle": "இந்தப் பாடநெறியில் சேருங்கள்",
+      "useCsr": "CSR நிதியுதவி இடத்தைப் பயன்படுத்து",
+      "csrExplain": "நிதியுதவியாளர் கட்டணம் செலுத்துவார், ஆசிரியருக்கு ஊதியம் கிடைக்கும், நீங்கள் இலவசமாகக் கற்கலாம்.",
+      "enrollDemo": "சேர் (டெமோ கட்டணம்)",
+      "noRealPayment": "இந்த முன்மாதிரியில் உண்மையான பணம் எதுவும் வசூலிக்கப்படாது.",
+      "lessons": "பாடங்கள்",
+      "takeQuiz": "பாடநெறி வினாடி வினா",
+      "dlNow": "இணைப்பில்லாப் பயன்பாட்டுக்குப் பதிவிறக்கு",
+      "dlDone": "இந்தக் கைபேசியில் சேமிக்கப்பட்டது · நீக்கத் தட்டுங்கள்",
+      "dlNeedsNet": "பதிவிறக்க இணையம் தேவை",
+      "offlineCopy": "இணைப்பில்லாப் பிரதி",
+      "keyPoints": "முக்கியக் குறிப்புகள்",
+      "quickCheck": "சிறு சோதனை",
+      "completeLesson": "பாடம் முடிந்தது எனக் குறி",
+      "lessonDone": "பாடம் முடிந்தது!",
+      "backToCourse": "பாடநெறிக்குத் திரும்பு",
+      "nextLesson": "அடுத்த பாடம்",
+      "playLesson": "இந்தப் பாடத்தைக் கேள்",
+      "correct": "சரி!",
+      "notQuite": "முழுமையாகச் சரி இல்லை. சரியான பதில்: {a}",
+      "doneNoteOnline": "முன்னேற்றம் சேமித்து ஒத்திசைக்கப்பட்டது. உங்கள் முகப்பும் வாழ்க்கை வரைபடமும் புதுப்பிக்கப்பட்டன.",
+      "doneNoteOffline": "இந்தக் கைபேசியில் சேமிக்கப்பட்டது. இணைப்பு வந்ததும் ஒத்திசைக்கும்.",
+      "savedOffline": "இணைப்பில்லாமல் சேமித்தது · பிறகு ஒத்திசைக்கும்",
+      "seeScore": "என் மதிப்பெண்",
+      "quizEnd": "{n}-இல் {s} பெற்றீர்கள்.",
+      "quizGood": "அருமை. தொடருங்கள்!",
+      "quizOk": "நல்ல முயற்சி. பாடத்தை மீண்டும் பார்த்து முயலுங்கள்.",
+      "eligibility": "தகுதி நிபந்தனைகள்",
+      "checkEligibility": "என் தகுதியைச் சோதி",
+      "ruleBased": "விதி அடிப்படை",
+      "checkNow": "இப்போது சோதி",
+      "checkerNote": "டெமோ விதிகள், அதிகாரப்பூர்வ முடிவு அல்ல. எப்போதும் அதிகாரப்பூர்வ அறிவிப்பைப் பாருங்கள்.",
+      "documents": "தேவையான ஆவணங்கள்",
+      "prepareApp": "என் விண்ணப்பத்தைத் தயார் செய்",
+      "noSubmit": "CitiGrow விண்ணப்பங்களைச் சமர்ப்பிக்காது. அதிகாரப்பூர்வ இணையதளத்திலோ அலுவலகத்திலோ நீங்களே விண்ணப்பிக்க வேண்டும்.",
+      "officialSource": "அதிகாரப்பூர்வ மூலம்",
+      "openSource": "அதிகாரப்பூர்வ மூலத்தைத் திற",
+      "incomeQ": "உங்கள் குடும்ப ஆண்டு வருமானம் {v}-க்குக் குறைவா?",
+      "yes": "ஆம்",
+      "no": "இல்லை",
+      "notSure": "தெரியவில்லை",
+      "privacyTitle": "தனியுரிமையும் ஒப்புதலும்",
+      "whatWeStore": "என்ன சேமிக்கப்படுகிறது",
+      "whoSees": "யார் எதைப் பார்க்கலாம்",
+      "yourChoices": "உங்கள் தேர்வுகள்",
+      "parentHello": "வணக்கம்! பெற்றோரே, வருக",
+      "parentSub": "உங்கள் குழந்தையின் பயணத்தின் எளிய பார்வை. கேட்க இயக்கு பொத்தானைத் தட்டுங்கள்.",
+      "listenCareer": "தொழில் விளக்கத்தைக் கேளுங்கள்",
+      "listenSub": "{name}-இன் தொழில், எளிமையாக",
+      "howToHelp": "இந்த வாரம் நீங்கள் எப்படி உதவலாம்",
+      "childPathways": "ஆராயப்படும் தொழில் பாதைகள்",
+      "parentNoPaths": "உங்கள் குழந்தை இன்னும் தொழில்களை ஆராயவில்லை.",
+      "expectedMilestones": "எதிர்பார்க்கும் மைல்கற்கள்",
+      "costs": "பாடநெறி, பயிற்சிச் செலவுகள்",
+      "costNote": "தொகைகள் எடுத்துக்காட்டுக்கானவை. பல வாய்ப்புகளில் இலவச அல்லது நிதியுதவி இடங்கள் உண்டு.",
+      "financialAid": "கிடைக்கக்கூடிய நிதியுதவி",
+      "nearby": "அருகிலுள்ள கற்றல் வாய்ப்புகள்",
+      "progressSummary": "முன்னேற்றச் சுருக்கம்",
+      "familySchedule": "குடும்பக் கற்றல் அட்டவணை",
+      "sharedPhoneNote": "ஒரு குடும்பக் கைபேசி, அனைவருக்கும் நியாயமாக. ஒவ்வொரு குழந்தையின் விருப்ப நேரப்படி.",
+      "parentHidden": "{name} குடும்பப் பார்வையுடன் விவரங்களைப் பகிர வேண்டாம் எனத் தேர்ந்துள்ளார். {name} இதைச் சுயவிவரத்தில் இயக்கலாம்.",
+      "parentPrivacy": "தனிப்பட்ட உரையாடல்களும் விரிவான பதில்களும் {name}-இடமே இருக்கும்.",
+      "sup_tech": "உங்கள் குழந்தை தொழில்நுட்பத் தொழில்களை ஆராய்கிறது. இந்த வாரம் மூன்று நாட்கள் 15 நிமிடம் குடும்பக் கைபேசியைக் கொடுத்தால் அடுத்த பாடத்துக்கு உதவும்.",
+      "sup_general": "உங்கள் குழந்தை தொழில்களை ஆராய்கிறது. இந்த வாரம் மூன்று நாட்கள் 15 நிமிடம் குடும்பக் கைபேசியைக் கொடுத்தால் அடுத்த பாடத்துக்கு உதவும்.",
+      "parentExplain": "{name} {career} பற்றி அறிந்து வருகிறார். {desc} இதற்குப் பொதுவாக {edu} தேவை; தயாரிப்புக்கு {dur} ஆகும். செலவு: {fin} {name} இப்போது செய்வது: {step}.",
+      "parentExplainNone": "{name} தனக்குப் பிடித்தவை பற்றிப் பேசி CitiGrow-இல் தொழில்களை ஆராயத் தொடங்கியுள்ளார். அடுத்து ஒரு சிறு திறன் சோதனை செய்து பொருத்தமான தொழில்களைப் பார்ப்பார்.",
+      "pTagChosen": "தேர்ந்தது",
+      "pTagExploring": "ஆராய்கிறார்",
+      "ps_lessons": "முடித்த பாடங்கள்",
+      "ps_compass": "திறன் சோதனை",
+      "ps_sessions": "குழு அமர்வுகள்",
+      "sunday": "குடும்ப நாள் · படிப்பு இல்லை",
+      "toastOffline": "இணைப்பில்லா நிலை (உருவகம்). சேமித்த பாடங்களும் வினாடி வினாக்களும் வேலை செய்யும்.",
+      "toastSynced": "{n} மாற்றங்கள் ஒத்திசைந்தன",
+      "toastOnline": "மீண்டும் இணைப்பில்",
+      "toastCareer": "{c}-க்கான வாழ்க்கை வரைபடம் உருவானது",
+      "toastStep": "படி முடிந்தது. அடுத்த படி திறந்தது!",
+      "toastLesson": "பாடம் முடிந்தது. முன்னேற்றம் புதுப்பிக்கப்பட்டது.",
+      "toastProfile": "சுயவிவரம் உருவானது. வருக, {name}!"
+    }
+  },
+  "data": {
+    "CAREERS": [
+      {
+        "id": "nda",
+        "title": "Armed Forces Officer (NDA)",
+        "icon": "shield",
+        "route": "aca",
+        "cost": "low",
+        "relocate": true,
+        "prepHours": 300,
+        "sim": null,
+        "short": "Lead teams in the Army, Navy or Air Force after NDA training.",
+        "desc": "Officers lead soldiers, sailors or air warriors, plan missions and serve the nation. Entry after Class 12 is through the UPSC NDA exam and SSB interview.",
+        "skills": [
+          "Maths and reasoning",
+          "Physical fitness",
+          "Leadership",
+          "Clear communication"
+        ],
+        "edu": "Class 12 (Physics and Maths needed for Air Force and Navy wings)",
+        "dur": "About 2 years of preparation in Classes 11–12, then about 3 years at NDA plus academy training",
+        "fin": "Training is government-funded once selected. The exam fee is small and many free study resources exist.",
+        "loc": "Postings across India; you live away from home",
+        "prog": "Lieutenant → Captain → Major and beyond",
+        "w": {
+          "service": 3,
+          "outdoors": 2,
+          "organizing": 2,
+          "people": 1
+        },
+        "need": {
+          "numeracy": 3,
+          "reasoning": 2,
+          "communication": 2
+        },
+        "exp": [],
+        "courses": [
+          "c1",
+          "c2",
+          "c3"
+        ],
+        "opps": [
+          "o6"
+        ],
+        "prereq": "You will need strong Class 11–12 Maths and regular fitness practice.",
+        "alt": {
+          "title": "Alternate route: join after graduation",
+          "text": "After a degree you can try for officer entry through other exams such as CDS (illustrative). This keeps the dream open if NDA does not work out the first time."
+        }
+      },
+      {
+        "id": "solar",
+        "title": "Solar Technician",
+        "icon": "sun",
+        "route": "voc",
+        "cost": "low",
+        "relocate": false,
+        "prepHours": 60,
+        "sim": "electric",
+        "short": "Install and maintain rooftop and farm solar systems.",
+        "desc": "Solar technicians fit panels, wire inverters and batteries, and keep systems running for homes, farms and schools. Demand is growing in rural areas.",
+        "skills": [
+          "Electrical basics",
+          "Safety habits",
+          "Measuring and maths",
+          "Working at heights"
+        ],
+        "edu": "Class 10 plus a short solar PV installer course, or ITI Electrician",
+        "dur": "3–6 months for a short course, or 2 years for ITI",
+        "fin": "Many government-supported short courses are free or low-cost.",
+        "loc": "Work in and around your district, with travel to sites",
+        "prog": "Installer → Senior technician → Site supervisor → Own solar service business",
+        "w": {
+          "practical": 3,
+          "tech": 2,
+          "outdoors": 2
+        },
+        "need": {
+          "practical": 2,
+          "numeracy": 2
+        },
+        "exp": [
+          "pump"
+        ],
+        "courses": [
+          "c4",
+          "c5",
+          "c2"
+        ],
+        "opps": [
+          "o4",
+          "o9",
+          "o12",
+          "o13"
+        ],
+        "prereq": "You may need electrical fundamentals training before applying.",
+        "alt": {
+          "title": "Alternate route: 2-year ITI Electrician",
+          "text": "An ITI Electrician course takes longer but opens more electrical jobs, including solar."
+        }
+      },
+      {
+        "id": "electrician",
+        "title": "Electrician",
+        "icon": "zap",
+        "route": "voc",
+        "cost": "low",
+        "relocate": false,
+        "prepHours": 120,
+        "sim": "electric",
+        "short": "Wire homes, repair motors and keep power safe.",
+        "desc": "Electricians install and repair wiring, motors and pumps in homes, farms and factories. Skilled electricians are needed in every town.",
+        "skills": [
+          "Electrical safety",
+          "Fault finding",
+          "Using tools",
+          "Reading diagrams"
+        ],
+        "edu": "Class 10 plus ITI Electrician (2 years)",
+        "dur": "2 years of ITI, then an apprenticeship",
+        "fin": "Government ITI fees are low; private ITIs cost more.",
+        "loc": "Near home in most towns",
+        "prog": "Apprentice → Licensed electrician → Contractor",
+        "w": {
+          "practical": 3,
+          "tech": 2
+        },
+        "need": {
+          "practical": 2,
+          "numeracy": 2
+        },
+        "exp": [],
+        "courses": [
+          "c4",
+          "c2"
+        ],
+        "opps": [
+          "o12",
+          "o8"
+        ],
+        "prereq": "Start with electrical safety basics.",
+        "alt": {
+          "title": "Alternate route: short course first",
+          "text": "A short skilling course (for example under PMKVY) can get you started sooner, then ITI later."
+        }
+      },
+      {
+        "id": "chauffeur",
+        "title": "Executive Chauffeur",
+        "icon": "car",
+        "route": "voc",
+        "cost": "low",
+        "relocate": true,
+        "prepHours": 50,
+        "sim": null,
+        "short": "Drive guests and executives safely and professionally.",
+        "desc": "Executive chauffeurs drive for companies, hotels and families. Good driving, route knowledge and polite communication matter.",
+        "skills": [
+          "Safe driving",
+          "Route planning",
+          "Polite communication",
+          "Basic car care"
+        ],
+        "edu": "Age 18+ with a valid driving licence; Class 10 is helpful",
+        "dur": "2–4 months of training after age 18",
+        "fin": "Training and licence fees apply; some skilling schemes cover training.",
+        "loc": "Mostly in cities and tourist towns",
+        "prog": "Driver → Executive chauffeur → Fleet supervisor or own taxi",
+        "w": {
+          "practical": 2,
+          "people": 2,
+          "organizing": 1,
+          "outdoors": 1
+        },
+        "need": {
+          "communication": 2
+        },
+        "exp": [],
+        "courses": [
+          "c6"
+        ],
+        "opps": [
+          "o4"
+        ],
+        "prereq": "You can start training once you are 18.",
+        "alt": {
+          "title": "Alternate route: logistics driving",
+          "text": "Commercial driving with a logistics company is another path."
+        }
+      },
+      {
+        "id": "support",
+        "title": "Customer Support Professional",
+        "icon": "headset",
+        "route": "voc",
+        "cost": "low",
+        "relocate": true,
+        "prepHours": 60,
+        "sim": "customer",
+        "short": "Help customers solve problems by phone or chat.",
+        "desc": "Customer support professionals answer questions and solve problems for banks, telecom and online shops, often in Tamil, Hindi and English.",
+        "skills": [
+          "Listening",
+          "Clear speaking",
+          "Typing and computers",
+          "Patience"
+        ],
+        "edu": "Class 12 plus basic computer skills",
+        "dur": "1–3 months of training",
+        "fin": "Training is often free or employer-provided.",
+        "loc": "Cities, with some work-from-home roles",
+        "prog": "Associate → Team lead → Quality or training roles",
+        "w": {
+          "people": 3,
+          "tech": 1,
+          "organizing": 1
+        },
+        "need": {
+          "communication": 3,
+          "digital": 2
+        },
+        "exp": [
+          "shop"
+        ],
+        "courses": [
+          "c6",
+          "c8"
+        ],
+        "opps": [
+          "o11",
+          "o10"
+        ],
+        "prereq": "Communication and computer practice help.",
+        "alt": {
+          "title": "Alternate route: local service desk",
+          "text": "Banks and service centres in town also need support staff."
+        }
+      },
+      {
+        "id": "logistics",
+        "title": "Logistics Coordinator",
+        "icon": "truck",
+        "route": "voc",
+        "cost": "med",
+        "relocate": false,
+        "prepHours": 120,
+        "sim": null,
+        "short": "Plan how goods move from warehouses to people.",
+        "desc": "Logistics coordinators track stock and deliveries for warehouses and online shops, using phones and simple software.",
+        "skills": [
+          "Planning",
+          "Numbers",
+          "Spreadsheets",
+          "Teamwork"
+        ],
+        "edu": "Class 12; a logistics certificate or diploma helps",
+        "dur": "6–12 months for a certificate",
+        "fin": "Moderate course fees; scholarships may help.",
+        "loc": "Warehouses near highways and towns",
+        "prog": "Executive → Coordinator → Manager",
+        "w": {
+          "organizing": 3,
+          "tech": 1,
+          "people": 1
+        },
+        "need": {
+          "numeracy": 2,
+          "digital": 2
+        },
+        "exp": [
+          "shop",
+          "fest"
+        ],
+        "courses": [
+          "c2",
+          "c8"
+        ],
+        "opps": [
+          "o4"
+        ],
+        "prereq": "Practise percentages and spreadsheets.",
+        "alt": {
+          "title": "Alternate route: start in a warehouse",
+          "text": "Some begin as warehouse associates and grow into coordinators."
+        }
+      },
+      {
+        "id": "health",
+        "title": "Healthcare Technician",
+        "icon": "activity",
+        "route": "aca",
+        "cost": "med",
+        "relocate": false,
+        "prepHours": 200,
+        "sim": null,
+        "short": "Run lab tests and equipment in hospitals and clinics.",
+        "desc": "Healthcare technicians work in labs, X-ray rooms and clinics, helping doctors with accurate tests.",
+        "skills": [
+          "Science basics",
+          "Accuracy",
+          "Care for patients",
+          "Hygiene"
+        ],
+        "edu": "Class 12 with science plus a diploma (for example DMLT)",
+        "dur": "About 2 years of diploma",
+        "fin": "Diploma fees vary; government colleges cost less.",
+        "loc": "District hospitals, clinics and labs",
+        "prog": "Technician → Senior technician → Lab in-charge",
+        "w": {
+          "caring": 3,
+          "tech": 1,
+          "practical": 1
+        },
+        "need": {
+          "numeracy": 2,
+          "reading": 2
+        },
+        "exp": [],
+        "courses": [
+          "c2",
+          "c7"
+        ],
+        "opps": [
+          "o2"
+        ],
+        "prereq": "Choose science in Class 11.",
+        "alt": {
+          "title": "Alternate route: nursing assistant",
+          "text": "Shorter healthcare courses can lead to assistant roles."
+        }
+      },
+      {
+        "id": "agritech",
+        "title": "Agricultural Technology Specialist",
+        "icon": "sprout",
+        "route": "aca",
+        "cost": "med",
+        "relocate": false,
+        "prepHours": 200,
+        "sim": null,
+        "short": "Help farmers use drones, sensors and better methods.",
+        "desc": "Agri-tech specialists advise farmers on soil, water, seeds and digital tools, often working close to home.",
+        "skills": [
+          "Farming knowledge",
+          "Phones and apps",
+          "Explaining to people",
+          "Observation"
+        ],
+        "edu": "Class 12 plus a diploma or B.Sc Agriculture",
+        "dur": "2–4 years",
+        "fin": "Moderate fees; scholarships can help.",
+        "loc": "Rural areas, often near home",
+        "prog": "Field officer → Agri-tech advisor → Own agri-service",
+        "w": {
+          "outdoors": 3,
+          "tech": 2,
+          "practical": 1
+        },
+        "need": {
+          "reasoning": 2,
+          "digital": 2
+        },
+        "exp": [
+          "field"
+        ],
+        "courses": [
+          "c8",
+          "c2"
+        ],
+        "opps": [
+          "o5"
+        ],
+        "prereq": "Science and digital skills help.",
+        "alt": {
+          "title": "Alternate route: drone operator course",
+          "text": "Short agri-drone courses are a faster way in (illustrative)."
+        }
+      },
+      {
+        "id": "garment",
+        "title": "Fashion / Garment Technician",
+        "icon": "scissors",
+        "route": "voc",
+        "cost": "low",
+        "relocate": false,
+        "prepHours": 80,
+        "sim": null,
+        "short": "Design, cut and stitch garments in units or at home.",
+        "desc": "Garment technicians cut patterns, run machines and check quality. Some start their own tailoring units.",
+        "skills": [
+          "Stitching",
+          "Measuring",
+          "Design sense",
+          "Quality checking"
+        ],
+        "edu": "Class 10 plus a short course or diploma",
+        "dur": "3 months to 2 years",
+        "fin": "Low to moderate course fees.",
+        "loc": "Garment clusters such as Tiruppur, or home-based work",
+        "prog": "Operator → Technician → Designer or own unit",
+        "w": {
+          "creative": 3,
+          "practical": 2
+        },
+        "need": {
+          "practical": 2,
+          "numeracy": 1
+        },
+        "exp": [
+          "stitch"
+        ],
+        "courses": [
+          "c2"
+        ],
+        "opps": [
+          "o4",
+          "o13"
+        ],
+        "prereq": "Stitching practice gives you a head start.",
+        "alt": {
+          "title": "Alternate route: home tailoring business",
+          "text": "Start small from home and grow with orders."
+        }
+      },
+      {
+        "id": "software",
+        "title": "Software Developer",
+        "icon": "code",
+        "route": "aca",
+        "cost": "high",
+        "relocate": true,
+        "prepHours": 400,
+        "sim": null,
+        "short": "Build apps and websites that people use every day.",
+        "desc": "Software developers write code for apps, websites and systems. Many start with free online learning.",
+        "skills": [
+          "Logical thinking",
+          "Maths",
+          "English reading",
+          "Problem solving"
+        ],
+        "edu": "Class 12 plus a degree (BCA or B.E.) or a certified programme",
+        "dur": "3–4 years",
+        "fin": "Degree fees can be high; scholarships and free online courses matter.",
+        "loc": "Cities, plus remote roles",
+        "prog": "Junior developer → Developer → Senior or lead",
+        "w": {
+          "tech": 3,
+          "creative": 1,
+          "organizing": 1
+        },
+        "need": {
+          "reasoning": 3,
+          "numeracy": 2,
+          "digital": 3
+        },
+        "exp": [],
+        "courses": [
+          "c8",
+          "c2"
+        ],
+        "opps": [
+          "o5",
+          "o10"
+        ],
+        "prereq": "Build reasoning and digital skills first.",
+        "alt": {
+          "title": "Alternate route: diploma then degree",
+          "text": "A computer diploma after Class 10 can lead to a degree later."
+        }
+      },
+      {
+        "id": "marketing",
+        "title": "Digital Marketing Specialist",
+        "icon": "megaphone",
+        "route": "voc",
+        "cost": "low",
+        "relocate": false,
+        "prepHours": 80,
+        "sim": null,
+        "short": "Help local businesses reach customers online.",
+        "desc": "Digital marketers create posts, videos and ads for shops and brands, and study what works.",
+        "skills": [
+          "Writing",
+          "Photos and videos",
+          "Social media",
+          "Basic analytics"
+        ],
+        "edu": "Class 12 plus a short certificate",
+        "dur": "3–6 months",
+        "fin": "Many free online courses exist.",
+        "loc": "Remote or town-based",
+        "prog": "Executive → Specialist → Freelancer or agency",
+        "w": {
+          "creative": 2,
+          "tech": 2,
+          "people": 2
+        },
+        "need": {
+          "communication": 2,
+          "digital": 3
+        },
+        "exp": [
+          "shop"
+        ],
+        "courses": [
+          "c8",
+          "c6"
+        ],
+        "opps": [
+          "o10",
+          "o5"
+        ],
+        "prereq": "Practise digital skills.",
+        "alt": {
+          "title": "Alternate route: help family business online",
+          "text": "Start by promoting your family shop online."
+        }
+      },
+      {
+        "id": "hospitality",
+        "title": "Hospitality Professional",
+        "icon": "bed",
+        "route": "voc",
+        "cost": "med",
+        "relocate": true,
+        "prepHours": 100,
+        "sim": "customer",
+        "short": "Welcome guests in hotels, resorts and restaurants.",
+        "desc": "Hospitality professionals work at front desks, kitchens and events, making guests feel cared for.",
+        "skills": [
+          "Friendly communication",
+          "Teamwork",
+          "Organizing",
+          "Languages"
+        ],
+        "edu": "Class 10 or 12 plus a hotel management certificate or diploma",
+        "dur": "6 months to 3 years",
+        "fin": "Moderate course fees; some schemes cover training.",
+        "loc": "Tourist towns and cities",
+        "prog": "Trainee → Supervisor → Manager",
+        "w": {
+          "people": 3,
+          "organizing": 2,
+          "caring": 1
+        },
+        "need": {
+          "communication": 2
+        },
+        "exp": [
+          "shop",
+          "fest"
+        ],
+        "courses": [
+          "c6"
+        ],
+        "opps": [
+          "o4"
+        ],
+        "prereq": "Communication practice helps.",
+        "alt": {
+          "title": "Alternate route: start in a local restaurant",
+          "text": "Learn on the job, then add a certificate."
+        }
+      }
+    ],
+    "COURSES": [
+      {
+        "id": "c1",
+        "title": "NDA Mathematics Foundations",
+        "by": "Ms. Kavitha R.",
+        "teacher": "t1",
+        "icon": "cap",
+        "price": {
+          "mode": "module",
+          "amount": 49
+        },
+        "csr": true,
+        "langs": "Tamil, English",
+        "careers": [
+          "nda"
+        ],
+        "desc": "Number systems, algebra and speed-time-distance, taught slowly with practice sets for future NDA aspirants.",
+        "lessons": [
+          "Number systems refresher",
+          "Algebra basics",
+          "Speed, time and distance"
+        ],
+        "min": 15,
+        "points": [
+          "Break big problems into small steps.",
+          "Practise 5 problems a day instead of 50 once a week.",
+          "Check answers by estimating first."
+        ],
+        "quiz": "qz_pct",
+        "check": {
+          "q": "A bus travels 60 km in 2 hours. What is its speed?",
+          "o": [
+            "20 km/h",
+            "30 km/h",
+            "120 km/h"
+          ],
+          "a": 1
+        }
+      },
+      {
+        "id": "c2",
+        "title": "Percentage and Ratio Basics",
+        "by": "CitiGrow open lessons (sample)",
+        "teacher": null,
+        "icon": "book",
+        "price": {
+          "mode": "free"
+        },
+        "csr": false,
+        "langs": "Tamil, Hindi, English",
+        "careers": [
+          "all"
+        ],
+        "desc": "Free module on percentages and ratios using shop discounts, recipes and farm examples.",
+        "lessons": [
+          "What is a percentage?",
+          "Ratios in daily life",
+          "Shop discounts and profit"
+        ],
+        "min": 15,
+        "points": [
+          "Percent means \"out of 100\".",
+          "10% of a number: move the decimal one place left.",
+          "A ratio compares two amounts, like 2 cups rice : 1 cup dal."
+        ],
+        "quiz": "qz_pct",
+        "check": {
+          "q": "What is 25% of 200?",
+          "o": [
+            "25",
+            "50",
+            "75"
+          ],
+          "a": 1
+        }
+      },
+      {
+        "id": "c3",
+        "title": "NDA Preparation — Weekly Practice Sessions",
+        "by": "Ms. Kavitha R.",
+        "teacher": "t1",
+        "icon": "clipboard",
+        "price": {
+          "mode": "sub",
+          "amount": 99
+        },
+        "csr": true,
+        "langs": "Tamil, English",
+        "careers": [
+          "nda"
+        ],
+        "desc": "Weekly timed practice, doubt-clearing and a live class every Saturday.",
+        "lessons": [
+          "Week 1: Mixed practice set",
+          "Week 2: Timed practice",
+          "Week 3: Review and doubts"
+        ],
+        "min": 15,
+        "live": "Saturdays, 6:00 PM (sample)",
+        "points": [
+          "Time yourself: speed improves with practice.",
+          "Note every mistake in a small notebook.",
+          "Ask doubts in the live class."
+        ],
+        "quiz": "qz_reason",
+        "check": {
+          "q": "In a timed test, what should you do with a very hard question?",
+          "o": [
+            "Spend all your time on it",
+            "Skip it and come back later",
+            "Leave the test"
+          ],
+          "a": 1
+        }
+      },
+      {
+        "id": "c4",
+        "title": "Electrical Safety and Basics",
+        "by": "Mr. Arun S.",
+        "teacher": "t2",
+        "icon": "zap",
+        "price": {
+          "mode": "paid",
+          "amount": 19
+        },
+        "csr": true,
+        "langs": "Tamil, English",
+        "careers": [
+          "solar",
+          "electrician"
+        ],
+        "desc": "Free module on safe tools, voltage and current, and how switches, fuses and MCBs protect homes.",
+        "lessons": [
+          "Safety first: tools and gloves",
+          "Voltage, current and power",
+          "Switches, fuses and MCBs"
+        ],
+        "min": 15,
+        "points": [
+          "Always switch off the main supply before work.",
+          "Use insulated tools and dry gloves.",
+          "An MCB cuts power automatically when there is a fault."
+        ],
+        "quiz": "qz_safety",
+        "check": {
+          "q": "What should you do before touching any wire?",
+          "o": [
+            "Switch off the main supply",
+            "Wet your hands",
+            "Touch it quickly"
+          ],
+          "a": 0
+        }
+      },
+      {
+        "id": "c5",
+        "title": "Solar PV Fundamentals",
+        "by": "Mr. Arun S.",
+        "teacher": "t2",
+        "icon": "sun",
+        "price": {
+          "mode": "module",
+          "amount": 29
+        },
+        "csr": true,
+        "langs": "Tamil",
+        "careers": [
+          "solar"
+        ],
+        "desc": "How panels make electricity, parts of a rooftop system, and safe cleaning and checks.",
+        "lessons": [
+          "How solar panels make electricity",
+          "Parts of a rooftop system",
+          "Basic installation and cleaning"
+        ],
+        "min": 15,
+        "points": [
+          "Panels turn sunlight into DC electricity.",
+          "An inverter changes DC to AC for home use.",
+          "Dust reduces output, so clean panels gently."
+        ],
+        "quiz": "qz_safety",
+        "check": {
+          "q": "What does an inverter do?",
+          "o": [
+            "Stores water",
+            "Changes DC to AC",
+            "Cools the panel"
+          ],
+          "a": 1
+        }
+      },
+      {
+        "id": "c6",
+        "title": "Spoken English for Customer Support",
+        "by": "Mrs. Fatima B.",
+        "teacher": "t3",
+        "icon": "headset",
+        "price": {
+          "mode": "sub",
+          "amount": 79
+        },
+        "csr": true,
+        "langs": "Tamil, English",
+        "careers": [
+          "support",
+          "hospitality",
+          "chauffeur",
+          "marketing"
+        ],
+        "desc": "Polite greetings, listening and repeating back, and solving common complaints in simple English.",
+        "lessons": [
+          "Greeting customers politely",
+          "Listening and repeating back",
+          "Solving common complaints"
+        ],
+        "min": 15,
+        "live": "Wednesdays, 5:00 PM (sample)",
+        "points": [
+          "Start with the customer’s name and a greeting.",
+          "Repeat the problem back to show you listened.",
+          "End with a clear next step."
+        ],
+        "quiz": null,
+        "check": {
+          "q": "Which is the most polite greeting?",
+          "o": [
+            "What do you want?",
+            "Good morning, how can I help you?",
+            "Wait."
+          ],
+          "a": 1
+        }
+      },
+      {
+        "id": "c7",
+        "title": "Reading Practice: Short Stories",
+        "by": "CitiGrow open lessons (sample)",
+        "teacher": null,
+        "icon": "book",
+        "price": {
+          "mode": "free"
+        },
+        "csr": false,
+        "langs": "Tamil, Hindi, English",
+        "careers": [
+          "all"
+        ],
+        "desc": "Short stories about village life with simple questions to build reading confidence.",
+        "lessons": [
+          "Story 1: The new well",
+          "Story 2: Selvi’s solar lamp",
+          "Story 3: The village bus"
+        ],
+        "min": 10,
+        "points": [
+          "Read slowly, then read again.",
+          "Find the main idea in one sentence.",
+          "Ask: who, what, where, why?"
+        ],
+        "quiz": null,
+        "check": {
+          "q": "What is the best way to understand a story?",
+          "o": [
+            "Read it twice and find the main idea",
+            "Read only the title",
+            "Skip hard words forever"
+          ],
+          "a": 0
+        }
+      },
+      {
+        "id": "c8",
+        "title": "Digital Basics on a Shared Phone",
+        "by": "CitiGrow open lessons (sample)",
+        "teacher": null,
+        "icon": "phone",
+        "price": {
+          "mode": "free"
+        },
+        "csr": false,
+        "langs": "Tamil, Hindi, English",
+        "careers": [
+          "all"
+        ],
+        "desc": "Keep your profile private, use OTPs and links safely, and save lessons for offline use.",
+        "lessons": [
+          "Keeping your profile private",
+          "Safe use of OTPs and links",
+          "Saving data and offline lessons"
+        ],
+        "min": 10,
+        "points": [
+          "Never share OTPs or PINs.",
+          "Do not click links from unknown numbers.",
+          "Download lessons on Wi-Fi to save data."
+        ],
+        "quiz": "qz_digital",
+        "check": {
+          "q": "Someone asks for your OTP. You should…",
+          "o": [
+            "Share it",
+            "Never share it",
+            "Post it online"
+          ],
+          "a": 1
+        }
+      }
+    ],
+    "QUIZZES": {
+      "qz_pct": {
+        "title": "Percentages quick quiz",
+        "course": "c2",
+        "qs": [
+          {
+            "q": "What is 50% of 80?",
+            "o": [
+              "40",
+              "8",
+              "50"
+            ],
+            "a": 0
+          },
+          {
+            "q": "A ₹200 shirt has 10% off. What do you pay?",
+            "o": [
+              "₹190",
+              "₹180",
+              "₹20"
+            ],
+            "a": 1
+          },
+          {
+            "q": "The ratio of 2 boys to 4 girls is the same as…",
+            "o": [
+              "2 : 1",
+              "4 : 2",
+              "1 : 2"
+            ],
+            "a": 2
+          }
+        ]
+      },
+      "qz_safety": {
+        "title": "Electrical safety quiz",
+        "course": "c4",
+        "qs": [
+          {
+            "q": "Before touching a wire you should…",
+            "o": [
+              "Use wet hands",
+              "Switch off the main supply",
+              "Test it with a spoon"
+            ],
+            "a": 1
+          },
+          {
+            "q": "Which unit measures electrical power?",
+            "o": [
+              "Watt",
+              "Litre",
+              "Kilogram"
+            ],
+            "a": 0
+          },
+          {
+            "q": "What does an MCB do?",
+            "o": [
+              "Makes the fan faster",
+              "Stores electricity",
+              "Cuts power when there is a fault"
+            ],
+            "a": 2
+          }
+        ]
+      },
+      "qz_reason": {
+        "title": "Reasoning challenge",
+        "course": null,
+        "qs": [
+          {
+            "q": "1, 4, 9, 16, … what comes next?",
+            "o": [
+              "20",
+              "25",
+              "32"
+            ],
+            "a": 1
+          },
+          {
+            "q": "A is taller than B. B is taller than C. Who is shortest?",
+            "o": [
+              "C",
+              "A",
+              "B"
+            ],
+            "a": 0
+          },
+          {
+            "q": "All pumps are machines. Some machines are old. Which must be true?",
+            "o": [
+              "All pumps are old",
+              "No pumps are machines",
+              "Some pumps may be old"
+            ],
+            "a": 2
+          }
+        ]
+      },
+      "qz_digital": {
+        "title": "Phone safety quiz",
+        "course": "c8",
+        "qs": [
+          {
+            "q": "A message says you won a prize and asks you to click a link. You…",
+            "o": [
+              "Click quickly",
+              "Do not click, and show an adult",
+              "Forward it to friends"
+            ],
+            "a": 1
+          },
+          {
+            "q": "On a shared phone, your profile should have…",
+            "o": [
+              "Your own PIN",
+              "No lock",
+              "Your friend’s PIN"
+            ],
+            "a": 0
+          },
+          {
+            "q": "Downloaded lessons work…",
+            "o": [
+              "Only at school",
+              "Only on Wi-Fi",
+              "Without internet"
+            ],
+            "a": 2
+          }
+        ]
+      }
+    },
+    "OPPS": [
+      {
+        "id": "o1",
+        "type": "scholarship",
+        "name": "National Means-cum-Merit Scholarship (NMMS)",
+        "region": "All India · through the state education department",
+        "sort": 20261130,
+        "deadline": "Sample date: 30 Nov 2026",
+        "desc": "Yearly scholarship that helps students from lower-income families continue Classes 9–12 after qualifying the NMMS exam in Class 8.",
+        "rules": [
+          {
+            "t": "cls",
+            "min": 9,
+            "max": 12
+          },
+          {
+            "t": "income",
+            "v": "₹3.5 lakh"
+          },
+          {
+            "t": "confirm",
+            "id": "nmms",
+            "q": "Did you qualify the NMMS exam in Class 8?"
+          }
+        ],
+        "ruleText": [
+          "Studying in Class 9–12",
+          "Family income below ₹3.5 lakh a year (illustrative)",
+          "Qualified the NMMS exam in Class 8"
+        ],
+        "docs": [
+          "Income certificate",
+          "NMMS exam result",
+          "School bonafide certificate",
+          "Bank account details"
+        ],
+        "source": "National Scholarship Portal (NSP) · scholarships.gov.in",
+        "url": "https://scholarships.gov.in",
+        "careers": [
+          "all"
+        ]
+      },
+      {
+        "id": "o2",
+        "type": "scholarship",
+        "name": "Post-Matric Scholarship, Tamil Nadu (sample)",
+        "region": "Tamil Nadu",
+        "sort": 20270115,
+        "deadline": "Sample date: 15 Jan 2027",
+        "desc": "Support for students in Class 11 and above from eligible community categories.",
+        "rules": [
+          {
+            "t": "state",
+            "v": "Tamil Nadu"
+          },
+          {
+            "t": "cls",
+            "min": 11,
+            "max": 13
+          },
+          {
+            "t": "income",
+            "v": "₹2.5 lakh"
+          },
+          {
+            "t": "confirm",
+            "id": "cat",
+            "q": "Does your family belong to an eligible community category?"
+          }
+        ],
+        "ruleText": [
+          "Resident of Tamil Nadu",
+          "Class 11 or above",
+          "Family income below ₹2.5 lakh a year (illustrative)",
+          "Eligible community category"
+        ],
+        "docs": [
+          "Community certificate",
+          "Income certificate",
+          "Previous marksheet",
+          "Bank account details"
+        ],
+        "source": "State scholarship portal · [official link placeholder]",
+        "careers": [
+          "all"
+        ]
+      },
+      {
+        "id": "o3",
+        "type": "scholarship",
+        "name": "Pre-Matric Scholarship, Tamil Nadu (sample)",
+        "region": "Tamil Nadu",
+        "sort": 20261231,
+        "deadline": "Sample date: 31 Dec 2026",
+        "desc": "Support for Class 9–10 students from eligible categories to stay in school.",
+        "rules": [
+          {
+            "t": "state",
+            "v": "Tamil Nadu"
+          },
+          {
+            "t": "cls",
+            "min": 9,
+            "max": 10
+          },
+          {
+            "t": "income",
+            "v": "₹2.5 lakh"
+          },
+          {
+            "t": "confirm",
+            "id": "cat",
+            "q": "Does your family belong to an eligible community category?"
+          }
+        ],
+        "ruleText": [
+          "Resident of Tamil Nadu",
+          "Studying in Class 9 or 10",
+          "Family income below ₹2.5 lakh a year (illustrative)",
+          "Eligible community category"
+        ],
+        "docs": [
+          "Community certificate",
+          "Income certificate",
+          "School bonafide certificate",
+          "Bank account details"
+        ],
+        "source": "State scholarship portal · [official link placeholder]",
+        "careers": [
+          "all"
+        ]
+      },
+      {
+        "id": "o4",
+        "type": "scheme",
+        "name": "PM Kaushal Vikas Yojana (PMKVY) short-term training",
+        "region": "All India · nearest PMKVY centre",
+        "sort": 0,
+        "deadline": "Rolling batches (sample)",
+        "desc": "Free short-term skill training with certification in trades such as solar, electrical, retail and hospitality.",
+        "rules": [
+          {
+            "t": "age",
+            "min": 15,
+            "max": 45
+          },
+          {
+            "t": "confirm",
+            "id": "time",
+            "q": "Can you attend training in holidays or after school?"
+          }
+        ],
+        "ruleText": [
+          "Age 15–45 (illustrative)",
+          "Able to attend the training batch"
+        ],
+        "docs": [
+          "Age proof",
+          "Address proof",
+          "Passport photo"
+        ],
+        "source": "Skill India Digital Hub · skillindiadigital.gov.in",
+        "url": "https://www.skillindiadigital.gov.in",
+        "careers": [
+          "solar",
+          "electrician",
+          "support",
+          "hospitality",
+          "garment",
+          "chauffeur",
+          "logistics"
+        ]
+      },
+      {
+        "id": "o5",
+        "type": "scheme",
+        "name": "Naan Mudhalvan skilling programme (sample)",
+        "region": "Tamil Nadu",
+        "sort": 0,
+        "deadline": "Each semester (sample)",
+        "desc": "State skilling and career guidance for college students.",
+        "rules": [
+          {
+            "t": "state",
+            "v": "Tamil Nadu"
+          },
+          {
+            "t": "cls",
+            "min": 13,
+            "max": 13
+          }
+        ],
+        "ruleText": [
+          "Resident of Tamil Nadu",
+          "Enrolled in college"
+        ],
+        "docs": [
+          "College ID",
+          "Previous marksheet"
+        ],
+        "source": "State portal · [official link placeholder]",
+        "careers": [
+          "software",
+          "marketing",
+          "agritech",
+          "support"
+        ]
+      },
+      {
+        "id": "o6",
+        "type": "exam",
+        "name": "NDA and NA Examination (UPSC)",
+        "region": "All India",
+        "sort": 20270101,
+        "deadline": "Usually twice a year · check the UPSC notice (sample)",
+        "desc": "Entrance exam for the National Defence Academy, followed by an SSB interview and medical checks.",
+        "rules": [
+          {
+            "t": "cls",
+            "min": 12,
+            "max": 12
+          },
+          {
+            "t": "age",
+            "min": 16,
+            "max": 19
+          },
+          {
+            "t": "confirm",
+            "id": "pcm",
+            "q": "Will you study Physics and Maths in Classes 11–12? (needed for Air Force and Navy wings)"
+          }
+        ],
+        "ruleText": [
+          "In Class 12 or passed Class 12",
+          "Age about 16½ to 19½ at course start (illustrative)",
+          "Physics and Maths for Air Force and Navy wings"
+        ],
+        "docs": [
+          "Class 10 certificate (age proof)",
+          "Class 12 marksheet",
+          "Photo ID",
+          "Passport photos"
+        ],
+        "source": "UPSC website · [official link placeholder]",
+        "careers": [
+          "nda"
+        ]
+      },
+      {
+        "id": "o7",
+        "type": "exam",
+        "name": "Polytechnic (Diploma) admission, Tamil Nadu (sample)",
+        "region": "Tamil Nadu",
+        "sort": 20270601,
+        "deadline": "Sample date: June 2027",
+        "desc": "Admission to 3-year diploma courses in engineering trades after Class 10.",
+        "rules": [
+          {
+            "t": "state",
+            "v": "Tamil Nadu"
+          },
+          {
+            "t": "pass",
+            "v": 10
+          }
+        ],
+        "ruleText": [
+          "Resident of Tamil Nadu",
+          "Passed Class 10"
+        ],
+        "docs": [
+          "Class 10 marksheet",
+          "Transfer certificate",
+          "Community certificate (if any)"
+        ],
+        "source": "State technical education portal · [official link placeholder]",
+        "careers": [
+          "electrician",
+          "solar",
+          "software"
+        ]
+      },
+      {
+        "id": "o8",
+        "type": "apprentice",
+        "name": "Electrician apprenticeship (sample listing)",
+        "region": "Villupuram and Cuddalore",
+        "sort": 20261220,
+        "deadline": "Sample date: 20 Dec 2026",
+        "desc": "Paid on-the-job training with a stipend for ITI Electrician students and graduates.",
+        "rules": [
+          {
+            "t": "age",
+            "min": 18,
+            "max": 30
+          },
+          {
+            "t": "pass",
+            "v": 10
+          },
+          {
+            "t": "confirm",
+            "id": "iti",
+            "q": "Have you done (or are you doing) ITI Electrician?"
+          }
+        ],
+        "ruleText": [
+          "Age 18 or above for this trade (illustrative)",
+          "Passed Class 10",
+          "ITI Electrician"
+        ],
+        "docs": [
+          "ITI certificate",
+          "Class 10 marksheet",
+          "Bank account details"
+        ],
+        "source": "NAPS (National Apprenticeship Promotion Scheme) · apprenticeshipindia.gov.in",
+        "url": "https://www.apprenticeshipindia.gov.in",
+        "careers": [
+          "electrician",
+          "solar"
+        ]
+      },
+      {
+        "id": "o9",
+        "type": "apprentice",
+        "name": "Solar installer apprentice, SunRise Rooftop Solar (fictional)",
+        "region": "Villupuram",
+        "sort": 20270131,
+        "deadline": "Sample date: 31 Jan 2027",
+        "desc": "Learn rooftop installation alongside a senior technician.",
+        "rules": [
+          {
+            "t": "age",
+            "min": 18,
+            "max": 30
+          },
+          {
+            "t": "pass",
+            "v": 10
+          }
+        ],
+        "ruleText": [
+          "Age 18 or above",
+          "Passed Class 10"
+        ],
+        "docs": [
+          "Class 10 marksheet",
+          "Age proof"
+        ],
+        "source": "Employer listing · apprentices are registered through NAPS (apprenticeshipindia.gov.in)",
+        "url": "https://www.apprenticeshipindia.gov.in",
+        "careers": [
+          "solar"
+        ]
+      },
+      {
+        "id": "o10",
+        "type": "intern",
+        "name": "Village Digital Helper summer internship (sample NGO)",
+        "region": "Villupuram district",
+        "sort": 20270331,
+        "deadline": "Sample date: 31 Mar 2027",
+        "desc": "Help neighbours use digital services in a daytime, group-based programme guided by an NGO mentor.",
+        "rules": [
+          {
+            "t": "cls",
+            "min": 9,
+            "max": 12
+          },
+          {
+            "t": "age",
+            "min": 14,
+            "max": 19
+          }
+        ],
+        "ruleText": [
+          "Studying in Class 9–12",
+          "Age 14 or above"
+        ],
+        "docs": [
+          "School ID",
+          "Guardian consent form"
+        ],
+        "source": "NGO listing · [verification pending]",
+        "careers": [
+          "software",
+          "marketing",
+          "support",
+          "agritech"
+        ]
+      },
+      {
+        "id": "o11",
+        "type": "job",
+        "name": "Customer Support Associate, Tamil and English (sample)",
+        "region": "Chennai · relocation needed",
+        "sort": 0,
+        "deadline": "Rolling (sample)",
+        "desc": "Entry-level support role with training. Salary details are shared by the employer; none are shown in this demo.",
+        "rules": [
+          {
+            "t": "age",
+            "min": 18,
+            "max": 35
+          },
+          {
+            "t": "pass",
+            "v": 12
+          }
+        ],
+        "ruleText": [
+          "Age 18 or above",
+          "Passed Class 12"
+        ],
+        "docs": [
+          "Class 12 marksheet",
+          "Photo ID",
+          "Resume"
+        ],
+        "source": "Employer listing · [verification pending]",
+        "careers": [
+          "support"
+        ]
+      },
+      {
+        "id": "o12",
+        "type": "centre",
+        "name": "Government ITI, Villupuram (sample)",
+        "region": "Villupuram",
+        "sort": 20270615,
+        "deadline": "Admissions: June 2027 (sample)",
+        "desc": "Two-year trades such as Electrician, Fitter and Computer Operator.",
+        "rules": [
+          {
+            "t": "pass",
+            "v": 10
+          },
+          {
+            "t": "age",
+            "min": 14,
+            "max": 40
+          }
+        ],
+        "ruleText": [
+          "Passed Class 10",
+          "Age 14 or above"
+        ],
+        "docs": [
+          "Class 10 marksheet",
+          "Transfer certificate",
+          "Photos"
+        ],
+        "source": "State ITI admissions portal · [official link placeholder]",
+        "careers": [
+          "electrician",
+          "solar",
+          "software"
+        ]
+      },
+      {
+        "id": "o13",
+        "type": "centre",
+        "name": "District Skill Training Centre (sample)",
+        "region": "Villupuram",
+        "sort": 0,
+        "deadline": "New batch every month (sample)",
+        "desc": "Short courses in tailoring, solar basics, retail and computers.",
+        "rules": [
+          {
+            "t": "age",
+            "min": 15,
+            "max": 45
+          }
+        ],
+        "ruleText": [
+          "Age 15 or above"
+        ],
+        "docs": [
+          "Age proof",
+          "Address proof"
+        ],
+        "source": "District skill office · [official link placeholder]",
+        "careers": [
+          "garment",
+          "solar",
+          "support",
+          "logistics"
+        ]
+      }
+    ],
+    "TEACHERS": [
+      {
+        "id": "t1",
+        "name": "Ms. Kavitha R.",
+        "subject": "Maths and NDA preparation",
+        "place": "Govt. Higher Secondary School, Villupuram (sample)",
+        "color": "#1677C8",
+        "ink": "#FFFFFF"
+      },
+      {
+        "id": "t2",
+        "name": "Mr. Arun S.",
+        "subject": "Electrical trades (ITI instructor)",
+        "place": "Government ITI, Villupuram (sample)",
+        "color": "#19A38C",
+        "ink": "#102A43"
+      },
+      {
+        "id": "t3",
+        "name": "Mrs. Fatima B.",
+        "subject": "English and communication",
+        "place": "Community learning centre (sample)",
+        "color": "#F0B429",
+        "ink": "#102A43"
+      }
+    ],
+    "ALUMNI": [
+      {
+        "id": "a1",
+        "name": "Selvi M., 24",
+        "place": "Village near Tiruvannamalai",
+        "career": "solar",
+        "color": "#F0B429",
+        "ink": "#102A43",
+        "role": "Solar site supervisor · group mentor",
+        "path": [
+          "Class 12",
+          "Solar course",
+          "Installer",
+          "Supervisor"
+        ],
+        "quote": "I started by helping my uncle with wiring. The short course gave me confidence.",
+        "now": "Now leads a team of four installers."
+      },
+      {
+        "id": "a2",
+        "name": "Karthik P., 23",
+        "place": "Villupuram district",
+        "career": "electrician",
+        "color": "#19A38C",
+        "ink": "#102A43",
+        "role": "Maintenance technician",
+        "path": [
+          "Class 10",
+          "ITI Electrician",
+          "Apprenticeship",
+          "Factory job"
+        ],
+        "quote": "My first apprenticeship stipend helped my family. Safety habits mattered most.",
+        "now": "Works as a maintenance technician in Hosur."
+      },
+      {
+        "id": "a3",
+        "name": "Priya S., 22",
+        "place": "Kallakurichi district",
+        "career": "software",
+        "color": "#1677C8",
+        "ink": "#FFFFFF",
+        "role": "Software testing trainee",
+        "path": [
+          "Class 12",
+          "Scholarship",
+          "BCA",
+          "Support job",
+          "Testing"
+        ],
+        "quote": "A scholarship and free online lessons made college possible.",
+        "now": "Moved from customer support to software testing."
+      },
+      {
+        "id": "a4",
+        "name": "Vignesh K., 20",
+        "place": "Village near Salem",
+        "career": "nda",
+        "color": "#102A43",
+        "ink": "#FFFFFF",
+        "role": "NDA aspirant · peer mentor",
+        "path": [
+          "Class 12 (PCM)",
+          "NDA exam",
+          "Second attempt"
+        ],
+        "quote": "I did not clear on my first try. A study plan and fitness routine helped me keep going.",
+        "now": "Preparing for the SSB interview."
+      },
+      {
+        "id": "a5",
+        "name": "Revathi S., 26",
+        "place": "Village near Tiruppur",
+        "career": "garment",
+        "color": "#19A38C",
+        "ink": "#102A43",
+        "role": "Owner, small uniform-stitching unit",
+        "path": [
+          "Class 10",
+          "Tailoring course",
+          "Garment unit",
+          "Own unit"
+        ],
+        "quote": "I learned stitching from my mother. A short course taught me patterns and quality checks.",
+        "now": "Runs a uniform-stitching unit with three women from her village."
+      },
+      {
+        "id": "a6",
+        "name": "Arul D., 23",
+        "place": "Kanyakumari district",
+        "career": "hospitality",
+        "color": "#F0B429",
+        "ink": "#102A43",
+        "role": "Front-office executive",
+        "path": [
+          "Class 12",
+          "Hotel certificate",
+          "Trainee",
+          "Front office"
+        ],
+        "quote": "Helping at my uncle’s tea shop taught me to speak politely to every customer.",
+        "now": "Works at the front desk of a hill-station resort."
+      }
+    ],
+    "SESSIONS": [
+      {
+        "id": "s1",
+        "title": "Careers in solar energy",
+        "host": "Selvi M. (alumni) with Mr. Arun S.",
+        "when": "Saturday, 4:00 PM · online group (sample)",
+        "seats": 20,
+        "topic": "solar",
+        "career": "solar"
+      },
+      {
+        "id": "s2",
+        "title": "What the NDA journey looks like",
+        "host": "Ms. Kavitha R. with Vignesh K.",
+        "when": "Sunday, 11:00 AM · school hall (sample)",
+        "seats": 30,
+        "topic": "NDA",
+        "career": "nda"
+      },
+      {
+        "id": "s3",
+        "title": "Talking to customers with confidence",
+        "host": "Mrs. Fatima B.",
+        "when": "Wednesday, 5:00 PM · online group (sample)",
+        "seats": 25,
+        "topic": "communication",
+        "career": "support"
+      }
+    ],
+    "STORIES": [
+      {
+        "title": "From motor pumps to rooftops",
+        "text": "A student who repaired pumps at home joined a short solar course, then an apprenticeship near his village. (Fictional demo story)"
+      },
+      {
+        "title": "A tailoring unit at home",
+        "text": "Two sisters turned stitching skills into a small home unit that supplies school uniforms. (Fictional demo story)"
+      },
+      {
+        "title": "The first in the family at college",
+        "text": "A scholarship and evening study on a shared phone helped a student join a BCA course. (Fictional demo story)"
+      }
+    ],
+    "COHORT": [
+      {
+        "id": "k1",
+        "name": "Meena K.",
+        "age": 15,
+        "edu": "10",
+        "district": "Villupuram",
+        "phone": "teacher",
+        "career": "hospitality",
+        "pct": 0.43,
+        "help": false,
+        "consent": true,
+        "color": "#F0B429",
+        "ink": "#102A43",
+        "levels": {
+          "numeracy": 2,
+          "reasoning": 2,
+          "communication": 3,
+          "practical": 2,
+          "digital": 1,
+          "reading": 3
+        },
+        "lessons": 6
+      },
+      {
+        "id": "k2",
+        "name": "Arjun V.",
+        "age": 14,
+        "edu": "9",
+        "district": "Villupuram",
+        "phone": "shared",
+        "career": "electrician",
+        "pct": 0.14,
+        "help": true,
+        "helpReason": "Asked for help with fractions",
+        "consent": true,
+        "color": "#19A38C",
+        "ink": "#102A43",
+        "levels": {
+          "numeracy": 1,
+          "reasoning": 2,
+          "communication": 2,
+          "practical": 3,
+          "digital": 2,
+          "reading": 2
+        },
+        "lessons": 2
+      },
+      {
+        "id": "k3",
+        "name": "Divya R.",
+        "age": 16,
+        "edu": "11",
+        "district": "Villupuram",
+        "phone": "own",
+        "career": "software",
+        "pct": 0.57,
+        "help": false,
+        "consent": true,
+        "color": "#102A43",
+        "ink": "#FFFFFF",
+        "levels": {
+          "numeracy": 3,
+          "reasoning": 3,
+          "communication": 2,
+          "practical": 2,
+          "digital": 3,
+          "reading": 3
+        },
+        "lessons": 11
+      },
+      {
+        "id": "k4",
+        "name": "Murugan S.",
+        "age": 15,
+        "edu": "10",
+        "district": "Villupuram",
+        "phone": "none",
+        "career": "agritech",
+        "pct": 0.29,
+        "help": true,
+        "helpReason": "No phone at home · learns on the classroom device",
+        "consent": true,
+        "color": "#1677C8",
+        "ink": "#FFFFFF",
+        "levels": {
+          "numeracy": 2,
+          "reasoning": 2,
+          "communication": 2,
+          "practical": 3,
+          "digital": 1,
+          "reading": 2
+        },
+        "lessons": 3,
+        "byTeacher": true
+      }
+    ],
+    "TMODS": [
+      {
+        "id": "tm1",
+        "courseId": "c1",
+        "title": "NDA Mathematics Foundations",
+        "meta": "Maths · NDA · ₹49 · CSR seats on",
+        "enrol": 14
+      },
+      {
+        "id": "tm2",
+        "courseId": "c3",
+        "title": "NDA Preparation — Weekly Practice Sessions",
+        "meta": "Maths · NDA · ₹99 · CSR seats on",
+        "enrol": 9
+      }
+    ],
+    "TX": [
+      {
+        "item": "NDA Maths Foundations · Module 1",
+        "who": "Student (anonymised)",
+        "amount": 49,
+        "kind": "student",
+        "date": "12 Oct"
+      },
+      {
+        "item": "NDA Maths Foundations · Module 2",
+        "who": "CSR sponsor (sample foundation)",
+        "amount": 49,
+        "kind": "csr",
+        "date": "13 Oct"
+      },
+      {
+        "item": "NDA Weekly Practice · October",
+        "who": "Student (anonymised)",
+        "amount": 99,
+        "kind": "student",
+        "date": "14 Oct"
+      },
+      {
+        "item": "NDA Weekly Practice · October",
+        "who": "CSR sponsor (sample foundation)",
+        "amount": 99,
+        "kind": "csr",
+        "date": "15 Oct"
+      }
+    ],
+    "PSUBS": [
+      {
+        "type": "story",
+        "org": "Villupuram Alumni Network (sample)",
+        "title": "From ITI to factory maintenance",
+        "district": "Villupuram",
+        "desc": "A verified alumni story.",
+        "status": "verified"
+      },
+      {
+        "type": "apprentice",
+        "org": "SunRise Rooftop Solar (fictional)",
+        "title": "Solar installer apprentices (18+)",
+        "district": "Villupuram",
+        "desc": "6-month paid apprenticeship with on-site training. Registered through NAPS.",
+        "status": "verified"
+      },
+      {
+        "type": "employer",
+        "org": "Green Valley Agro (fictional)",
+        "title": "Weekend farm-tech helper (16+, with guardian consent)",
+        "district": "Villupuram",
+        "desc": "Help farmers use soil-test and weather apps. Daytime only, paid per day.",
+        "status": "verified"
+      },
+      {
+        "type": "training",
+        "org": "Village Skills Trust (sample NGO)",
+        "title": "Free tailoring and pattern-cutting course",
+        "district": "Villupuram",
+        "desc": "8-week course in the village hall, with a CSR-sponsored certificate.",
+        "status": "verified"
+      },
+      {
+        "type": "mentor",
+        "org": "Selvi M. (alumni mentor)",
+        "title": "Group session: careers in solar energy",
+        "district": "Online",
+        "desc": "Teacher-moderated group session for Classes 9–12.",
+        "status": "verified"
+      }
+    ],
+    "ASSESS": [
+      {
+        "skill": "reading",
+        "kind": "reading",
+        "q": "as_read_q",
+        "p": "as_read_p",
+        "o": [
+          "as_read_o0",
+          "as_read_o1",
+          "as_read_o2"
+        ],
+        "a": 1
+      },
+      {
+        "skill": "communication",
+        "kind": "listening",
+        "q": "as_listen_q",
+        "p": "as_listen_t",
+        "o": [
+          "as_listen_o0",
+          "as_listen_o1",
+          "as_listen_o2"
+        ],
+        "a": 2
+      },
+      {
+        "skill": "numeracy",
+        "kind": "plain",
+        "q": "as_num_q",
+        "lit": [
+          "74",
+          "47",
+          "407"
+        ],
+        "a": 1
+      },
+      {
+        "skill": "numeracy",
+        "kind": "plain",
+        "q": "as_sub_q",
+        "lit": [
+          "35",
+          "29",
+          "25"
+        ],
+        "a": 2
+      },
+      {
+        "skill": "numeracy",
+        "kind": "plain",
+        "q": "as_div_q",
+        "lit": [
+          "39",
+          "38",
+          "41"
+        ],
+        "a": 0
+      },
+      {
+        "skill": "reasoning",
+        "kind": "plain",
+        "q": "as_reason_q",
+        "lit": [
+          "18",
+          "24",
+          "32"
+        ],
+        "a": 2
+      },
+      {
+        "skill": "practical",
+        "kind": "plain",
+        "q": "as_prac_q",
+        "o": [
+          "as_prac_o0",
+          "as_prac_o1",
+          "as_prac_o2"
+        ],
+        "a": 1
+      },
+      {
+        "skill": "digital",
+        "kind": "plain",
+        "q": "as_dig_q",
+        "o": [
+          "as_dig_o0",
+          "as_dig_o1",
+          "as_dig_o2"
+        ],
+        "a": 2
+      },
+      {
+        "skill": "communication",
+        "kind": "plain",
+        "q": "as_comm_q",
+        "o": [
+          "as_comm_o0",
+          "as_comm_o1",
+          "as_comm_o2"
+        ],
+        "a": 0
+      }
+    ],
+    "TASKS": {
+      "numeracy": {
+        "title": "Percentage and Ratio Basics",
+        "course": "c2",
+        "icon": "book"
+      },
+      "reasoning": {
+        "title": "Reasoning challenge (10-minute quiz)",
+        "quiz": "qz_reason",
+        "icon": "help"
+      },
+      "communication": {
+        "title": "Spoken English for Customer Support",
+        "course": "c6",
+        "icon": "headset"
+      },
+      "practical": {
+        "title": "Electrical Safety and Basics",
+        "course": "c4",
+        "icon": "zap"
+      },
+      "digital": {
+        "title": "Digital Basics on a Shared Phone",
+        "course": "c8",
+        "icon": "phone"
+      },
+      "reading": {
+        "title": "Reading Practice: Short Stories",
+        "course": "c7",
+        "icon": "book"
+      }
+    },
+    "EXAMS": {
+      "nda": [
+        [
+          "UPSC NDA and NA Examination",
+          "Written test for the National Defence Academy, then SSB interview and medicals.",
+          "Usually twice a year · check the UPSC notice",
+          "https://upsc.gov.in"
+        ],
+        [
+          "UPSC CDS Examination (after graduation)",
+          "Another way to become an officer if NDA does not work out.",
+          "Usually twice a year",
+          "https://upsc.gov.in"
+        ]
+      ],
+      "solar": [
+        [
+          "ITI admission (Electrician trade)",
+          "State admission to a 2-year ITI course; merit-based in many states.",
+          "Usually after Class 10 results",
+          ""
+        ],
+        [
+          "Polytechnic diploma admission (EEE)",
+          "Diploma in Electrical and Electronics Engineering after Class 10.",
+          "Usually May–June",
+          ""
+        ],
+        [
+          "Skill certification: Solar PV Installer (NSQF)",
+          "Assessment at the end of a short skilling course.",
+          "At the end of each batch",
+          "https://www.skillindiadigital.gov.in"
+        ]
+      ],
+      "electrician": [
+        [
+          "ITI admission (Electrician trade)",
+          "State admission to a 2-year ITI course.",
+          "Usually after Class 10 results",
+          ""
+        ],
+        [
+          "All India Trade Test (AITT)",
+          "Final ITI exam for the National Trade Certificate.",
+          "At the end of the ITI course",
+          ""
+        ],
+        [
+          "State electrical licence (wireman)",
+          "Licence needed to do wiring work independently.",
+          "As announced by the state licensing board",
+          ""
+        ]
+      ],
+      "chauffeur": [
+        [
+          "Learner licence test (RTO)",
+          "Road rules test at your Regional Transport Office. Age 18+ for cars.",
+          "Any time · book online",
+          "https://parivahan.gov.in"
+        ],
+        [
+          "Driving test (RTO)",
+          "Practical test to get a permanent licence.",
+          "30 days to 6 months after the learner licence",
+          "https://parivahan.gov.in"
+        ]
+      ],
+      "support": [
+        [
+          "Employer aptitude and voice test",
+          "Short tests of language, listening and typing.",
+          "During hiring",
+          ""
+        ],
+        [
+          "Skill certification: Customer Care Executive (NSQF)",
+          "Certificate after a short skilling course.",
+          "At the end of each batch",
+          "https://www.skillindiadigital.gov.in"
+        ]
+      ],
+      "logistics": [
+        [
+          "CUET-UG (for B.Com / BBA courses)",
+          "Common entrance test used by many central universities.",
+          "Usually May–June",
+          "https://www.nta.ac.in"
+        ],
+        [
+          "Skill certification: logistics roles (NSQF)",
+          "Certificate after a short skilling course.",
+          "At the end of each batch",
+          "https://www.skillindiadigital.gov.in"
+        ]
+      ],
+      "health": [
+        [
+          "State paramedical diploma admission",
+          "Admission to diplomas like DMLT; often based on Class 12 marks.",
+          "Usually after Class 12 results",
+          ""
+        ],
+        [
+          "NEET-UG (for some nursing and health degrees)",
+          "National entrance test used for many health courses.",
+          "Usually once a year",
+          "https://www.nta.ac.in"
+        ]
+      ],
+      "agritech": [
+        [
+          "CUET-UG (ICAR agriculture seats)",
+          "Entrance for agriculture degrees at central universities.",
+          "Usually May–June",
+          "https://www.nta.ac.in"
+        ],
+        [
+          "State agriculture university admission (e.g. TNAU)",
+          "Often based on Class 12 marks.",
+          "Usually after Class 12 results",
+          ""
+        ]
+      ],
+      "garment": [
+        [
+          "NIFT entrance",
+          "Entrance test for fashion and design courses.",
+          "Usually once a year",
+          "https://www.nift.ac.in"
+        ],
+        [
+          "Skill certification: sewing machine operator (NSQF)",
+          "Certificate after a short skilling course.",
+          "At the end of each batch",
+          "https://www.skillindiadigital.gov.in"
+        ]
+      ],
+      "software": [
+        [
+          "JEE Main",
+          "Engineering entrance used by many colleges.",
+          "Usually twice a year",
+          "https://www.nta.ac.in"
+        ],
+        [
+          "State engineering admission (e.g. TNEA)",
+          "Tamil Nadu engineering seats; based on Class 12 marks.",
+          "Usually after Class 12 results",
+          ""
+        ],
+        [
+          "CUET-UG (for BCA / B.Sc Computer Science)",
+          "Common entrance for central universities.",
+          "Usually May–June",
+          "https://www.nta.ac.in"
+        ]
+      ],
+      "marketing": [
+        [
+          "CUET-UG (for BBA / B.Com)",
+          "Common entrance for central universities.",
+          "Usually May–June",
+          "https://www.nta.ac.in"
+        ],
+        [
+          "Skill certification: digital marketing (NSQF)",
+          "Certificate after a short skilling course.",
+          "At the end of each batch",
+          "https://www.skillindiadigital.gov.in"
+        ]
+      ],
+      "hospitality": [
+        [
+          "NCHM JEE",
+          "Entrance for hotel management institutes.",
+          "Usually once a year",
+          "https://www.nta.ac.in"
+        ],
+        [
+          "Skill certification: food and beverage service (NSQF)",
+          "Certificate after a short skilling course.",
+          "At the end of each batch",
+          "https://www.skillindiadigital.gov.in"
+        ]
+      ]
+    },
+    "ADS": {
+      "learn": {
+        "sponsor": "SunRise Rooftop Solar (fictional)",
+        "title": "Free solar safety workshop this Saturday in Villupuram"
+      },
+      "discover": {
+        "sponsor": "Village Skills Trust (sample)",
+        "title": "Scholarship help desk at the block office every Monday"
+      }
+    },
+    "HELPER_Q": [
+      [
+        "What is ITI and how do I join?",
+        [
+          "NCS career data",
+          "State ITI portal"
+        ]
+      ],
+      [
+        "Which exam do I need for hotel jobs?",
+        [
+          "NTA · NCHM JEE"
+        ]
+      ],
+      [
+        "Explain percentages simply",
+        [
+          "DIKSHA",
+          "NCERT textbook"
+        ]
+      ],
+      [
+        "How do I apply on the scholarship portal?",
+        [
+          "scholarships.gov.in"
+        ]
+      ]
+    ],
+    "SIMS": {
+      "customer": {
+        "kind": "Customer support simulation",
+        "title": "An upset customer calls the help desk",
+        "mods": [
+          "c6",
+          "c8"
+        ],
+        "scene": "You work at a mobile recharge help desk. Mr. Senthil says his recharge failed but money was taken from his account. He sounds angry.",
+        "skills": {
+          "empathy": "Empathy",
+          "clarity": "Clear communication",
+          "problem": "Problem solving"
+        },
+        "steps": [
+          {
+            "p": "What do you say first?",
+            "c": [
+              {
+                "l": "\"Sir, please calm down.\"",
+                "s": {
+                  "empathy": 0,
+                  "clarity": 1
+                },
+                "fb": "Telling someone to calm down often makes them angrier. Acknowledge the problem first."
+              },
+              {
+                "l": "\"I understand how worrying that is. Let me check it for you right now.\"",
+                "s": {
+                  "empathy": 3,
+                  "clarity": 2
+                },
+                "ok": true,
+                "fb": "Great start. You recognised his feelings before solving the problem."
+              },
+              {
+                "l": "\"That is not my department.\"",
+                "s": {
+                  "empathy": 0,
+                  "clarity": 0
+                },
+                "fb": "Even if it is not your area, take ownership and guide the customer."
+              }
+            ]
+          },
+          {
+            "p": "You need details to check. What do you ask?",
+            "c": [
+              {
+                "l": "\"Tell me everything that happened today.\"",
+                "s": {
+                  "clarity": 1,
+                  "problem": 1
+                },
+                "fb": "Too broad. Ask only for what you need."
+              },
+              {
+                "l": "\"Why didn’t you check before paying?\"",
+                "s": {
+                  "empathy": 0
+                },
+                "fb": "Blaming the customer damages trust."
+              },
+              {
+                "l": "\"Can you tell me your number and the time of the recharge?\"",
+                "s": {
+                  "clarity": 3,
+                  "problem": 2
+                },
+                "ok": true,
+                "fb": "Clear, specific questions help you solve the problem faster."
+              }
+            ]
+          },
+          {
+            "p": "The payment is stuck and will be refunded in 3 days. How do you explain?",
+            "c": [
+              {
+                "l": "\"Your money is safe. It will come back within 3 days, and I will send you a reference number.\"",
+                "s": {
+                  "clarity": 3,
+                  "empathy": 2,
+                  "problem": 3
+                },
+                "ok": true,
+                "fb": "Excellent: reassurance, a clear timeline and a next step."
+              },
+              {
+                "l": "\"It is a technical issue. Nothing I can do.\"",
+                "s": {
+                  "problem": 0
+                },
+                "fb": "Always give the customer a clear next step and timeline."
+              },
+              {
+                "l": "\"Maybe it comes back, maybe not.\"",
+                "s": {
+                  "clarity": 0
+                },
+                "fb": "Uncertain answers increase worry. Share what you know clearly."
+              }
+            ]
+          }
+        ]
+      },
+      "electric": {
+        "kind": "Technical simulation",
+        "title": "A ceiling fan will not start",
+        "mods": [
+          "c4",
+          "c5"
+        ],
+        "scene": "A neighbour’s ceiling fan will not run, but the tube light on the same switchboard works. You have a tester, a screwdriver and rubber gloves.",
+        "skills": {
+          "safety": "Electrical safety",
+          "diagnosis": "Fault finding",
+          "cost": "Cost awareness"
+        },
+        "steps": [
+          {
+            "p": "What do you do first?",
+            "c": [
+              {
+                "l": "Open the switchboard straight away",
+                "s": {
+                  "safety": 0
+                },
+                "fb": "Never open a live board. Switch off the supply first."
+              },
+              {
+                "l": "Switch off the main supply and wear gloves",
+                "s": {
+                  "safety": 3
+                },
+                "ok": true,
+                "fb": "Safety first: always isolate power before touching anything."
+              },
+              {
+                "l": "Shake the fan to see if it moves",
+                "s": {
+                  "safety": 1,
+                  "diagnosis": 0
+                },
+                "fb": "This does not find the cause and could be unsafe."
+              }
+            ]
+          },
+          {
+            "p": "The light works, so power reaches the board. What do you check next?",
+            "c": [
+              {
+                "l": "The fan’s switch and regulator",
+                "s": {
+                  "diagnosis": 3
+                },
+                "ok": true,
+                "fb": "Right. The fault is probably between the board and the fan: the switch, regulator or wiring."
+              },
+              {
+                "l": "The electricity meter outside",
+                "s": {
+                  "diagnosis": 1
+                },
+                "fb": "The light works, so the meter and main supply are fine."
+              },
+              {
+                "l": "Buy a new fan",
+                "s": {
+                  "diagnosis": 0,
+                  "cost": 0
+                },
+                "fb": "Find the fault before replacing anything. It saves money."
+              }
+            ]
+          },
+          {
+            "p": "The regulator is burnt. What do you do?",
+            "c": [
+              {
+                "l": "Join the wires directly and skip the regulator",
+                "s": {
+                  "safety": 0
+                },
+                "fb": "Bypassing parts can be unsafe and is not a proper repair."
+              },
+              {
+                "l": "Tell them to call someone else",
+                "s": {
+                  "diagnosis": 1
+                },
+                "fb": "Asking for help is fine, but you found the fault. You can fix this safely."
+              },
+              {
+                "l": "Replace it with the correct rating, then test carefully",
+                "s": {
+                  "diagnosis": 2,
+                  "safety": 2,
+                  "cost": 3
+                },
+                "ok": true,
+                "fb": "Good repair: the right part, then a careful test."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "FLOW": [
+      "enjoy",
+      "exp",
+      "life",
+      "where",
+      "time",
+      "worry",
+      "pace"
+    ],
+    "QA": {
+      "enjoy": [
+        {
+          "id": "fix",
+          "tags": {
+            "practical": 2,
+            "tech": 1
+          }
+        },
+        {
+          "id": "talk",
+          "tags": {
+            "people": 2
+          }
+        },
+        {
+          "id": "make",
+          "tags": {
+            "creative": 2,
+            "practical": 1
+          }
+        },
+        {
+          "id": "tech",
+          "tags": {
+            "tech": 2
+          }
+        },
+        {
+          "id": "farm",
+          "tags": {
+            "outdoors": 2
+          }
+        },
+        {
+          "id": "org",
+          "tags": {
+            "organizing": 2,
+            "people": 1
+          }
+        }
+      ],
+      "exp": [
+        {
+          "id": "pump",
+          "tags": {
+            "practical": 2,
+            "tech": 1
+          },
+          "exp": "pump"
+        },
+        {
+          "id": "shop",
+          "tags": {
+            "people": 2,
+            "organizing": 1
+          },
+          "exp": "shop"
+        },
+        {
+          "id": "stitch",
+          "tags": {
+            "creative": 2,
+            "practical": 1
+          },
+          "exp": "stitch"
+        },
+        {
+          "id": "fest",
+          "tags": {
+            "organizing": 2,
+            "people": 1
+          },
+          "exp": "fest"
+        },
+        {
+          "id": "field",
+          "tags": {
+            "outdoors": 2
+          },
+          "exp": "field"
+        }
+      ],
+      "life": [
+        {
+          "id": "steady",
+          "tags": {}
+        },
+        {
+          "id": "biz",
+          "tags": {
+            "organizing": 1,
+            "people": 1
+          }
+        },
+        {
+          "id": "nation",
+          "tags": {
+            "service": 3,
+            "outdoors": 1
+          }
+        },
+        {
+          "id": "creative",
+          "tags": {
+            "creative": 2
+          }
+        },
+        {
+          "id": "help",
+          "tags": {
+            "caring": 2,
+            "people": 1
+          }
+        }
+      ],
+      "where": [
+        {
+          "id": "near",
+          "set": {
+            "nearHome": true
+          }
+        },
+        {
+          "id": "city",
+          "set": {
+            "nearHome": false
+          }
+        },
+        {
+          "id": "any",
+          "set": {
+            "nearHome": false
+          }
+        }
+      ],
+      "time": [
+        {
+          "id": "15",
+          "set": {
+            "study": 15
+          }
+        },
+        {
+          "id": "30",
+          "set": {
+            "study": 30
+          }
+        },
+        {
+          "id": "45",
+          "set": {
+            "study": 45
+          }
+        },
+        {
+          "id": "60",
+          "set": {
+            "study": 60
+          }
+        }
+      ],
+      "worry": [
+        {
+          "id": "cost",
+          "set": {
+            "budget": "limited"
+          }
+        },
+        {
+          "id": "unknown"
+        },
+        {
+          "id": "english",
+          "set": {
+            "english": true
+          }
+        },
+        {
+          "id": "family",
+          "set": {
+            "nearHome": true
+          }
+        },
+        {
+          "id": "exam"
+        }
+      ],
+      "pace": [
+        {
+          "id": "fixed",
+          "set": {
+            "pace": "fixed"
+          }
+        },
+        {
+          "id": "self",
+          "set": {
+            "pace": "self"
+          }
+        }
+      ]
+    },
+    "KW": [
+      {
+        "re": "pump|motor|fan|repair|fix|wire|wiring|bulb|cycle|பம்ப|மோட்டார்|பழுது|சரி செய்|मोटर|पंप|मरम्मत|ठीक",
+        "tags": {
+          "practical": 2,
+          "tech": 1
+        },
+        "exp": "pump"
+      },
+      {
+        "re": "shop|customer|sell|sales|கடை|வாடிக்கை|दुकान|ग्राहक",
+        "tags": {
+          "people": 2,
+          "organizing": 1
+        },
+        "exp": "shop"
+      },
+      {
+        "re": "stitch|sew|tailor|embroider|தையல்|தைக்|सिलाई|सिल",
+        "tags": {
+          "creative": 2,
+          "practical": 1
+        },
+        "exp": "stitch"
+      },
+      {
+        "re": "festival|organi[sz]|event|function|திருவிழா|நிகழ்ச்சி|त्योहार|उत्सव|आयोजन",
+        "tags": {
+          "organizing": 2,
+          "people": 1
+        },
+        "exp": "fest"
+      },
+      {
+        "re": "farm|crop|field|cow|goat|agri|வயல்|விவசாய|खेत|खेती",
+        "tags": {
+          "outdoors": 2
+        },
+        "exp": "field"
+      },
+      {
+        "re": "computer|phone|mobile|app|internet|கணினி|மொபைல்|கைபேசி|कंप्यूटर|मोबाइल",
+        "tags": {
+          "tech": 2
+        }
+      },
+      {
+        "re": "draw|paint|design|music|dance|வரை|चित्र",
+        "tags": {
+          "creative": 2
+        }
+      },
+      {
+        "re": "help|care|teach|nurse|doctor|உதவ|मदद|सेवा",
+        "tags": {
+          "caring": 2
+        }
+      },
+      {
+        "re": "army|navy|air ?force|soldier|nation|ராணுவ|நாட்டு|सेना|देश",
+        "tags": {
+          "service": 3
+        }
+      },
+      {
+        "re": "talk|people|friends|பேச|बात",
+        "tags": {
+          "people": 1
+        }
+      }
+    ],
+    "STATES": [
+      "Tamil Nadu",
+      "Andhra Pradesh",
+      "Bihar",
+      "Karnataka",
+      "Kerala",
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Odisha",
+      "Rajasthan",
+      "Telangana",
+      "Uttar Pradesh",
+      "West Bengal",
+      "Other"
+    ],
+    "SKILLS": [
+      "numeracy",
+      "reasoning",
+      "communication",
+      "practical",
+      "digital",
+      "reading"
+    ],
+    "TRAITS": [
+      "practical",
+      "tech",
+      "people",
+      "creative",
+      "organizing",
+      "outdoors",
+      "caring",
+      "service"
+    ]
+  },
+  "profiles": [
+    {
+      "state": "Tamil Nadu",
+      "district": "Villupuram",
+      "lang": "ta",
+      "phone": "shared",
+      "internet": "sometimes",
+      "budget": "limited",
+      "income": "unknown",
+      "consent": {
+        "teacher": true,
+        "parent": true
+      },
+      "confirms": {},
+      "checklists": {},
+      "quizzes": {},
+      "sims": {},
+      "bookings": [],
+      "mentorReqs": [],
+      "enrolled": [
+        "c2",
+        "c4"
+      ],
+      "chat": [],
+      "chatAns": {},
+      "chatStep": 0,
+      "mapProgress": {
+        "solar": {
+          "stage": 3,
+          "lessons": 1
+        }
+      },
+      "lessonsDone": [
+        "c4|0"
+      ],
+      "id": "ram",
+      "name": "Ram",
+      "age": 15,
+      "edu": "10",
+      "learnTime": "evening",
+      "study": 30,
+      "pin": "1111",
+      "guardian": "Lakshmi (mother)",
+      "studentId": "CG-TN-2041",
+      "color": "#19A38C",
+      "ink": "#102A43",
+      "seedInterests": "Practical problem-solving, technology, helping in the family business",
+      "discovery": {
+        "traits": {
+          "practical": 3,
+          "tech": 2,
+          "people": 1,
+          "creative": 0,
+          "organizing": 1,
+          "outdoors": 2,
+          "caring": 0,
+          "service": 0
+        },
+        "experiences": [
+          "pump",
+          "shop"
+        ],
+        "constraints": {
+          "nearHome": true,
+          "budget": "limited",
+          "english": false,
+          "pace": "fixed"
+        }
+      },
+      "assessment": {
+        "levels": {
+          "numeracy": 2,
+          "reasoning": 3,
+          "communication": 2,
+          "practical": 3,
+          "digital": 1,
+          "reading": 2
+        }
+      },
+      "career": "solar",
+      "usage": [
+        32,
+        28,
+        0,
+        35,
+        18,
+        0,
+        0
+      ],
+      "lastActive": "yesterday 7:20 PM",
+      "downloads": [
+        "c2",
+        "c4",
+        "c8"
+      ]
+    },
+    {
+      "state": "Tamil Nadu",
+      "district": "Villupuram",
+      "lang": "ta",
+      "phone": "shared",
+      "internet": "sometimes",
+      "budget": "limited",
+      "income": "unknown",
+      "consent": {
+        "teacher": true,
+        "parent": true
+      },
+      "confirms": {},
+      "checklists": {},
+      "quizzes": {},
+      "sims": {},
+      "bookings": [],
+      "mentorReqs": [],
+      "enrolled": [],
+      "chat": [],
+      "chatAns": {},
+      "chatStep": 0,
+      "mapProgress": {},
+      "lessonsDone": [],
+      "id": "lakshman",
+      "name": "Lakshman",
+      "age": 14,
+      "edu": "9",
+      "learnTime": "evening",
+      "study": 30,
+      "pin": "2222",
+      "guardian": "Lakshmi (mother)",
+      "studentId": "CG-TN-2042",
+      "color": "#1677C8",
+      "ink": "#FFFFFF",
+      "seedInterests": "Practical problem-solving, technology, helping in the family business",
+      "discovery": null,
+      "assessment": null,
+      "career": null,
+      "usage": [
+        15,
+        0,
+        22,
+        0,
+        12,
+        0,
+        0
+      ],
+      "lastActive": "yesterday 7:50 PM",
+      "downloads": [
+        "c7",
+        "c8"
+      ]
+    }
+  ]
+}

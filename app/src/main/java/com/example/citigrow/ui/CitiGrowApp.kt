@@ -2,7 +2,13 @@ package com.example.citigrow.ui
 import android.content.Intent
 import android.net.Uri
 import androidx.activity.compose.BackHandler
+import androidx.activity.ComponentActivity
+import androidx.activity.SystemBarStyle
+import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.background
+import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
@@ -11,6 +17,10 @@ import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.saveable.rememberSaveableStateHolder
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.toArgb
+import androidx.compose.ui.semantics.*
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -75,35 +85,80 @@ class AppSession(val store: GrowStore, val navigate: (String) -> Unit, val tell:
         else navigate(if (route == "roles") "welcome" else if (studentId.isNotBlank() && route != "home") "home" else "roles")
     }
     val tabs = listOf("home", "discover", "learn", "profile")
+    val onboarding = route in listOf("welcome", "roles", "profiles") || route.startsWith("pin/") || route.startsWith("register")
+    SideEffect {
+        (context as? ComponentActivity)?.enableEdgeToEdge(
+            statusBarStyle = if (route == "welcome") SystemBarStyle.dark(Navy.toArgb()) else SystemBarStyle.light(Cloud.toArgb(), Cloud.toArgb()),
+            navigationBarStyle = SystemBarStyle.light(Color.White.toArgb(), Color.White.toArgb()))
+    }
+    fun back() {
+        if (history.isNotEmpty()) { route = history.last(); history = history.dropLast(1) }
+        else navigate(if (route == "roles") "welcome" else if (studentId.isNotBlank()) "home" else "roles")
+    }
     CompositionLocalProvider(LocalGrowStore provides store) {
-    Scaffold(topBar = {
-        if (route != "chat") Column(Modifier.background(Cloud).statusBarsPadding().padding(horizontal = 16.dp)) {
-            Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
-                TextButton(onClick = { navigate(if (studentId.isNotBlank()) "home" else "roles") }) { Text("CitiGrow.ai", fontWeight = FontWeight.Black, color = Navy) }
-                TextButton(onClick = { store.change { store.state.put("offline", !store.state.optBoolean("offline")) } }) { Text(if (store.state.optBoolean("offline")) "Offline demo" else "Online") }
+    MaterialTheme(typography = com.example.citigrow.ui.theme.growTypography(store.state.text("lang", "en"))) {
+    Scaffold(containerColor = if (route == "welcome") Navy else Cloud, topBar = {
+        if (route != "chat" && route != "welcome") Column(Modifier.background(if (onboarding) Cloud else Color.White).statusBarsPadding()) {
+            if (!onboarding) {
+                Row(Modifier.fillMaxWidth().padding(horizontal = 12.dp, vertical = 10.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    Box(Modifier.size(34.dp).background(Navy, RoundedCornerShape(11.dp)), contentAlignment = Alignment.Center) { GrowIcon("sprout", Modifier.size(18.dp), TealLight) }
+                    Column(Modifier.weight(1f)) {
+                        Row { Text("CitiGrow", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.ExtraBold); Text(".ai", color = Blue, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.ExtraBold) }
+                        Text(if (studentId.isNotBlank()) "STUDENT" else route.substringBefore('/').uppercase(), style = MaterialTheme.typography.labelSmall, color = Muted)
+                    }
+                    val offline = store.state.optBoolean("offline")
+                    Surface(onClick = { store.change { store.state.put("offline", !offline) } }, color = if (offline) Gold else Mint, contentColor = if (offline) GoldInk else TealInk, shape = RoundedCornerShape(50)) {
+                        Row(Modifier.heightIn(min = 44.dp).padding(horizontal = 10.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(5.dp)) {
+                            GrowIcon(if (offline) "wifiOff" else "wifi", Modifier.size(16.dp)); Text(if (offline) "Offline demo" else "Online", style = MaterialTheme.typography.labelMedium)
+                        }
+                    }
+                    Box(Modifier.clickable { navigate(if (studentId.isNotBlank()) "profile" else "roles") }) {
+                        if (studentId.isNotBlank()) Avatar(p.text("name"), size = 40.dp) else IconTile("swap", GreyTint, Navy, 40.dp)
+                    }
+                }
+                HorizontalDivider(color = Border)
             }
-            if (route !in tabs && route !in listOf("welcome", "roles")) TextButton(onClick = {
-                if (history.isNotEmpty()) { route = history.last(); history = history.dropLast(1) } else navigate("roles")
-            }) { Text("‹ ${session.t("back")}") }
+            if (onboarding || route !in tabs && route !in listOf("parent", "teacher", "partner")) Row(Modifier.fillMaxWidth().background(Cloud).padding(horizontal = 12.dp, vertical = 8.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+                Surface(onClick = ::back, shape = RoundedCornerShape(14.dp), color = Color.White, shadowElevation = 1.dp) {
+                    Box(Modifier.size(48.dp), contentAlignment = Alignment.Center) { GrowIcon("chevL", description = session.t("back")) }
+                }
+                if (!onboarding) Text(session.t(titleKey), style = MaterialTheme.typography.titleLarge)
+            }
         }
     }, bottomBar = {
-        if (route in tabs && studentId.isNotBlank()) NavigationBar {
-            tabs.forEachIndexed { index, tab ->
-                NavigationBarItem(route == tab, onClick = { history = emptyList(); route = tab }, icon = { Text(listOf("⌂", "◇", "▤", "○")[index]) },
-                    label = { Text(session.t(tab.replaceFirstChar { it.uppercase() })) })
+        Column(Modifier.background(if (route == "welcome") Cloud else Color.White)) {
+            if (revision >= 0 && voiceStatus.isNotEmpty()) Surface(color = Navy, contentColor = Color.White, shape = RoundedCornerShape(14.dp), modifier = Modifier.padding(horizontal = 16.dp, vertical = 6.dp)) {
+                Row(Modifier.fillMaxWidth().padding(start = 12.dp, end = 6.dp).semantics { liveRegion = LiveRegionMode.Polite }, verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    GrowIcon("volume", Modifier.size(18.dp), TealLight)
+                    Text(if (voiceStatus.startsWith("Playing")) voiceStatus else "Read aloud · audio coming soon", modifier = Modifier.weight(1f), style = MaterialTheme.typography.bodySmall)
+                    TextButton(onClick = { voice.stop(); voiceStatus = "" }, colors = ButtonDefaults.textButtonColors(contentColor = Color.White)) { Text(session.t("stopReading"), style = MaterialTheme.typography.labelMedium) }
+                }
+            }
+            if (route in tabs && studentId.isNotBlank()) {
+                HorizontalDivider(color = Border)
+                Row(Modifier.fillMaxWidth().navigationBarsPadding().padding(horizontal = 4.dp, vertical = 6.dp)) {
+                    tabs.forEachIndexed { index, tab ->
+                        val selected = route == tab
+                        Column(Modifier.weight(1f).clickable { history = emptyList(); route = tab }.semantics { this.selected = selected; role = Role.Tab }.padding(vertical = 4.dp), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(3.dp)) {
+                            Box(Modifier.size(52.dp, 32.dp).background(if (selected) BlueTint else Color.Transparent, RoundedCornerShape(16.dp)), contentAlignment = Alignment.Center) {
+                                GrowIcon(listOf("home", "compass", "book", "user")[index], tint = if (selected) Blue else Muted)
+                            }
+                            Text(session.t(tab.replaceFirstChar { it.uppercase() }), style = MaterialTheme.typography.labelSmall, color = if (selected) Blue else Muted)
+                        }
+                    }
+                }
             }
         }
     }, floatingActionButton = {
-        if (route in tabs && studentId.isNotBlank()) SmallFloatingActionButton(onClick = { navigate("helper") }, containerColor = Navy, contentColor = Cloud) { Text("Ask", Modifier.padding(8.dp)) }
+        if (route in tabs && studentId.isNotBlank()) FloatingActionButton(onClick = { navigate("helper") }, shape = RoundedCornerShape(26.dp), containerColor = Navy, contentColor = Color.White, modifier = Modifier.height(52.dp)) {
+            Row(Modifier.padding(horizontal = 18.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) { GrowIcon("sparkles", tint = TealLight); Text(session.t("askShort"), style = MaterialTheme.typography.labelLarge) }
+        }
     }) { padding ->
         val scroll = key(route) { rememberScrollState() }
-        Column(Modifier.fillMaxSize().padding(padding).verticalScroll(scroll).padding(20.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
+        Column(Modifier.fillMaxSize().padding(padding).background(Cloud).verticalScroll(scroll).then(if (route == "welcome") Modifier else Modifier.padding(horizontal = 16.dp, vertical = 14.dp)), verticalArrangement = Arrangement.spacedBy(if (route == "welcome") 0.dp else 14.dp)) {
             val savedKey = "$studentId:$route"
             SideEffect { savedKeys.add(savedKey) }
             savedScreens.SaveableStateProvider(savedKey) {
-                if (revision >= 0 && voiceStatus.isNotEmpty()) Surface(color = Mint, shape = androidx.compose.foundation.shape.RoundedCornerShape(12.dp)) {
-                    Column(Modifier.fillMaxWidth().padding(12.dp)) { Note(voiceStatus); TextButton(onClick = { voice.stop(); voiceStatus = "" }) { Text(session.t("stopReading")) } }
-                }
                 when {
                     route == "welcome" -> LanguageScreen(session)
                     route == "roles" -> RolesScreen(session)
@@ -133,9 +188,10 @@ class AppSession(val store: GrowStore, val navigate: (String) -> Unit, val tell:
                     route == "partner" -> PartnerScreen(session)
                 }
             }
-            Spacer(Modifier.height(64.dp))
+            if (route != "welcome") Spacer(Modifier.height(28.dp))
         }
     }
     if (message.isNotEmpty()) AlertDialog(onDismissRequest = { message = "" }, confirmButton = { TextButton(onClick = { message = "" }) { Text("OK") } }, text = { Text(message) })
+    }
     }
 }

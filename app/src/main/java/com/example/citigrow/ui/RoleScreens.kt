@@ -6,6 +6,10 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.sp
 import androidx.compose.ui.unit.dp
 import com.example.citigrow.data.*
 import com.example.citigrow.ui.theme.*
@@ -24,17 +28,22 @@ import java.util.UUID
         val career = s.store.find("CAREERS", child.text("career"))
         val transcript = if (career.length() > 0) "${child.text("name")} is exploring ${career.text("title")}. ${career.text("short")} Typical entry: ${career.text("edu")}. This is sample guidance; confirm current requirements with a teacher."
             else "${child.text("name")} is beginning to explore interests and possibilities. Give them time and encouragement."
-        GrowCard("Your child's possibilities", transcript) { Secondary("Listen to career explanation") { s.speak("parent_explanation", transcript) } }
-        GrowCard("How you can help this week", "Make room for ${child.optInt("study", 30)} quiet minutes, three times this week. Ask what they enjoyed learning.")
+        Hero("Listen to career explanation", "Understand your child's chosen path", "play") {
+            Secondary("Listen · audio placeholder") { s.speak("parent_explanation", transcript) }
+            Text(transcript, style = MaterialTheme.typography.bodyLarge, color = Color(0xFFE4ECF4))
+        }
+        GrowPanel(background = GoldSurface, border = Color(0xFFF3E2A9)) { Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) { GrowIcon("heart", tint = GoldInk); SectionTitle("How you can help this week") }; Text("Make room for ${child.optInt("study", 30)} quiet minutes, three times this week. Ask what they enjoyed learning.", style = MaterialTheme.typography.bodyLarge) }
         val usage = child.arr("usage"); val total = (0 until usage.length()).sumOf { usage.optInt(it) }
         val goal = child.optInt("study", 30)
-        Expand("Usage this week · $total minutes") {
-            Note("${(0 until usage.length()).count { usage.optInt(it) > 0 }} active days · ${(0 until usage.length()).count { usage.optInt(it) >= goal }} days met the ${goal}m goal\nLast active: ${child.text("lastActive", "Not yet")}")
-            val maximum = maxOf(goal, (0 until usage.length()).maxOfOrNull { usage.optInt(it) } ?: goal).coerceAtLeast(1)
-            listOf("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun").forEachIndexed { index, day ->
-                Text("$day · ${usage.optInt(index)}m · goal ${goal}m")
-                LinearProgressIndicator(progress = { usage.optInt(index).toFloat() / maximum }, modifier = Modifier.fillMaxWidth())
+        GrowPanel {
+            SectionTitle("Usage this week")
+            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                listOf(total.toString() to "minutes", (0 until usage.length()).count { usage.optInt(it) > 0 }.toString() to "active days", (0 until usage.length()).count { usage.optInt(it) >= goal }.toString() to "goal days").forEach { (value,label) ->
+                    Column(Modifier.weight(1f).background(Cloud, androidx.compose.foundation.shape.RoundedCornerShape(14.dp)).padding(10.dp)) { Text(value, style = MaterialTheme.typography.headlineSmall); Note(label) }
+                }
             }
+            WeekBars((0..6).map { usage.optInt(it) }, goal)
+            Note("Last active: ${child.text("lastActive", "Not yet")}")
             Note("Ram and Lakshman start with sample usage. New lesson time counts completed minutes on this device.")
         }
         Expand("Pathways and expected milestones") {
@@ -67,7 +76,13 @@ import java.util.UUID
     val sample = s.store.list("COHORT").filter { it.optBoolean("consent") }
     when (tab) {
         "Overview" -> {
-            GrowCard("Your classroom", "${shared.size} shared device profiles · ${sample.size} fictional cohort students")
+            Hero("Spot talent. Open possibilities.", "Help each student take their next step.", "pres")
+            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                listOf((shared.size+sample.size).toString() to "students", sample.count { it.optBoolean("help") }.toString() to "need support").forEach { (value,label) ->
+                    GrowPanel(Modifier.weight(1f)) { Text(value, style = MaterialTheme.typography.headlineMedium, color = Blue); Note(label) }
+                }
+            }
+            Note("${shared.size} shared device profiles · ${sample.size} fictional cohort students")
             Expand("Help requests and interventions") {
                 sample.filter { it.optBoolean("help") }.forEach { c -> Note("${c.text("name")}: ${c.text("helpReason")}\nSuggested support: a short guided practice session.") }
                 shared.filter { it.optJSONObject("assessment")?.obj("levels")?.optInt("digital", 3) == 1 }.forEach { Note("${it.text("name")}: offer guided shared-phone digital practice.") }
@@ -148,8 +163,7 @@ import java.util.UUID
     var type by rememberSaveable { mutableStateOf("Story") }; var org by rememberSaveable { mutableStateOf("") }
     var title by rememberSaveable { mutableStateOf("") }; var district by rememberSaveable { mutableStateOf("") }
     var description by rememberSaveable { mutableStateOf("") }; var safe by rememberSaveable { mutableStateOf(false) }
-    Heading("Open a door for someone")
-    Note("Alumni, mentors, NGOs and employers · local demo portal")
+    Hero("Open a door for someone", "Share a story, teach a group, or create an opportunity.\nAlumni, mentors, NGOs and employers · local demo portal", "building")
     Choices(listOf("Story", "Group mentorship", "Training programme", "Apprenticeship", "Job / internship"), type) { type = it }
     Entry("Organisation / contributor", org) { org = it.take(120) }; Entry("Listing title", title) { title = it.take(120) }
     Entry("District", district) { district = it.take(60) }; Entry("Describe your contribution", description) { description = it.take(1000) }

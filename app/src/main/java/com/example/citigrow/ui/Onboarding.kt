@@ -1,48 +1,119 @@
 package com.example.citigrow.ui
 
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.background
+import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.selection.selectable
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.semantics.*
+import androidx.compose.foundation.text.BasicTextField
+import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.example.citigrow.data.*
+import com.example.citigrow.ui.theme.*
 import org.json.JSONObject
 import java.util.UUID
 
 @Composable fun LanguageScreen(s: AppSession) {
-    Spacer(Modifier.height(24.dp))
-    Heading("Discover your next possibility.")
-    Note(s.t("tagline"))
-    GrowCard("A small step today. A world of possibilities tomorrow.") { JourneyVisual() }
-    Heading(s.t("chooseLang"))
-    listOf("en" to "English", "hi" to "हिन्दी", "ta" to "தமிழ்").forEach { (code, name) ->
-        Secondary("${if (s.store.state.text("lang") == code) "●  " else ""}$name") { s.store.change { s.store.state.put("lang", code) } }
+    Column(Modifier.fillMaxWidth().background(Navy).padding(top = 26.dp), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(8.dp)) {
+        Box(Modifier.size(64.dp).background(Teal, RoundedCornerShape(20.dp)), contentAlignment = Alignment.Center) { GrowIcon("sprout", Modifier.size(40.dp), Navy) }
+        Row(Modifier.padding(top = 4.dp)) {
+            Text("CitiGrow", style = MaterialTheme.typography.displayLarge, color = Color.White)
+            Text(".ai", style = MaterialTheme.typography.displayLarge, color = TealLight)
+        }
+        Text(s.t("tagline"), color = Color(0xFFD9E2EC), fontSize = 16.sp, lineHeight = 24.sp, textAlign = TextAlign.Center, modifier = Modifier.widthIn(max = 310.dp).padding(horizontal = 4.dp))
+        JourneyVisual()
     }
-    Note(s.t("bhashiniNote"))
-    Primary(s.t("continue")) { s.go("roles") }
+    Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(14.dp)) {
+        Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(10.dp)) { GrowIcon("languages", tint = Blue); SectionTitle(s.t("chooseLang")) }
+        Row(Modifier.fillMaxWidth().semantics { selectableGroup() }, horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+            listOf(Triple("en", "English", "English"), Triple("hi", "हिन्दी", "Hindi"), Triple("ta", "தமிழ்", "Tamil")).forEach { (code, name, subtitle) ->
+                val selected = s.store.state.text("lang") == code
+                Surface(modifier = Modifier.weight(1f).heightIn(min = 76.dp).selectable(selected, role = Role.RadioButton) { s.store.change { s.store.state.put("lang", code) } },
+                    color = if (selected) BlueTint else Color.White, border = BorderStroke(2.dp, if (selected) Blue else Border), shape = RoundedCornerShape(16.dp)) {
+                    Column(Modifier.padding(horizontal = 4.dp, vertical = 10.dp), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                        Text(name, fontSize = 19.sp, fontWeight = FontWeight.Bold, color = Navy); Note(subtitle)
+                    }
+                }
+            }
+        }
+        Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) { GrowIcon("languages", Modifier.size(16.dp), Blue); Box(Modifier.weight(1f)) { Note(s.t("bhashiniNote")) } }
+        Spacer(Modifier.height(12.dp))
+        Button(onClick = { s.go("roles") }, modifier = Modifier.fillMaxWidth().heightIn(min = 58.dp), shape = RoundedCornerShape(16.dp)) {
+            Text(s.t("continue"), fontSize = 18.sp, fontWeight = FontWeight.Bold); Spacer(Modifier.width(8.dp)); GrowIcon("chevR")
+        }
+    }
 }
 @Composable fun RolesScreen(s: AppSession) {
     Heading(s.t("chooseStart")); Note(s.t("startSub"))
-    Primary(s.t("begin")) { s.go("profiles") }
-    Secondary(s.t("imParent")) { s.go("pin/parent") }
-    Secondary(s.t("imTeacher")) { s.go("pin/teacher") }
-    Secondary("Partner · alumni, NGO or employer") { s.go("partner") }
-    Note("Hackathon demo · fictional profiles, simulated AI, local data only.")
+    ActionRow(s.t("begin"), s.t("role_student_d"), "sprout", selected = true) { s.go("profiles") }
+    ActionRow(s.t("imParent"), s.t("role_parent_d"), "users", Mint, TealInk) { s.go("pin/parent") }
+    ActionRow(s.t("imTeacher"), s.t("role_teacher_d"), "pres", Gold, GoldInk) { s.go("pin/teacher") }
+    ActionRow(s.t("role_partner"), s.t("role_partner_d"), "building", PurpleTint, PurpleInk) { s.go("partner") }
     Expand("Demo access") { Note("Ram: 1111 · Lakshman: 2222\nParent: 3333 · Teacher: 4444\nRole PINs demonstrate navigation, not production identity verification.") }
 }
 @Composable fun ProfilesScreen(s: AppSession) {
-    Heading("Who is learning today?"); Note("One family phone. Your own learning journey.")
-    s.store.profiles.forEach { p -> GrowCard(p.text("name"), "Class ${p.text("edu")} · ${p.text("district")}", { s.go("pin/${p.text("id")}") }) }
-    Secondary("Add another student") { s.go("register") }
+    Heading(s.t("whoLearning"))
+    Surface(color = BlueTint, shape = RoundedCornerShape(16.dp)) {
+        Row(Modifier.padding(horizontal = 14.dp, vertical = 12.dp), horizontalArrangement = Arrangement.spacedBy(10.dp)) { GrowIcon("phone", tint = BlueInk); Text(s.t("sharedNote"), style = MaterialTheme.typography.bodyMedium, color = BlueInk, modifier = Modifier.weight(1f)) }
+    }
+    s.store.profiles.forEach { p ->
+        GrowPanel(padding = 14.dp, action = { s.go("pin/${p.text("id")}") }) {
+            Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                Avatar(p.text("name"), if (p.text("id") == "lakshman") Blue else Teal, if (p.text("id") == "lakshman") Color.White else Navy, 60.dp)
+                Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                    Text(p.text("name"), style = MaterialTheme.typography.titleLarge)
+                    Note("Class ${p.text("edu")} · Age ${p.optInt("age")}")
+                    Row(horizontalArrangement = Arrangement.spacedBy(4.dp)) { GrowIcon("pin", Modifier.size(14.dp), Muted); Box(Modifier.weight(1f)) { Note("${p.text("district")}, ${p.text("state")}") } }
+                }
+                IconTile("lock", GreyTint, Muted, 40.dp)
+            }
+        }
+    }
+    ActionRow(s.t("addStudent"), icon = "plus") { s.go("register") }
 }
 @Composable fun PinScreen(s: AppSession, target: String, unlocked: (String, String) -> Unit) {
     var pin by rememberSaveable { mutableStateOf("") }
     var error by remember { mutableStateOf("") }
     val p = s.store.profiles.firstOrNull { it.text("id") == target }
-    Heading("Unlock ${p?.text("name") ?: target}")
-    Note("Use your private four-digit PIN. Voice cannot unlock a profile.")
-    Entry("PIN", pin, secret = true) { pin = it.filter(Char::isDigit).take(4); error = "" }
+    Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(10.dp)) {
+        Avatar(p?.text("name") ?: target, if (target == "teacher") GoldFill else Teal, size = 76.dp)
+        Heading(p?.text("name") ?: target.replaceFirstChar { it.uppercase() })
+        Note(s.t("enterPin"))
+        BasicTextField(value = pin, onValueChange = { pin = it.filter(Char::isDigit).take(4); error = "" }, singleLine = true,
+            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.NumberPassword), cursorBrush = SolidColor(Color.Transparent), textStyle = TextStyle(color = Color.Transparent),
+            modifier = Modifier.fillMaxWidth().height(44.dp).semantics { contentDescription = "PIN" }, decorationBox = { inner ->
+                Box(contentAlignment = Alignment.Center) {
+                    Box(Modifier.size(1.dp).alpha(0f)) { inner() }
+                    Row(horizontalArrangement = Arrangement.spacedBy(16.dp)) { repeat(4) { index -> Surface(Modifier.size(16.dp), shape = CircleShape, color = if (index < pin.length) Blue else Color.White, border = BorderStroke(2.dp, if (index < pin.length) Blue else Color(0xFFC9D6E3))) {} } }
+                }
+            })
+        listOf(listOf("1", "2", "3"), listOf("4", "5", "6"), listOf("7", "8", "9"), listOf("", "0", "Delete")).forEach { keys ->
+            Row(Modifier.widthIn(max = 290.dp).fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                keys.forEach { digit ->
+                    if (digit.isEmpty()) Spacer(Modifier.weight(1f)) else Surface(onClick = { if (digit == "Delete") pin = pin.dropLast(1) else if (pin.length < 4) pin += digit; error = "" }, modifier = Modifier.weight(1f).height(62.dp), shape = RoundedCornerShape(20.dp), color = if (digit == "Delete") Color.Transparent else Color.White, shadowElevation = if (digit == "Delete") 0.dp else 1.dp) {
+                        Box(contentAlignment = Alignment.Center) { if (digit == "Delete") GrowIcon("del", description = "Delete digit") else Text(digit, fontSize = 28.sp, fontWeight = FontWeight.Bold, color = Navy) }
+                    }
+                }
+            }
+        }
+        Note("Private PIN · voice cannot unlock a profile")
+    }
     if (error.isNotEmpty()) Text(error, color = MaterialTheme.colorScheme.error)
     val lockedUntil = s.store.state.optLong("lockUntil:$target")
     Primary("Unlock", pin.length == 4) {

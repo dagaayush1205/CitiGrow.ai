@@ -1,11 +1,21 @@
 package com.example.citigrow.ui
 
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.background
+import androidx.compose.foundation.horizontalScroll
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.example.citigrow.data.*
+import com.example.citigrow.ui.theme.*
 import org.json.JSONArray
 import org.json.JSONObject
 import kotlin.math.roundToInt
@@ -13,10 +23,13 @@ import kotlin.math.roundToInt
 @Composable fun ChatScreen(s: AppSession) {
     var text by rememberSaveable { mutableStateOf("") }
     val flow = s.store.data.arr("FLOW").strings(); val step = s.p.optInt("chatStep")
-    TextButton(onClick = { s.go("home") }) { Text("Close discovery") }
-    Heading("Let's discover your possibilities")
-    Note("Simulated AI · your conversation stays private")
-    LinearProgressIndicator(progress = { (step.toFloat() / flow.size).coerceIn(0f, 1f) }, modifier = Modifier.fillMaxWidth())
+    Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+        Surface(onClick = { s.go("home") }, shape = RoundedCornerShape(14.dp), color = Color.White, shadowElevation = 1.dp) { Box(Modifier.size(48.dp), contentAlignment = Alignment.Center) { GrowIcon("x", description = "Close discovery") } }
+        Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+            Note("Discovering your possibilities · ${step.coerceAtMost(flow.size)} / ${flow.size}")
+            LinearProgressIndicator(progress = { (step.toFloat() / flow.size).coerceIn(0f, 1f) }, modifier = Modifier.fillMaxWidth().height(8.dp), color = Teal, trackColor = Border)
+        }
+    }
     if (step >= flow.size) {
         GrowCard("Your everyday experience matters", "Your interest profile is ready. Explore careers and take a short skills check to build your path.")
         Primary("See career matches") { s.go("discover") }
@@ -29,19 +42,31 @@ import kotlin.math.roundToInt
         if ((enjoy?.obj("tags")?.optInt("practical") ?: 0) >= 2 || (enjoy?.obj("tags")?.optInt("tech") ?: 0) >= 2) "q_exp_fix"
         else if ((enjoy?.obj("tags")?.optInt("people") ?: 0) >= 2) "q_exp_people" else "q_exp"
     } else "q_$question"
-    s.p.arr("chat").objects().takeLast(2).forEach { answer -> GrowCard("You shared", answer.text("text")) }
-    GrowCard("${step + 1} of ${flow.size}", s.t(key))
+    s.p.arr("chat").objects().takeLast(2).forEach { answer ->
+        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.End) {
+            Surface(shape = RoundedCornerShape(topStart = 18.dp, topEnd = 18.dp, bottomStart = 18.dp, bottomEnd = 6.dp), color = Blue, contentColor = Color.White, modifier = Modifier.widthIn(max = 272.dp)) { Text(answer.text("text"), Modifier.padding(horizontal = 14.dp, vertical = 12.dp), style = MaterialTheme.typography.bodyLarge) }
+        }
+    }
+    Row(verticalAlignment = Alignment.Bottom, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+        IconTile("sprout", Teal, Navy, 34.dp)
+        Surface(shape = RoundedCornerShape(topStart = 18.dp, topEnd = 18.dp, bottomStart = 6.dp, bottomEnd = 18.dp), color = Color.White, border = androidx.compose.foundation.BorderStroke(1.dp, Border), modifier = Modifier.widthIn(max = 272.dp)) {
+            Column(Modifier.padding(horizontal = 14.dp, vertical = 12.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) { Text(s.t(key), style = MaterialTheme.typography.bodyLarge); IconButton(onClick = { s.speak(key, s.t(key)) }, modifier = Modifier.background(Mint, RoundedCornerShape(50))) { GrowIcon("volume", tint = TealInk, description = "Listen") } }
+        }
+    }
     LaunchedEffect(step) { if (s.p.optBoolean("readAloud", true)) s.speak(key, s.t(key)) }
+    Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
     s.store.data.obj("QA").arr(question).objects().forEach { answer ->
         val labelKey = "a_${question}_${answer.text("id")}" // prototype uses a_* keys
         val label = s.t(labelKey).takeUnless { it == labelKey } ?: s.t("${question}_${answer.text("id")}").takeUnless { it == "${question}_${answer.text("id")}" } ?: answer.text("id")
-        Secondary(label) {
+        ChoiceChip(label, false) {
             s.update("Discovery answer saved") { GrowRules.answer(s.store, it, question, answer.copy().put("text", label)) }; text = ""
         }
+    }
     }
     Entry("Or tell us in your own words", text) { text = it.take(500) }
     Primary("Send", text.isNotBlank()) { s.update("Discovery answer saved") { GrowRules.answer(s.store, it, question, GrowRules.parse(s.store, question, text.trim())) }; text = "" }
     Secondary("Speak · coming soon") { s.tell("Speech recognition is not connected. Choose an answer or type in English, Hindi or Tamil.") }
+    Note(s.t("demoShort"))
 }
 @Composable fun AssessmentScreen(s: AppSession) {
     var started by rememberSaveable { mutableStateOf(false) }
@@ -68,7 +93,12 @@ import kotlin.math.roundToInt
         return
     }
     if (!started) {
-        GrowCard("Find a starting point", "9 short questions about reading, numbers and everyday situations. This helps us choose practice; it is not a pass or fail test.")
+        GrowPanel {
+            IconTile("target", Gold, GoldInk, 64.dp)
+            Text("Find a starting point", style = MaterialTheme.typography.headlineMedium)
+            Text("9 short questions about reading, numbers and everyday situations. This helps us choose practice; it is not a pass or fail test.", style = MaterialTheme.typography.bodyLarge)
+            Badge("ASER-style · demo", PurpleTint, PurpleInk)
+        }
         Primary("Begin skills check") { started = true }
         return
     }
@@ -92,7 +122,7 @@ import kotlin.math.roundToInt
 @Composable fun CourseScreen(s: AppSession, id: String) {
     val c = s.store.find("COURSES", id); val saved = id in s.p.arr("downloads").strings()
     val free = c.obj("price").text("mode") == "free"
-    Heading(c.text("title")); Note("${c.text("by")} · ${c.text("langs")}")
+    Hero(c.text("title"), "${c.text("by")} · ${c.text("langs")}", c.text("icon"))
     Note(if (free) "Free foundations · sample text lessons" else "₹${c.obj("price").optInt("amount")} illustrative price · demo access, no payment collected")
     Note(c.text("desc").replace("Free module", if (free) "Free module" else "Sample module"))
     val bytes = c.toString().toByteArray().size
@@ -160,9 +190,8 @@ import kotlin.math.roundToInt
     val sim = s.store.data.obj("SIMS").obj(id); val steps = sim.arr("steps").objects()
     var step by rememberSaveable { mutableIntStateOf(0) }; var choice by rememberSaveable { mutableIntStateOf(-1) }
     var score by rememberSaveable { mutableIntStateOf(0) }
-    Heading(sim.text("title")); Note("Simulated career scenario · educational only")
+    Hero(sim.text("title"), sim.text("scene"), "play") { Badge("Career simulation · educational only", Mint, TealInk) }
     if (id == "electric") Note("Never attempt electrical repairs yourself. This scenario is not practical safety training; seek a qualified adult professional.")
-    GrowCard("The situation", sim.text("scene"))
     if (step >= steps.size) { GrowCard("Scenario complete", "$score / ${steps.size} strong choices. Explore the linked courses to keep practising."); Primary("Back to Discover") { s.go("discover") }; return }
     val current = steps[step]; val options = current.arr("c").objects()
     Heading(current.text("p"))

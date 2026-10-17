@@ -3,11 +3,12 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import com.example.citigrow.data.*
 import org.json.JSONArray
+import com.example.citigrow.ui.theme.*
 
 @Composable fun OpportunityScreen(s: AppSession, id: String) {
     val o = s.store.find("OPPS", id); val result = GrowRules.eligibility(s.p, o)
-    Heading(o.text("name")); Note("Sample opportunity · ${o.text("region")}")
-    Text(o.text("desc")); Note("${o.text("deadline")} · unverified sample date")
+    Hero(o.text("name"), o.text("desc"), "briefcase") { Badge("Sample opportunity · unverified", Gold, GoldInk); Note(o.text("region")) }
+    Note("${o.text("deadline")} · unverified sample date")
     GrowCard("Eligibility · ${result.status}", "Simulated rules, not an official eligibility decision.") { result.reasons.forEach { Note(it) } }
     o.arr("rules").objects().filter { it.text("t") == "income" }.forEach { rule ->
         GrowCard("Is family income below ${rule.text("v")}?", "Choose a category only. No income documents are collected.") {

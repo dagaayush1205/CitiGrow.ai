@@ -37,7 +37,15 @@ Lesson screens use the supplied course summaries and checks; full per-lesson tea
 
 Career requirements, eligibility rules, sample dates and exam mappings are imported from the prototype and labelled unverified. No real submission or guaranteed eligibility is claimed. Unverified deep application links are not opened. The source catalogue has 12 careers; expansion to 30–40 officially grounded careers remains future work.
 
-The supplied fonts were not bundled; Android system fonts provide the current fallback. Hindi and Tamil text needs native-speaker review. Room, WorkManager and a real sync protocol remain integration work once a server contract exists. The local repository is intentionally independent of the UI to support that migration.
+Noto Sans fonts for English, Hindi and Tamil are bundled for offline use. The prototype's Baloo display fonts are still unavailable; headings use Noto at the specified sizes and weights until those assets are supplied. Hindi and Tamil text needs native-speaker review. Room, WorkManager and a real sync protocol remain integration work once a server contract exists. The local repository is intentionally independent of the UI to support that migration.
+
+## UI reference alignment
+
+The visual reference is `reference/citigrow-prototype.dc.html`, not the original purple landing-screen stub. The Compose design tokens now follow its CSS: navy #102A43, blue #1677C8, teal #19A38C, background #F7F9FC, muted text #52606D and border #E4E9F0. Cards use 16dp padding and 20dp corners; primary buttons are 52dp, chips 44dp, page gutters 16dp, and page gaps 14dp. The original SVG icon paths are imported into `assets/prototype-icons.json` by the data import script and drawn as native vectors.
+
+The welcome illustration follows the reference SVG coordinates. Onboarding uses three language tiles, colored role cards, profile avatars and a PIN keypad. The student shell uses a white header, connection pill, profile avatar and compact white bottom navigation. Home restores the blue next-step panel and shortcut tiles; Discover restores its navy conversation banner, horizontal stories and career badges. Learn uses a gold Skills Compass card and progress-based course cards. Life Map uses the reference's winding path coordinates, alternate branch, selectable steps and weekly bars. Parent usage is a seven-day chart with a goal line; secondary screens share navy hero panels and the same component styling.
+
+This alignment has been checked against the prototype markup and CSS. It has **not** been verified by comparing device screenshots: ADB and Gradle cannot start their socket services in the managed workspace. Exact visual parity is still pending a rendered device comparison and the missing Baloo font assets.
 
 ## Source layout
 

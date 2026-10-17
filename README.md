@@ -1,12 +1,23 @@
 # CitiGrow.ai Android
+tagline
 
-Native Kotlin / Jetpack Compose implementation of the supplied [handoff](HANDOFF.md) and [interactive reference](reference/citigrow-prototype.dc.html). Android 7.0+ (API 24).
+## Given Problem Statement
 
-## Product purpose and readiness
+Education is a fundamental pillar of human development. Yet for many learners in rural India, education does not always translate into relevant skills, practical capabilities, or economic opportunity. While **school enrollment in India reaches 98% for ages 6 to 14**, high attendance masks a severe deficit in foundational learning outcomes.
 
-CitiGrow helps students turn interests, everyday experience and available study time into a practical learning and career pathway. It connects discovery, skills checks, learning, opportunity preparation and family/teacher support in one local-first Android experience. Its intended users include learners who share phones, have intermittent connectivity, prefer regional-language guidance, or need help navigating education and livelihood options.
+As students progress into adolescence, the gap between schooling and actual competency widens significantly. **One in four rural youth aged 14 to 18 cannot fluently read a second-grade level text in their regional language, and over 56% cannot solve a simple three-digit by one-digit division problem.**
 
-The product hypothesis is that understandable guidance and a clear next action can reduce the effort between discovering a pathway and taking a useful step toward it. This is a genuine problem to investigate with learners and facilitators, not a claim of validated demand: the repository contains no customer research, paid adoption, placement results or measured income uplift.
+### Why does this happen? Why is there such a big gap?
+
+One of the reasons and the primary focus of this project: **Teacher Shortages, Absenteeism & Administrative Workload**
+
++ **Single-Teacher & Multi-grade Classrooms:** Tens of thousands of primary schools operate with a single teacher responsible for simultaneously teaching multiple grades across subjects.
+
++ **Non-Teaching Duties:** Government school teachers are frequently deployed for non-educational administrative tasks.
+
+## Our Solution
+
+
 
 Current readiness: a functional local prototype, not a production service. The sections below distinguish implemented capabilities, engineering assessment, commercial hypotheses and outcomes still to be measured. No revenue, usability, scale or livelihood-impact figures are presented as observed results.
 

@@ -317,10 +317,11 @@ import org.json.JSONObject
     }
     GrowCard(s.t("voiceTitle")) {
         Toggle("Read each screen aloud", s.p.optBoolean("readAloud", true)) { value -> s.update("Read aloud changed") { it.put("readAloud", value) } }
-        Note("Audio placeholder. Pre-recorded clips are supported; an on-device Hindi/Tamil TTS engine has not been selected.")
+        Note("Tamil and Malayalam use the bundled VITS model on this phone. English and Hindi use an installed offline Android voice. If a voice is missing, install it in Android text-to-speech settings.")
+        Expand("Speech model attribution") { Note("Tamil and Malayalam speech: AI4Bharat vits_rasa_13 · CC BY 4.0. ONNX model supplied with CitiGrow.\nhttps://huggingface.co/ai4bharat/vits_rasa_13") }
         Secondary("Listen · test voice") { s.speak("tagline", s.t("tagline")) }
     }
-    GrowCard("App language") { Choices(listOf("en", "hi", "ta"), s.store.state.text("lang")) { value -> s.store.change { s.store.state.put("lang", value); s.p.put("lang", value) } }; Note("Career and lesson content is currently English. Some interface text falls back to English.") }
+    GrowCard("App language") { Choices(listOf("en", "hi", "ta", "ml"), s.store.state.text("lang")) { value -> s.store.change { s.store.state.put("lang", value); s.p.put("lang", value) } }; Note("Career and lesson content is currently English. Some interface text falls back to English.") }
     Toggle("Data saver · text only", s.store.state.optBoolean("lite")) { value -> s.store.change { s.store.state.put("lite", value) } }
     Note("All sample content is bundled. There are no automatic media downloads.")
     Expand("Offline storage and sync") { Note("${s.store.state.arr("queue").length()} changes saved locally. Server sync is not connected; coming online does not upload or erase this queue.") }

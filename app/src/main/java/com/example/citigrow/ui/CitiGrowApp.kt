@@ -27,10 +27,16 @@ import androidx.compose.ui.unit.dp
 import com.example.citigrow.data.*
 import com.example.citigrow.ui.theme.*
 import com.example.citigrow.voice.VoiceController
+import com.example.citigrow.voice.FormNarrator
+import com.example.citigrow.voice.VoicePhase
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.LifecycleEventObserver
+import androidx.lifecycle.LifecycleOwner
 import org.json.JSONObject
 
 class AppSession(val store: GrowStore, val navigate: (String) -> Unit, val tell: (String) -> Unit,
-    val speak: (String, String) -> Unit, val openUrl: (String) -> Unit, val studentId: String) {
+    val speak: (String, String) -> Unit, val openUrl: (String) -> Unit, val studentId: String,
+    val narrator: FormNarrator? = null) {
     val p get() = store.profiles.firstOrNull { it.text("id") == studentId } ?: store.profiles.first()
     fun t(key: String) = store.t(key)
     fun go(route: String) = navigate(route)
@@ -45,8 +51,8 @@ class AppSession(val store: GrowStore, val navigate: (String) -> Unit, val tell:
     var studentId by rememberSaveable { mutableStateOf("") }
     var history by rememberSaveable { mutableStateOf(listOf<String>()) }
     var message by remember { mutableStateOf("") }
-    var voiceStatus by remember { mutableStateOf("") }
     val voice = remember { VoiceController(context) }
+    val voiceState = voice.state
     val savedScreens = rememberSaveableStateHolder()
     val savedKeys = remember { mutableSetOf<String>() }
     fun navigate(next: String) {
@@ -60,13 +66,17 @@ class AppSession(val store: GrowStore, val navigate: (String) -> Unit, val tell:
         route = next
     }
     val session = AppSession(store, ::navigate, { message = it }, { key, text ->
-        voiceStatus = if (store.state.optBoolean("offline")) "Voice is unavailable in offline demo mode."
-        else if (voice.read(key, text, store.state.text("lang"))) "Playing recorded audio" else "Audio coming soon · $text"
+        voice.read(key, text, store.state.text("lang"))
     }, { url ->
         if (store.state.optBoolean("offline")) message = "Official portals need internet. Your checklist is saved on this device."
         else if (url.startsWith("https://")) runCatching { context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url))) }.onFailure { message = "No browser is available on this device." }
-    }, studentId)
-    DisposableEffect(Unit) { onDispose { voice.stop() } }
+    }, studentId, voice)
+    DisposableEffect(voice, context) {
+        val owner = context as? LifecycleOwner
+        val observer = LifecycleEventObserver { _, event -> if (event == Lifecycle.Event.ON_STOP) voice.stop() }
+        owner?.lifecycle?.addObserver(observer)
+        onDispose { owner?.lifecycle?.removeObserver(observer); voice.close() }
+    }
     val p = session.p
     val titleKey = when (route.substringBefore('/')) {
         "welcome" -> "chooseLang"; "roles" -> "chooseStart"; "profiles" -> "Who is learning today?"
@@ -76,8 +86,8 @@ class AppSession(val store: GrowStore, val navigate: (String) -> Unit, val tell:
         else -> route.substringBefore('/').replaceFirstChar { it.uppercase() }
     }
     LaunchedEffect(route, studentId, store.state.text("lang"), p.optBoolean("readAloud", true)) {
-        voice.stop(); voiceStatus = ""
-        if (p.optBoolean("readAloud", true)) session.speak(titleKey, session.t(titleKey))
+        voice.stop()
+        if (!route.startsWith("register") && p.optBoolean("readAloud", true)) session.speak(titleKey, session.t(titleKey))
     }
     BackHandler(route != "welcome") {
         voice.stop()
@@ -127,11 +137,11 @@ class AppSession(val store: GrowStore, val navigate: (String) -> Unit, val tell:
         }
     }, bottomBar = {
         Column(Modifier.background(if (route == "welcome") Cloud else Color.White)) {
-            if (revision >= 0 && voiceStatus.isNotEmpty()) Surface(color = Navy, contentColor = Color.White, shape = RoundedCornerShape(14.dp), modifier = Modifier.padding(horizontal = 16.dp, vertical = 6.dp)) {
+            if (revision >= 0 && voiceState.phase != VoicePhase.IDLE) Surface(color = Navy, contentColor = Color.White, shape = RoundedCornerShape(14.dp), modifier = Modifier.padding(horizontal = 16.dp, vertical = 6.dp)) {
                 Row(Modifier.fillMaxWidth().padding(start = 12.dp, end = 6.dp).semantics { liveRegion = LiveRegionMode.Polite }, verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     GrowIcon("volume", Modifier.size(18.dp), TealLight)
-                    Text(if (voiceStatus.startsWith("Playing")) voiceStatus else "Read aloud · audio coming soon", modifier = Modifier.weight(1f), style = MaterialTheme.typography.bodySmall)
-                    TextButton(onClick = { voice.stop(); voiceStatus = "" }, colors = ButtonDefaults.textButtonColors(contentColor = Color.White)) { Text(session.t("stopReading"), style = MaterialTheme.typography.labelMedium) }
+                    Text(voiceState.message, modifier = Modifier.weight(1f), style = MaterialTheme.typography.bodySmall)
+                    TextButton(onClick = { voice.stop() }, colors = ButtonDefaults.textButtonColors(contentColor = Color.White)) { Text(session.t("stopReading"), style = MaterialTheme.typography.labelMedium) }
                 }
             }
             if (route in tabs && studentId.isNotBlank()) {

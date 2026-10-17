@@ -4,6 +4,22 @@ plugins {
     alias(libs.plugins.kotlin.compose)
 }
 
+// Keep the user's tested model as the source of truth; package it without duplicating
+// a 118 MB binary in the source tree. Tokenizer/config assets live under src/main/assets/tts.
+val bundledVoiceAssets = layout.buildDirectory.dir("generated/voiceAssets")
+val prepareVoiceModel by tasks.registering {
+    val sourceModel = rootProject.layout.projectDirectory.file("tests/model.onnx")
+    inputs.file(sourceModel)
+    outputs.file(bundledVoiceAssets.map { it.file("tts/rasa/model.onnx") })
+    doLast {
+        check(sourceModel.asFile.isFile) { "Place the validated VITS model at tests/model.onnx before building." }
+        project.copy {
+            from(sourceModel)
+            into(bundledVoiceAssets.map { it.dir("tts/rasa") })
+        }
+    }
+}
+
 android {
     namespace = "com.example.citigrow"
     compileSdk {
@@ -39,9 +55,15 @@ android {
     buildFeatures {
         compose = true
     }
+    sourceSets.getByName("main").assets.srcDir(bundledVoiceAssets)
+    androidResources { noCompress += "onnx" }
 }
 
+tasks.named("preBuild").configure { dependsOn(prepareVoiceModel) }
+
 dependencies {
+    implementation(libs.onnxruntime.android)
+    implementation(libs.kotlinx.coroutines.android)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)

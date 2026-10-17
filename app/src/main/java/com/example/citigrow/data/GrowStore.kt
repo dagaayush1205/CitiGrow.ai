@@ -22,7 +22,12 @@ class GrowStore(context: Context) {
     private val prefs = context.getSharedPreferences("citigrow_local_v1", Context.MODE_PRIVATE)
     private val source = JSONObject(context.assets.open("prototype.json").bufferedReader().use { it.readText() })
     val data: JSONObject = source.getJSONObject("data")
-    private val translations = source.getJSONObject("translations")
+    private val regionData = JSONObject(context.assets.open("india_regions.json").bufferedReader().use { it.readText() })
+    val regions: List<String> = (regionData.getJSONArray("states").strings() + regionData.getJSONArray("unionTerritories").strings()).sorted()
+    private val translations = source.getJSONObject("translations").apply {
+        put("ml", JSONObject(context.assets.open("translations/ml.json").bufferedReader().use { it.readText() }))
+        getJSONObject("en").put("readThisStep", "Read this step")
+    }
     var revision by mutableIntStateOf(0)
         private set
     var state: JSONObject = prefs.getString("state", null)?.let { runCatching { JSONObject(it) }.getOrNull() } ?: seed()

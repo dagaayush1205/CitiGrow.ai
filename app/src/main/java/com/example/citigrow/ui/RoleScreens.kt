@@ -29,7 +29,7 @@ import java.util.UUID
         val transcript = if (career.length() > 0) "${child.text("name")} is exploring ${career.text("title")}. ${career.text("short")} Typical entry: ${career.text("edu")}. This is sample guidance; confirm current requirements with a teacher."
             else "${child.text("name")} is beginning to explore interests and possibilities. Give them time and encouragement."
         Hero("Listen to career explanation", "Understand your child's chosen path", "play") {
-            Secondary("Listen · audio placeholder") { s.speak("parent_explanation", transcript) }
+            Secondary("Listen to career explanation") { s.speak("parent_explanation", transcript) }
             Text(transcript, style = MaterialTheme.typography.bodyLarge, color = Color(0xFFE4ECF4))
         }
         GrowPanel(background = GoldSurface, border = Color(0xFFF3E2A9)) { Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) { GrowIcon("heart", tint = GoldInk); SectionTitle("How you can help this week") }; Text("Make room for ${child.optInt("study", 30)} quiet minutes, three times this week. Ask what they enjoyed learning.", style = MaterialTheme.typography.bodyLarge) }

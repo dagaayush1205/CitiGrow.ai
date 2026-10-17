@@ -22,12 +22,13 @@ import androidx.compose.ui.unit.sp
     val body = remember(assets, language) { when (language) {
         "hi" -> FontFamily(Font("fonts/noto_sans_devanagari.ttf", assets))
         "ta" -> FontFamily(Font("fonts/noto_sans_tamil.ttf", assets))
+        "ml" -> FontFamily.Default // Android's bundled Malayalam font fallback; no font download.
         else -> latin
     } }
     // Optional original display assets; never silently download fonts at app startup.
     val display = remember(assets, language, body) {
         val prefix = if (language == "ta") "baloo_thambi2" else "baloo2"
-        if (runCatching { assets.open("fonts/${prefix}_bold.ttf").close() }.isSuccess)
+        if (language != "ml" && runCatching { assets.open("fonts/${prefix}_bold.ttf").close() }.isSuccess)
             FontFamily(Font("fonts/${prefix}_bold.ttf", assets, FontWeight.Bold)) else body
     }
     fun style(size: Int, line: Int, weight: FontWeight = FontWeight.Normal, heading: Boolean = false) = TextStyle(

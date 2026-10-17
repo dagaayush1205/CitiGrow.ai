@@ -22,12 +22,47 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.draw.alpha
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.citigrow.data.*
 import com.example.citigrow.ui.theme.*
 import org.json.JSONObject
 import java.util.UUID
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable private fun RegistrationDropdown(label: String, value: String, options: List<Pair<String, String>>, select: (String) -> Unit) {
+    var expanded by remember { mutableStateOf(false) }
+    val guide = LocalRegistrationGuide.current
+    val displayed = options.firstOrNull { it.first == value }?.second.orEmpty()
+    Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
+        if (guide == null) Text(translated(label), style = MaterialTheme.typography.bodyLarge, fontWeight = FontWeight.SemiBold)
+        ExposedDropdownMenuBox(expanded = expanded, onExpandedChange = { if (it) guide?.stop(); expanded = it }) {
+            OutlinedTextField(
+                value = translated(displayed), onValueChange = {}, readOnly = true, singleLine = true,
+                modifier = Modifier.menuAnchor().fillMaxWidth().semantics { contentDescription = label },
+                shape = RoundedCornerShape(14.dp),
+                trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expanded) },
+                colors = OutlinedTextFieldDefaults.colors(unfocusedContainerColor = Color.White, focusedContainerColor = Color.White, unfocusedBorderColor = InputBorder, focusedBorderColor = Blue)
+            )
+            ExposedDropdownMenu(expanded = expanded, onDismissRequest = { expanded = false }, modifier = Modifier.heightIn(max = 320.dp)) {
+                options.forEach { (key, title) ->
+                    DropdownMenuItem(text = { Text(translated(title)) }, onClick = { expanded = false; select(key) },
+                        trailingIcon = { if (key == value) GrowIcon("check", tint = Blue) })
+                }
+            }
+        }
+    }
+}
+
+@Composable private fun RegistrationInput(id: String, value: String, secret: Boolean = false, numeric: Boolean = false, change: (String) -> Unit) {
+    val guide = requireNotNull(LocalRegistrationGuide.current)
+    NarratedField(id) { Entry(guide.label(id), value, secret, numeric, showLabel = false, onFocused = guide::stop, change = change) }
+}
+@Composable private fun RegistrationSelect(id: String, value: String, options: List<Pair<String, String>>, change: (String) -> Unit) {
+    val guide = requireNotNull(LocalRegistrationGuide.current)
+    NarratedField(id) { RegistrationDropdown(guide.label(id), value, options, change) }
+}
 
 @Composable fun LanguageScreen(s: AppSession) {
     Column(Modifier.fillMaxWidth().background(Navy).padding(top = 26.dp), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -41,13 +76,17 @@ import java.util.UUID
     }
     Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(14.dp)) {
         Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(10.dp)) { GrowIcon("languages", tint = Blue); SectionTitle(s.t("chooseLang")) }
-        Row(Modifier.fillMaxWidth().semantics { selectableGroup() }, horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-            listOf(Triple("en", "English", "English"), Triple("hi", "हिन्दी", "Hindi"), Triple("ta", "தமிழ்", "Tamil")).forEach { (code, name, subtitle) ->
-                val selected = s.store.state.text("lang") == code
-                Surface(modifier = Modifier.weight(1f).heightIn(min = 76.dp).selectable(selected, role = Role.RadioButton) { s.store.change { s.store.state.put("lang", code) } },
-                    color = if (selected) BlueTint else Color.White, border = BorderStroke(2.dp, if (selected) Blue else Border), shape = RoundedCornerShape(16.dp)) {
-                    Column(Modifier.padding(horizontal = 4.dp, vertical = 10.dp), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(2.dp)) {
-                        Text(name, fontSize = 19.sp, fontWeight = FontWeight.Bold, color = Navy); Note(subtitle)
+        Column(Modifier.fillMaxWidth().semantics { selectableGroup() }, verticalArrangement = Arrangement.spacedBy(10.dp)) {
+            listOf(Triple("en", "English", "English"), Triple("hi", "हिन्दी", "Hindi"), Triple("ta", "தமிழ்", "Tamil"), Triple("ml", "മലയാളം", "Malayalam")).chunked(2).forEach { languages ->
+                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+                    languages.forEach { (code, name, subtitle) ->
+                        val selected = s.store.state.text("lang") == code
+                        Surface(modifier = Modifier.weight(1f).heightIn(min = 76.dp).selectable(selected, role = Role.RadioButton) { s.store.change { s.store.state.put("lang", code) } },
+                            color = if (selected) BlueTint else Color.White, border = BorderStroke(2.dp, if (selected) Blue else Border), shape = RoundedCornerShape(16.dp)) {
+                            Column(Modifier.padding(horizontal = 4.dp, vertical = 10.dp), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                                Text(name, fontSize = 19.sp, fontWeight = FontWeight.Bold, color = Navy); Note(subtitle)
+                            }
+                        }
                     }
                 }
             }
@@ -143,37 +182,61 @@ import java.util.UUID
     var internet by rememberSaveable { mutableStateOf("sometimes") }; var time by rememberSaveable { mutableStateOf("evening") }
     var guardian by rememberSaveable { mutableStateOf("") }; var consent by rememberSaveable { mutableStateOf(false) }
     var privacy by rememberSaveable { mutableStateOf(false) }
-    Heading(if (assisted) "Create a classroom profile" else "A journey of your own")
+    val language = s.store.state.text("lang", "en")
+    val context = LocalContext.current
+    val strings = remember { JSONObject(context.assets.open("tts/registration_prompts.json").bufferedReader().use { it.readText() }) }
+    val minor = (age.toIntOrNull() ?: 0) < 18
+    val guide = remember(step, language, minor && step == 2, s.narrator) {
+        val ids = when (step) {
+            0 -> listOf("intro0", "name", "age", "education", "state", "district", "continue")
+            1 -> listOf("intro1", "language", "phone", "internet", "time", "minutes", "pin", "continue")
+            else -> listOf("intro2", "privacyInfo") + (if (minor) listOf("guardian", "guardianConsent") else emptyList()) + listOf("privacy", "privacyLink", "create")
+        }
+        RegistrationGuide(language, s.narrator, strings.getJSONObject(language), ids)
+    }
+    LaunchedEffect(step, language) { withFrameNanos { }; guide.play() }
+    DisposableEffect(step, language) { onDispose { guide.stop() } }
+    CompositionLocalProvider(LocalRegistrationGuide provides guide) {
+    NarratedField("intro$step", showLabel = false) { Heading(guide.label("intro$step")); Note(guide.hint("intro$step")) }
+    if (assisted) Note("Teacher-assisted profile · the student keeps their own PIN")
     Note("Step ${step + 1} of 3 · stored on this device")
+    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+        TextButton(onClick = { guide.play() }) { GrowIcon("volume", tint = Blue); Spacer(Modifier.width(6.dp)); Text(s.t("readThisStep")) }
+        TextButton(onClick = guide::stop) { Text(s.t("stopReading")) }
+    }
     LinearProgressIndicator(progress = { (step + 1) / 3f }, modifier = Modifier.fillMaxWidth())
     when (step) {
         0 -> {
-            Entry("Student name", name) { name = it.take(60) }; Entry("Age (13–25)", age, numeric = true) { age = it.filter(Char::isDigit).take(2) }
-            Note("Education level"); Choices(listOf("8", "9", "10", "11", "12", "iti", "college"), edu) { edu = it }
-            Note("State"); Choices(s.store.data.arr("STATES").strings(), state) { state = it }
-            Entry("District", district) { district = it.take(60) }
+            RegistrationInput("name", name) { name = it.take(60) }; RegistrationInput("age", age, numeric = true) { age = it.filter(Char::isDigit).take(2) }
+            RegistrationSelect("education", edu, (8..12).map { it.toString() to "Class $it" } + listOf("iti" to "ITI", "college" to "College / graduation")) { edu = it }
+            RegistrationSelect("state", state, s.store.regions.map { it to it }) { state = it }
+            RegistrationInput("district", district) { district = it.take(60) }
         }
         1 -> {
-            Note("App language"); Choices(listOf("en", "hi", "ta"), s.store.state.text("lang")) { s.store.change { s.store.state.put("lang", it) } }
-            Note("Phone access"); Choices(listOf("shared", "own", "teacher"), phone) { phone = it }
-            Note("Internet access"); Choices(listOf("reliable", "sometimes", "limited"), internet) { internet = it }
-            Note("Learning time"); Choices(listOf("morning", "afternoon", "evening"), time) { time = it }
-            Note("Minutes each day"); Choices(listOf("15", "30", "45", "60"), minutes) { minutes = it }
-            Entry("Create a four-digit PIN", pin, secret = true) { pin = it.filter(Char::isDigit).take(4) }
+            RegistrationSelect("language", language, listOf("en" to "English", "hi" to "हिन्दी", "ta" to "தமிழ்", "ml" to "മലയാളം")) { value -> s.store.change { s.store.state.put("lang", value) } }
+            RegistrationSelect("phone", phone, listOf("shared" to "Shared family phone", "own" to "Own phone", "teacher" to "Teacher's device")) { phone = it }
+            RegistrationSelect("internet", internet, listOf("reliable" to "Reliable", "sometimes" to "Sometimes available", "limited" to "Limited connectivity")) { internet = it }
+            RegistrationSelect("time", time, listOf("morning" to "Morning", "afternoon" to "Afternoon", "evening" to "Evening")) { time = it }
+            RegistrationSelect("minutes", minutes, listOf("15", "30", "45", "60").map { it to "$it minutes" }) { minutes = it }
+            RegistrationInput("pin", pin, secret = true) { pin = it.filter(Char::isDigit).take(4) }
         }
         2 -> {
-            Note("Demo ID is generated automatically. We do not collect Aadhaar, identity numbers or phone numbers.")
-            if ((age.toIntOrNull() ?: 0) < 18) {
-                Entry("Guardian name / relationship", guardian) { guardian = it.take(80) }
-                Toggle("Guardian agrees to this demo profile", consent) { consent = it }
-                Note("This checkbox records demo consent only. Verified guardian consent is required before a real pilot.")
+            NarratedField("privacyInfo") { Note(guide.hint("privacyInfo")) }
+            if (minor) {
+                RegistrationInput("guardian", guardian) { guardian = it.take(80) }
+                NarratedField("guardianConsent", showLabel = false) {
+                    Toggle(guide.label("guardianConsent"), consent) { guide.stop(); consent = it }
+                    Note(guide.hint("guardianConsent"))
+                }
             }
-            Toggle("I understand the local demo privacy notice", privacy) { privacy = it }
-            Secondary("Read privacy notice") { s.go("privacy") }
+            NarratedField("privacy", showLabel = false) { Toggle(guide.label("privacy"), privacy) { guide.stop(); privacy = it } }
+            NarratedField("privacyLink", showLabel = false) { Secondary(guide.label("privacyLink")) { guide.stop(); s.go("privacy") } }
         }
     }
-    val valid = when (step) { 0 -> name.isNotBlank() && age.toIntOrNull() in 13..25 && district.isNotBlank(); 1 -> pin.length == 4; else -> privacy && ((age.toIntOrNull() ?: 0) >= 18 || (consent && guardian.isNotBlank())) }
-    Primary(if (step < 2) s.t("continue") else "Create profile", valid) {
+    val valid = when (step) { 0 -> name.isNotBlank() && age.toIntOrNull() in 13..25 && district.isNotBlank() && state in s.store.regions; 1 -> pin.length == 4; else -> privacy && ((age.toIntOrNull() ?: 0) >= 18 || (consent && guardian.isNotBlank())) }
+    NarratedField(if (step < 2) "continue" else "create", showLabel = false) {
+    Primary(guide.label(if (step < 2) "continue" else "create"), valid) {
+        guide.stop()
         if (step < 2) step++ else {
             val id = UUID.randomUUID().toString()
             val p = JSONObject().put("id", id).put("name", name.trim()).put("age", age.toInt()).put("edu", edu).put("state", state)
@@ -185,5 +248,7 @@ import java.util.UUID
             s.store.change("Profile created") { s.store.state.arr("profiles").put(p) }; created(id)
         }
     }
-    if (step > 0) Secondary(s.t("back")) { step-- }
+    }
+    if (step > 0) Secondary(s.t("back")) { guide.stop(); step-- }
+    }
 }

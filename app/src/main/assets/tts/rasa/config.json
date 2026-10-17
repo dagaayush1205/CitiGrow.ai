@@ -1,0 +1,17 @@
+{
+  "model": "ai4bharat/vits_rasa_13",
+  "revision": "00b1590501b55708d5d66be51bae336b51bce1d2",
+  "sha256": "4473f8d0b6f738196c1626bbf337cda99b34749b638bb7234c4cb8e1992bf804",
+  "sampleRate": 24000,
+  "speakers": {
+    "ta": 18,
+    "ml": 11
+  },
+  "emotion": 0,
+  "languages": [
+    "ta",
+    "ml"
+  ],
+  "license": "CC-BY-4.0",
+  "source": "https://huggingface.co/ai4bharat/vits_rasa_13"
+}

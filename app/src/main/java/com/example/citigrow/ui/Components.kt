@@ -28,6 +28,7 @@ import androidx.compose.ui.text.input.*
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.draw.rotate
+import androidx.compose.ui.focus.onFocusChanged
 import com.example.citigrow.ui.theme.*
 import com.example.citigrow.data.GrowStore
 import org.json.JSONObject
@@ -126,10 +127,10 @@ internal object ReferenceIcons {
         Text(translated(text), style = MaterialTheme.typography.labelLarge)
     }
 }
-@Composable fun Entry(label: String, value: String, secret: Boolean = false, numeric: Boolean = false, change: (String) -> Unit) {
+@Composable fun Entry(label: String, value: String, secret: Boolean = false, numeric: Boolean = false, showLabel: Boolean = true, onFocused: (() -> Unit)? = null, change: (String) -> Unit) {
     Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
-        Text(translated(label), style = MaterialTheme.typography.bodyLarge, fontWeight = FontWeight.SemiBold)
-        OutlinedTextField(value, onValueChange = change, modifier = Modifier.fillMaxWidth().semantics { contentDescription = label }, singleLine = true, shape = RoundedCornerShape(14.dp),
+        if (showLabel) Text(translated(label), style = MaterialTheme.typography.bodyLarge, fontWeight = FontWeight.SemiBold)
+        OutlinedTextField(value, onValueChange = change, modifier = Modifier.fillMaxWidth().onFocusChanged { if (it.isFocused) onFocused?.invoke() }.semantics { contentDescription = label }, singleLine = true, shape = RoundedCornerShape(14.dp),
             colors = OutlinedTextFieldDefaults.colors(unfocusedContainerColor = Color.White, focusedContainerColor = Color.White, unfocusedBorderColor = InputBorder, focusedBorderColor = Blue),
             visualTransformation = if (secret) PasswordVisualTransformation() else VisualTransformation.None,
             keyboardOptions = KeyboardOptions(keyboardType = if (secret) KeyboardType.NumberPassword else if (numeric) KeyboardType.Number else KeyboardType.Text))

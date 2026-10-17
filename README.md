@@ -1,4 +1,4 @@
-# CitiGrow.ai Android
+# CitiGrow.ai
 tagline
 
 ## Given Problem Statement

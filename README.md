@@ -2,6 +2,126 @@
 
 Native Kotlin / Jetpack Compose implementation of the supplied [handoff](HANDOFF.md) and [interactive reference](reference/citigrow-prototype.dc.html). Android 7.0+ (API 24).
 
+## Product purpose and readiness
+
+CitiGrow helps students turn interests, everyday experience and available study time into a practical learning and career pathway. It connects discovery, skills checks, learning, opportunity preparation and family/teacher support in one local-first Android experience. Its intended users include learners who share phones, have intermittent connectivity, prefer regional-language guidance, or need help navigating education and livelihood options.
+
+The product hypothesis is that understandable guidance and a clear next action can reduce the effort between discovering a pathway and taking a useful step toward it. This is a genuine problem to investigate with learners and facilitators, not a claim of validated demand: the repository contains no customer research, paid adoption, placement results or measured income uplift.
+
+Current readiness: a functional local prototype, not a production service. The sections below distinguish implemented capabilities, engineering assessment, commercial hypotheses and outcomes still to be measured. No revenue, usability, scale or livelihood-impact figures are presented as observed results.
+
+## Technical soundness, architecture and maintainability
+
+### Is the solution technically sound and realistically implementable?
+
+Yes for demonstrating the scoped local workflow. Kotlin/Compose provides a native Android interface; deterministic rules produce explainable suggestions; local persistence supports continuity without a server; and on-device speech avoids a speech-generation backend. Host source checks, 17 deterministic tests and Python inference with the supplied model have passed. APK packaging, Android ONNX JNI, device playback and rendered UI still need device verification. These checks do not establish production reliability.
+
+### Is the architecture well-designed and maintainable?
+
+It has useful boundaries: `ui/` renders screens, `GrowRules` handles matching/eligibility, `GrowStore` owns local records, and `voice/` separates language routing, synthesis and playback. Static content and prompts are assets rather than embedded model outputs. The narration interface also supports testing highlight behavior without a real speech engine.
+
+The architecture is appropriate for a prototype, but not yet a mature production architecture. Screens mutate shared JSON records, persistence rewrites a shared-preferences JSON document, content lacks a managed publication lifecycle, and the reflection-based ONNX bridge cannot be API-checked by the fallback compiler. A small catalogue is maintainable today; growing teams and datasets would benefit from typed models, explicit screen state/ViewModels, repository interfaces, schema migrations, transactional Room storage, feature-level ownership and CI that builds real APKs and exercises JNI/device tests. Keep rule, prompt and tokenizer regression tests when making those changes.
+
+### Does it address security, reliability, integrations and performance?
+
+| Area | Implemented today | Required before a real deployment |
+| --- | --- | --- |
+| Security and privacy | App-private data; salted PIN hashes and attempt throttling; backup/device transfer disabled; sharing off for new profiles; no microphone permission; registration narration excludes entered values | Replace demonstration role PINs and fast PIN hashing with a reviewed authentication design; enforce role/tenant authorization on a backend; assess device encryption, recovery, retention/deletion and child safeguarding; verify guardian consent rather than treating a checkbox as proof |
+| Reliability | Local persistence, cancellable playback, audio-focus handling, bounded speech caches, model checksum verification and explicit voice errors | Transactional persistence and migrations, crash/recovery tests, storage-pressure handling, monitored releases, rollback procedures and tested sync/conflict handling. The event queue does not currently upload anything |
+| Integrations | External portal links and local demonstration records; offline Android TTS and bundled ONNX runtime integration | Verified provider contracts/APIs, authenticated adapters, idempotent requests, retry limits, source freshness checks and reconciliation. No live application submission, payment, identity or LMS integration is implemented |
+| Performance | Lazy model loading, serialized background CPU inference, reused sessions and generated-audio caching | Benchmark cold/warm latency, memory, battery, app size and thermal behavior on low-cost phones; test rapid cancellation and concurrent app use. The approximately 118 MB model plus its installed copy is a material storage/distribution cost |
+
+Device-side generation can avoid per-request cloud speech costs, but shifts compute, battery and storage costs to the phone. No phone latency or capacity guarantee is established. Model licensing/attribution and dependency updates must remain part of release management. Security and safeguarding review are release gates, not completed certifications.
+
+### Does it offer AI-powered personalization and intelligence?
+
+Partially, with an important distinction:
+
+- AI inference is implemented for Tamil/Malayalam speech synthesis. It improves access to instructions; it is not a career-reasoning model.
+- Personalization is implemented through rules: discovery answers and interests, assessment skill gaps, prior experiences, budget and relocation constraints influence career suggestions; available study time influences pathway pacing. Recommendations include reasons and gaps.
+- The displayed match percentage is a heuristic score, not a calibrated probability of employment, course completion or success. Skills checks are demonstration assessments, not validated psychometric instruments.
+- There is no trained recommendation model, LLM tutor, predictive placement engine or learning-from-user-feedback pipeline today. An intelligent-advising roadmap could add verified-content retrieval and evaluated ranking with consent, fairness checks, explanations, human escalation and versioned evaluations. It must not invent eligibility, promise jobs or automatically exclude learners from opportunities.
+
+## Usability, workflow and adoption
+
+### Is it easy to understand, intuitive and quick to learn?
+
+The design aims to be: language selection comes first; onboarding is divided into three steps; dropdowns reduce ambiguous entry; and spoken field instructions follow a visible blue highlight. Replay and Stop give users control. Home, Discover, Learn and Profile separate the main tasks; the Life Map supplies an ordered next action. Shared-phone profiles and teacher-assisted creation address assisted use.
+
+These are usability design choices, not proof that users find the interface intuitive. Regional-language coverage is incomplete, some options remain English, voice availability differs by device, PINs may create friction, and the large model may deter installation. Validate with first-time learners across literacy levels, assistive technologies, languages and low-cost/shared devices. Measure onboarding completion, time to first useful recommendation, unassisted task completion, replay/error rates and whether users can explain their next step after one session. Device accessibility and native-speaker reviews remain pending.
+
+### Does it simplify workflows and provide a seamless journey?
+
+The intended journey is:
+
+1. Choose a language and create or unlock a private student profile.
+2. Describe interests and constraints, then compare explained career suggestions.
+3. Check skills and follow a paced Life Map with learning and practice.
+4. Review relevant opportunities, identify eligibility gaps and prepare a document checklist.
+5. Involve a teacher or parent through explicit sharing controls and review progress.
+
+This consolidates planning and preparation that would otherwise require separate notes, repeated explanations and unstructured searching. Learners retain their local progress; teachers can guide multiple students; parents see a simpler summary rather than private conversations. Actual time savings have not been measured.
+
+The local demonstration journey is connected, but the complete service journey is not yet seamless. Official applications leave the app, listings are unverified samples, full lessons are not authored, partner verification is simulated, and there is no confirmed enrolment/placement feedback loop. Production needs verified opportunity handoffs, clear status/ownership, accessible support and consented outcome tracking before claiming end-to-end delivery.
+
+### Can it grow from 10 users to 10,000 and across regions or organizations?
+
+Local inference and storage mean each installation handles its own speech and records; there is no central speech endpoint to saturate. That makes wider installation plausible, but 10,000 installations are not the same as a tested 10,000-user service. Current profiles are device-local, and there is no cross-device identity, organization management, central reporting or support operation. User count alone is also insufficient for capacity planning: measure active users, requests, content downloads and peak concurrency.
+
+A staged adoption plan is:
+
+- **10 users:** verify device builds, guided tasks, language comprehension and safeguarding in a supervised demonstration; collect usability feedback with consent.
+- **100–1,000 users:** only after readiness gates, pilot typed transactional storage, authenticated tenant-scoped APIs, real connectivity detection, durable background sync and conflict resolution; establish verified content, facilitator training and support ownership.
+- **10,000 users:** load-test the backend against measured traffic and bursts; use indexed/paginated data access, queued long-running work and managed content distribution; define service targets, monitoring, incident response, restore tests and cost limits. Separate organizations' permissions/data and test those boundaries.
+
+Broader customer/business-unit adoption also needs configurable programmes and curricula rather than customer-specific code forks, accessible onboarding, organizational reporting and a repeatable rollout/support playbook. Regional expansion needs reviewed translations, supported voices, local curricula and verified region-specific opportunities. Listing every state/union territory in a form does not mean the service has verified coverage there. None of these production-scale capabilities should be inferred from the local demo.
+
+## Revenue, efficiency and business case
+
+### Does it create revenue opportunities?
+
+Potentially. The strongest hypotheses are institution-funded access for schools, training organizations or livelihood programmes; implementation/training services; and paid organizational reporting or cohort-management features once those services exist. Verified partner programmes could fund access while keeping basic learner guidance affordable. These are proposed models, not existing customers, contracts or recurring revenue. Purchaser willingness to pay, procurement cycles and delivery costs need validation.
+
+Revenue should not depend on selling student data, pay-to-rank career advice or charging for unverified job promises. Any future employer/provider fees need transparent disclosure and separation from recommendation quality. Current prices, course purchases, partner submissions and teacher earnings are demonstrations; payment collection is not implemented.
+
+### Does it reduce costs and improve operational efficiency?
+
+The proposed efficiency gains are less repetitive form explanation through read-aloud guidance, reusable eligibility/document checklists, shared cohort visibility and clearer family/teacher coordination. Local speech avoids a metered cloud-speech call for each replay. These gains could free facilitator time, reduce repeated visits and improve preparedness, but the prototype has no operational study demonstrating them. Model storage, device support, translation, verified-content operations and staff training can offset savings.
+
+The business case is compelling only if institutions value the outcomes enough to fund delivery and measured benefits exceed full lifecycle costs. Validate with a named buyer, a baseline workflow, a paid or explicitly budgeted pilot and a plan for maintaining verified opportunities. Track cost per active learner, facilitator time per learner, retention, partner renewal, contribution margin and cost per verified progression outcome—not downloads alone.
+
+### What is the potential ROI?
+
+ROI is not established. Use a purchaser-specific model rather than treating all social benefits as vendor revenue:
+
+`Annual operational ROI = (annual realizable benefits − annual total cost) / annual total cost × 100`
+
+Illustrative assumptions only: a programme serves 1,000 learners; each completes four assisted tasks per year; each task saves 10 facilitator minutes; and staff time is valued at ₹300/hour. This gives approximately 667 hours or ₹200,000 of annual capacity value. If the all-in annual cost were ₹150,000, net capacity value would be ₹50,000 and ROI approximately 33%. At five minutes saved per task, value falls to ₹100,000 and ROI becomes approximately −33%; break-even is 7.5 minutes saved per task under these same assumptions.
+
+These figures are an arithmetic example, not observed savings, a market price or a budget quote. Time released becomes a cash saving only if staffing/overtime costs are actually avoided; otherwise it is capacity for additional service. Include software delivery/licensing, devices/data, onboarding, translation, content verification, support, hosting/sync, monitoring and maintenance in the real cost estimate. Avoid counting the same staff saving twice. Measure learner income and broader social value separately from the institution's financial ROI.
+
+## Livelihood, economic outcomes and customer value
+
+### Does it solve a genuine pain point and materially improve lives or work?
+
+The target pain points are difficulty understanding career choices, fragmented learning/application steps, uncertainty about requirements and costs, language barriers and limited access to individual guidance. CitiGrow addresses these through explained pathways, skills-gap practice, paced next steps, read-aloud instructions, preparation checklists and family/teacher support. If validated, this could improve confidence and access while reducing avoidable effort for learners and facilitators.
+
+The livelihood mechanism is a hypothesis: better understanding → a feasible pathway → relevant skill practice → a completed, eligible application → training/work access → sustained economic benefit. The app directly demonstrates the early guidance/preparation steps. Later outcomes depend on verified supply, training quality, affordability, employer demand, learner circumstances and human support. It cannot guarantee admission, funding, placement or income, and it must not steer minors into inappropriate work.
+
+### How significant is the improvement, and how will it be proved?
+
+No quantitative livelihood or income improvement has been demonstrated. A pilot should establish baseline access and outcomes, use a comparable non-user group or staged rollout where feasible, and obtain informed consent for follow-up. Set targets before collecting results and report sample size, missing follow-ups and attribution limits.
+
+| Outcome layer | Suggested measures |
+| --- | --- |
+| Understanding and experience | First-session task success; comprehension of requirements/next steps; satisfaction; language/accessibility issues; complaints |
+| Learning and preparation | Skills improvement using a validated assessment; course completion; application completeness; avoided repeat visits; time/cost to prepare |
+| Access and progression | Verified eligible applications; scholarship/training admissions; completed training; age-appropriate placement or progression; time to outcome |
+| Sustained economic value | Baseline versus 3/6/12-month earnings, hours worked and job retention for relevant consenting participants; training/travel costs; net rather than gross benefit |
+| Inclusion and safety | Outcome differences by region, language, gender and access needs where appropriate and consented; harmful advice, privacy incidents, grievance resolution and dropout reasons |
+
+Positive user experience is an intended design outcome, not an established result. A strong pilot would show that users understand and complete tasks more easily, receive accurate opportunities, and progress to independently verified outcomes without sacrificing privacy or safety. Report failures and exclusion as well as success stories. Until that evidence exists, position CitiGrow as a promising guidance prototype rather than a proven income-improvement platform.
+
 ## Run
 
 Open this directory in Android Studio, allow Gradle to sync, and run `app` on a device or emulator. Use JDK 17 or newer and Android SDK 36. Set your SDK location in `local.properties` if needed.
@@ -87,3 +207,4 @@ node scripts/check-kotlin.cjs --test
 Set `CITIGROW_DEPENDENCY_CACHE` and `ANDROID_HOME` to override its local cache and SDK paths. This fallback requires a populated dependency cache and SDK sources; it does not resolve the new Gradle dependencies, package an APK, load Android ONNX JNI or run Compose/device tests. The ONNX adapter uses reflection and is therefore not API-checked by this fallback compiler. Python CPU inference with the supplied model passes locally for Tamil and Malayalam; Android runtime integration and rendered UI remain unverified. Device tests also cover shared-phone PIN entry and local persistence, and should run on a fresh demo installation in Android Studio. An emulator/device run, accessibility pass and release build remain necessary before distribution.
 
 Portal roots checked while implementing: [NSP](https://scholarships.gov.in/), [DIKSHA](https://diksha.gov.in/), [SWAYAM](https://swayam.gov.in/), [AISHE](https://aishe.gov.in/). The [apprenticeship](https://www.apprenticeshipindia.gov.in/) and [Skill India Digital](https://www.skillindiadigital.gov.in/) sites did not return readable content to the verification tool; their links remain portal references, not verified listing evidence.
+

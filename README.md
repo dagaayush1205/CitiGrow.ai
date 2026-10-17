@@ -17,11 +17,7 @@ One of the reasons and the primary focus of this project: **Teacher Shortages, A
 
 ## Our Solution
 
-
-
-Current readiness: a functional local prototype, not a production service. The sections below distinguish implemented capabilities, engineering assessment, commercial hypotheses and outcomes still to be measured. No revenue, usability, scale or livelihood-impact figures are presented as observed results.
-
-## Technical soundness, architecture and maintainability
+CitiGrow is built to transform rural learning from an isolated struggle into a connected ecosystem of opportunity. Our AI-enabled working prototype brings students, teachers and families together through regional-language audio guidance, personalized learning pathways and career exploration helping bridge the linguistic barriers, extend teacher support and strengthen household participation. It represents an evolution from simply accessing education to building the skills, confidence and support to shape a better future, with the ambition to empower every rural learner to uplift themselves, their family and their community.
 
 ### Is the solution technically sound and realistically implementable?
 

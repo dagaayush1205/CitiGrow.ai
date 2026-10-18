@@ -23,11 +23,10 @@ CitiGrow is built to transform rural learning from an isolated struggle into a c
 
 Yes for demonstrating the scoped local workflow. Kotlin/Compose provides a native Android interface; deterministic rules produce explainable suggestions; local persistence supports continuity without a server; and on-device speech avoids a speech-generation backend. Host source checks, 17 deterministic tests and Python inference with the supplied model have passed. APK packaging, Android ONNX JNI, device playback and rendered UI still need device verification. These checks do not establish production reliability.
 
-### Is the architecture well-designed and maintainable?
+### Architecture
 
-It has useful boundaries: `ui/` renders screens, `GrowRules` handles matching/eligibility, `GrowStore` owns local records, and `voice/` separates language routing, synthesis and playback. Static content and prompts are assets rather than embedded model outputs. The narration interface also supports testing highlight behavior without a real speech engine.
+<img width="2975" height="3943" alt="mermaid-diagram-2026-10-18-183913" src="https://github.com/user-attachments/assets/836fc233-77e3-4841-8089-dea9da214592" />
 
-The architecture is appropriate for a prototype, but not yet a mature production architecture. Screens mutate shared JSON records, persistence rewrites a shared-preferences JSON document, content lacks a managed publication lifecycle, and the reflection-based ONNX bridge cannot be API-checked by the fallback compiler. A small catalogue is maintainable today; growing teams and datasets would benefit from typed models, explicit screen state/ViewModels, repository interfaces, schema migrations, transactional Room storage, feature-level ownership and CI that builds real APKs and exercises JNI/device tests. Keep rule, prompt and tokenizer regression tests when making those changes.
 
 ### Does it address security, reliability, integrations and performance?
 

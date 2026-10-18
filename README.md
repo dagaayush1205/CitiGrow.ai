@@ -71,7 +71,7 @@ CitiGrow builds a learner profile around interests, skills, available study time
   
 - **AI-Powered Skills and Career Mapping**: Extend rule-based personalization with a structured map connecting careers, prerequisite skills, assessments and learning resources. Identify skill gaps and recommend achievable next steps, explaining why each resource is relevant. Recommendations will consider affordability, language, available time and location—not interests alone. We also propose a cloud-assisted service to identify emerging and non-traditional opportunities using verified sources, while keeping essential guidance available offline.
 
--** Voice-Based Interaction**: Build on the text-to-speech proof of concept by evaluating locally executed speech recognition, including Whisper-based implementations. This would allow learners to speak instead of typing and review the recognized text before submission. Language accuracy, response time, memory and battery consumption will need testing on target devices.
+- **Voice-Based Interaction**: Build on the text-to-speech proof of concept by evaluating locally executed speech recognition, including Whisper-based implementations. This would allow learners to speak instead of typing and review the recognized text before submission. Language accuracy, response time, memory and battery consumption will need testing on target devices.
 
 - **Offline-First Learning and Synchronization**: Enable access to permitted downloadable lessons, practice activities and progress records with limited connectivity. Store progress locally and synchronize it when connectivity returns, supporting shared phones and interrupted learning sessions.
 

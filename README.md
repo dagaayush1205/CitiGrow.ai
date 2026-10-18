@@ -22,7 +22,9 @@ CitiGrow is built to transform rural learning from an isolated struggle into a c
 ### What makes CitiGrow different?
 
 - **Offline-first intelligence, built for rural realities**: Access to guidance should not depend on a reliable internet connection. CitiGrow generates supported speech directly on the device and caches it for reuse, rather than relying on prerecorded narration or cloud speech services. Our approach prioritizes local processing so that language support and essential guidance remain accessible in low-connectivity environments.
+  
 - **Household empowerment, not just individual learning**: A student’s journey is shaped by the people around them. CitiGrow brings families into that journey through dedicated parent and student experiences that explain learning pathways, potential costs and future opportunities. By helping households understand and support educational choices, we aim to give students the encouragement to pursue new possibilities—and help families break intergenerational cycles of disadvantage and essentially giving the career guidance that is required.
+  
 - **Start with the learner, not their certificate**: A learner’s class or qualification does not always reflect their current abilities. CitiGrow uses foundational skills checks to understand where support is needed, rather than assuming everyone can begin with the same material. We have develop an ASER-inspired assessment approach that guides learners toward achievable next steps—building confidence through progress, without labelling or leaving anyone behind.
   
 ### Current Technical Implementation

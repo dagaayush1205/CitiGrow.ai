@@ -25,11 +25,14 @@ CitiGrow is built to transform rural learning from an isolated struggle into a c
 
 ### What Makes CitiGrow Different?
 
-- **Offline-first intelligence, built for rural realities**: Access to guidance should not depend on a reliable internet connection. CitiGrow generates supported speech directly on the device and caches it for reuse, rather than relying on prerecorded narration or cloud speech services. Our approach prioritizes local processing so that language support and essential guidance remain accessible in low-connectivity environments.
-
-- **Household empowerment, not just individual learning**: A student’s journey is shaped by the people around them. CitiGrow involves families through dedicated parent and student experiences that explain learning pathways, potential costs and future opportunities. By helping households understand and support educational choices, we aim to strengthen students’ confidence, improve access to career guidance and help families break intergenerational cycles of disadvantage.
+- **Offline-first intelligence, built for rural realities**: Access to guidance should not depend on reliable connectivity. CitiGrow generates supported speech directly on the device and caches it for reuse, keeping spoken instructions and essential guidance accessible even without an internet connection.
   
-- **Start with the learner, not their certificate**: A learner’s class or qualification does not always reflect their current abilities. CitiGrow’s prototype includes foundational skills checks inspired by the principle of assessing actual learning levels rather than assuming readiness. These checks help identify support needs and guide learners toward achievable next steps—building confidence through progress without labelling or leaving anyone behind. They are not a validated ASER assessment.
+- **Household empowerment, not just individual learning**: A student’s journey is shaped by the people around them. Dedicated parent and student experiences help families understand learning pathways, potential costs and future opportunities. By building household understanding and encouragement, CitiGrow aims to strengthen students’ confidence and help families break intergenerational cycles of disadvantage.
+  
+- **Designed for shared phones and limited learning time**: Access to a household smartphone does not mean a learner can use it whenever they need. CitiGrow accounts for shared-device access and available study time, shaping learning into manageable steps. Private student profiles, suggested family schedules and parent involvement help households make space for learning—so limited phone access need not mean limited ambition.
+  
+- **Start with the learner, not their certificate**: A learner’s class or qualification does not always reflect their current abilities. CitiGrow’s prototype uses foundational skills checks to identify strengths and support needs, helping learners take achievable next steps without labelling or leaving anyone behind. These are demonstration checks, not a validated ASER assessment.
+
 
 ### Current Technical Implementation
 

@@ -30,8 +30,12 @@ CitiGrow is built to transform rural learning from an isolated struggle into a c
 ### Current Technical Implementation
 
 Currently, we have developed a MVP to lay the foundation of how the product will look like. It incorporates the following features:
+#### Simplistic UI
+CitiGrow simplifies learning through clear screens, familiar navigation and one-step-at-a-time guidance. Regional-language audio and highlighted fields help users understand each action, while dropdowns reduce typing. A personalized Life Map turns ambitious goals into manageable next steps, and dedicated student, parent and teacher views keep information relevant—making the experience approachable for first-time smartphone users.
+<img width="1080" height="2340" alt="Screenshot_20261018_194324_CitiGrow" src="https://github.com/user-attachments/assets/123ddb23-76d4-4c3e-9082-f9cac5f1b892" />
 
-+ **Local Text-to-speed**: We have implemented English, Hindi, Tamil and Malayalam, the speech is generated on-device in the application and does not require any internet connectivity. we have used ai4bharat/vits_rasa_13 which has been developed by IIT Madras.
+#### Local Text-to-speed
+CitiGrow reads instructions aloud in English, Hindi, Tamil and Malayalam, highlighting the relevant field as it speaks. Tamil and Malayalam use the bundled AI4Bharat VITS model, while English and Hindi use installed offline Android voices. Audio is generated on-device and cached for reuse, enabling guidance without an internet connection.
 + **Linking Online Free Courses**: We have linked SWAYAM, DIKSHA and skill India.
 + **Personalization and Profile**: We have a rule based personalization based on the user's interest in the field and his usage of the device.
 

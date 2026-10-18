@@ -1,5 +1,5 @@
 # CitiGrow.ai
-tagline
+_Laying the Educational Foundation of India_
 
 ## Given Problem Statement
 
@@ -32,25 +32,25 @@ CitiGrow is built to transform rural learning from an isolated struggle into a c
 Currently, we have developed a MVP to lay the foundation of how the product will look like. It incorporates the following features:
 #### Simplistic UI
 CitiGrow simplifies learning through clear screens, familiar navigation and one-step-at-a-time guidance. Regional-language audio and highlighted fields help users understand each action, while dropdowns reduce typing. A personalized Life Map turns ambitious goals into manageable next steps, and dedicated student, parent and teacher views keep information relevant—making the experience approachable for first-time smartphone users.
-
+<p align = "center">
 <img width="200" alt="Screenshot_20261018_194324_CitiGrow" src="https://github.com/user-attachments/assets/123ddb23-76d4-4c3e-9082-f9cac5f1b892" />
-
+</p>
 #### Local Text-to-speed
 CitiGrow reads instructions aloud in English, Hindi, Tamil and Malayalam, highlighting the relevant field as it speaks. Tamil and Malayalam use the bundled AI4Bharat VITS model, while English and Hindi use installed offline Android voices. Audio is generated on-device and cached for reuse, enabling guidance without an internet connection.
 
 #### Linking Online Free Courses
 CitiGrow connects learners to resources on SWAYAM, DIKSHA and Skill India, bringing learning opportunities into their career journey. The next phase aims to integrate supported course content within the app, reducing navigation between platforms and combining progress tracking with assessments to guide learners’ next steps.
-
+<p align = "center">
  <img width="200" alt="Screenshot_20261018_194856_CitiGrow" src="https://github.com/user-attachments/assets/32c5e0d2-25b7-4b6b-a7d1-ab24637ef80d" /> <img width="200" alt="Screenshot_20261018_194904_CitiGrow" src="https://github.com/user-attachments/assets/3d926229-9219-49fb-b65e-37aaadcdff60" />
-
+</p>
 
 
 #### Personalization and Profile
 We builds a learner profile around interests, skills, available study time and practical constraints such as budget and location. We perform an ASER assessment to understand the current level of the student and then a rule-based recommendations connect this profile to relevant career pathways and manageable learning steps, explaining why each option fits and which skills need strengthening.
-
+<p align = "center">
 <img width="200" alt="Screenshot_20261018_195051_CitiGrow" src="https://github.com/user-attachments/assets/107464b5-c8d1-4ab7-9741-9b6f51f72253" />
 <img width="200" alt="Screenshot_20261018_195627_CitiGrow" src="https://github.com/user-attachments/assets/83bef6da-e14b-44c0-bf02-7451ba952334" />
-
+</p>
 
 ### Proposed Technical Improvements for the next phase
 + **Linking of Online Free Courses**: Instead of re-directing the user to third-party websites. We will bring those learning courses on our platform. Example implementation: Swayam courses are hosted on YouTube. Instead of redirecting the user to Swayam website and then to YouTube. We would integrate supported course content through permitted embeds or provider partnerships.

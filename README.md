@@ -46,9 +46,10 @@ CitiGrow connects learners to resources on SWAYAM, DIKSHA and Skill India, bring
 
 
 #### Personalization and Profile
-CitiGrow builds a learner profile around interests, skills, available study time and practical constraints such as budget and location. Rule-based recommendations connect this profile to relevant career pathways and manageable learning steps, explaining why each option fits and which skills need strengthening.
+We builds a learner profile around interests, skills, available study time and practical constraints such as budget and location. We perform an ASER assessment to understand the current level of the student and then a rule-based recommendations connect this profile to relevant career pathways and manageable learning steps, explaining why each option fits and which skills need strengthening.
 
 <img width="200" alt="Screenshot_20261018_195051_CitiGrow" src="https://github.com/user-attachments/assets/107464b5-c8d1-4ab7-9741-9b6f51f72253" />
+<img width="200" alt="Screenshot_20261018_195627_CitiGrow" src="https://github.com/user-attachments/assets/83bef6da-e14b-44c0-bf02-7451ba952334" />
 
 
 ### Proposed Technical Improvements for the next phase
@@ -69,8 +70,12 @@ Give families simple regional-language progress summaries and suggested learning
 
 + **Privacy, Security and Scalable Infrastructure**: Introduce secure authentication, organization-level access controls, transactional storage and reliable background synchronization. Collect only necessary information, make sharing explicit and establish appropriate safeguards for minors. These foundations will support expansion across institutions and regions.
 
+#### Proposed Revenue Generation
 
-### Architecture
+- **Responsible Advertising**: Display relevant, clearly labelled advertisements to help cover platform costs, without using sensitive learner data for targeting.
+- **Sponsored Course**: Offer verified providers paid visibility for courses and scholarship awareness campaigns, clearly separating promotions from personalized recommendations.
+- **Premium Course Subscriptions**: Keep foundational guidance accessible while offering optional advanced courses through subscriptions, sharing revenue with educators and course providers.
+- **Institutional Partnerships**: Offer schools, NGOs and training centres paid access to cohort management, teacher dashboards and implementation support, enabling classroom adoption at scale. This will not only generate revenue but also create opportunities for the students.
 
 <img width="2975" height="3943" alt="mermaid-diagram-2026-10-18-183913" src="https://github.com/user-attachments/assets/836fc233-77e3-4841-8089-dea9da214592" />
 

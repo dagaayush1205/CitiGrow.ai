@@ -17,6 +17,8 @@ Learning outcomes are shaped by several interconnected factors. CitiGrow focuses
   
 - **Language and household barriers**: Learners may struggle to access understandable resources or receive informed educational and career guidance at home.
 
+- **Career Awareness**: Majority of the students are not aware of the steps and do not have guidance to uplift themseleves.
+
 ## Our Solution
 
 CitiGrow is built to transform rural learning from an isolated struggle into a connected ecosystem of opportunity. Our AI-enabled working prototype brings students, teachers and families together through regional-language audio guidance, personalized learning pathways and career exploration—helping bridge language barriers, extend teacher support and strengthen household participation. It represents an evolution from simply accessing education to building the skills, confidence and support needed to shape a better future, with the ambition to empower rural learners to uplift themselves, their families and their communities.
